@@ -4,22 +4,20 @@
 
 | Basic Syntax | Extended Syntax |
 | --- | --- |
-| Headings | Tables |
-| Emphasis | Fenced Code Blocks |
-| Headings | Footnotes |
-| Blockquotes | Heading IDs |
-| Lists | Definition Lists |
-| Code | Strikethrough |
-| Horizontal Rules | Task Lists |
-| Links | Automatic URL Linking |
-| Images |  |
-| Links |  |
-| Escaping Characters |  |
+| [Headings](#headings) | [Tables](#tables) |
+| [Emphasis](#emphasis) | [Fenced Code Blocks](#fenced-code-blocks) |
+| [Blockquotes](#blockquotes) | [Footnotes](#footnotes) |
+| [Lists](#lists) | [Heading IDs](#heading-ids) |
+| [Code](#code) | [Definition Lists](#definition-lists) |
+| [Horizontal Rules](#horizontal-rules) | [Strikethrough](#strikethrough) |
+| [Links](#links) | [Task Lists](#task-lists) |
+| [Images](#images) | [Automatic URL Linking](#automatic-url-linking) |
+| [Links](#links) |  |
+| [Escaping Characters](#escaping-characters) |  |
 
-## Basic Syntax
-
-### Headings
-
+## Basic Syntax 
+### Headings 
+[🔝](#markdown-cheatsheet)
 ```
 # H1
 ## H2
@@ -532,7 +530,7 @@ You can’t add headings, blockquotes, lists, horizontal rules, images, or HTML 
 
 ***
 
-### Fenced Code Blocks (3 \`, 3 \~)
+### Fenced Code Blocks
 
 \`\`\`
 <br>
