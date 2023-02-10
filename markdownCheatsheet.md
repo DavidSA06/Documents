@@ -1,5 +1,21 @@
 # Markdown Cheatsheet
 
+## Contents
+
+| Basic Syntax | Extended Syntax |
+| --- | --- |
+| Headings | Tables |
+| Emphasis | Fenced Code Blocks |
+| Headings | Footnotes |
+| Blockquotes | Heading IDs |
+| Lists | Definition Lists |
+| Code | Strikethrough |
+| Horizontal Rules | Task Lists |
+| Links | Automatic URL Linking |
+| Images |  |
+| Links |  |
+| Escaping Characters |  |
+
 ## Basic Syntax
 
 ### Headings
