@@ -459,10 +459,48 @@ lifestyles)
 | \. | dot |
 | \! | exclamation mark |
 
+***
 
 ## Extended Syntax
 
+### Tables
 
+Go to [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables)
+
+```
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+```
+
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
+#### Alignment
+
+```
+| Syntax | Description | Test Text |
+| :--- | :----: | ---: |
+| Header | Title | Here's this |
+| Paragraph | Text | And more |
+```
+
+| Syntax | Description | Test Text |
+| :--- | :----: | ---: |
+| Header | Title | Here's this |
+| Paragraph | Text | And more |
+
+#### Formatting Text in Tables
+
+You can format the text within tables. For example, you can add links, code (words
+or phrases in tick marks (\`) only, not code blocks), and emphasis.
+
+You can’t add headings, blockquotes, lists, horizontal rules, images, or HTML tags.
+
+#### Colspan and Rowspan (doesn't work in GitHub)
 
 | MathJax \|\| Image : |||
 | :--- | :--- | :--- |
@@ -475,3 +513,145 @@ lifestyles)
 | ^^ C. Banana || **3. It's OK!** |
 
 [cell-image]: https://jekyllrb.com/img/octojekyll.png "An exemplary image"
+
+***
+
+### Fenced Code Blocks (3 \`, 3 \~)
+
+\`\`\`
+<br>
+{
+<br>
+"firstName": "John",
+<br>
+"lastName": "Smith",
+<br>
+"age": 25
+<br>
+}
+<br>
+\`\`\`
+
+```
+{
+"firstName": "John",
+"lastName": "Smith",
+"age": 25
+}
+```
+
+#### Syntax Highlighting
+
+\`\`\`json
+<br>
+{
+<br>
+"firstName": "John",
+<br>
+"lastName": "Smith",
+<br>
+"age": 25
+<br>
+}
+<br>
+\`\`\`
+
+```json
+{
+"firstName": "John",
+"lastName": "Smith",
+"age": 25
+}
+```
+
+***
+
+### Footnotes
+
+```
+Here's a simple footnote,[^1] and here's a longer one.[^bignote] 
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code.
+
+```
+
+
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code.
+
+(Look the bottom).
+
+***
+
+### Heading IDs
+
+```
+### My Great Heading {#custom-id}
+```
+
+### My Great Heading {#custom-id}
+
+#### Linking to Heading IDs
+
+[Heading IDs](#custom-id)
+
+You can use `[Heading IDs](https:/www.eff.org/page#heading-ids)`
+
+***
+
+### Definition Lists
+
+```
+First Term
+: This is the definition of the first term.
+
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.
+```
+
+First Term
+: This is the definition of the first term.
+
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.
+
+***
+
+### Strikethrough
+
+`The world is ~~flat~~ round.`
+
+The world is ~~flat~~ round.
+
+***
+
+### Task Lists
+
+```
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+```
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+
+***
+
+### Automatic URL Linking
+
+http://example.com
+
+#### Disabling Automatic URL Linking
+
+\`http://www.example.com \`
+
+`http://www.example.com`
