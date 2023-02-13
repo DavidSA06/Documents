@@ -16,8 +16,10 @@
 | [Escaping Characters](#escaping-characters) |  |
 
 ## Basic Syntax 
+
 ### Headings 
-[🔝](#markdown-cheatsheet)
+<!--{::comment}[🔝](#markdown-cheatsheet){:/comment}-->
+
 ```
 # H1
 ## H2
