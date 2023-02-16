@@ -12,6 +12,8 @@
 |  |  |  |  |  | [Large Operators](#large-operators) |  |
 |  |  |  |  |  | [Binary Operations](#binary-operations) |  |
 |  |  |  |  |  | [Relations](#relations) |  |
+|  |  |  |  |  | [Arrows](#arrows) |  |
+|  |  |  |  |  | [Delimiters](#delimiters) |  |
 
 
 ### Document classes
@@ -32,7 +34,7 @@
 
 | Name | Code | Symbol |
 | --- | --- | :---: |
-| ampersand | `\&` | $\& $ |
+| ampersand | `\&` | $\&$ |
 | backslash | `\backslash` | $\backslash $ |
 | bullet symbol | `\bullet` | $\bullet $ |
 | circumflex | `\^{}` | $\^{} $ |
@@ -43,7 +45,7 @@
 | section sign | `\S` | $\S $ |
 | tilde | `\~{}` | $\~{} $ |
 | underscore | `\_` | $\_ $ |
-| vertical bar (pipe) | `\mid`, `\|`, `\textpipe`, `\textbar` | $\mid $ |
+| vertical bar (pipe) | `\|`, `\mid`, `\textpipe`, `\textbar` | $\\|$ |
 
 #### Accents
 
@@ -97,7 +99,7 @@
 #### Sensible size examples
 
 | name | code | inline | displayed |
-| --- | --- | :---: | :---: |
+| --- | --- | --- | :---: |
 | fraction | `\frac{x}{y}` | $\frac{x}{y} $ | $$\frac{x}{y} $$ |
 | product | `\prod_{k=1}^{n}` | $\prod_{k=1}^{n} $ | $$\prod_{k=1}^{n} $$ |
 | radical symbol | `\sqrt[n]{x}` | $\sqrt[n]{x} $ | $$\sqrt[n]{x} $$ |
@@ -136,132 +138,110 @@
 
 #### Symbols of Type Ord
 
-| Name | Code | Symbol |
-| --- | --- | :---: |
-| aleph | `\aleph`| $\aleph$ |
-| h-bar | `\hbar`| $\hbar$ |
-|  | `\imath` | $\imath$ |
-|  | `\jmath` | $\jmath$ |
-|  | `\ell` | $\ell$ |
-|  | `\wp` | $\wp$ |
-|  | `\jmath` | $\hbar$ |
-|  | `\Re` | $\Re$ |
-|  | `\Im` | $\Im$ |
-|  | `\infty` | $\infty$ |
-|  | `\prime` | $\prime$ |
-|  | `\emptyset` | $\emptyset$ |
-|  | `\nabla` | $\nabla$ |
-|  | `\surd` | $\surd$ |
-|  | `\top` | $\top$ |
-|  | `\top` | $\top$ |
-|  | `\angle` | $\angle$ |
-|  | `\triangle` | $\triangle$ |
-|  | `\backslash` | $\backslash$ |
-|  | `\forall` | $\forall$ |
-|  | `\exists` | $\exists$ |
-|  | `\neg`, `\lnot` | $\neg$, $\lnot$ |
-|  | `\flat` | $\flat$ |
-|  | `\natural` | $\natural$ |
-|  | `\sharp` | $\sharp$ |
-|  | `\clubsuit` | $\clubsuit$ |
-|  | `\diamondsuit` | $\diamondsuit$ |
-|  | `\heartsuit` | $\heartsuit$ |
-|  | `\spadesuit` | $\spadesuit$ |
+| Name | Code | Symbol | Name | Code | Symbol | Name | Code | Symbol |
+| --- | --- | :---: | --- | --- | :---: | --- | --- | :---: |
+| aleph | `\aleph`| $\aleph$ |  | `\prime` | $\prime$ |  | `\forall` | $\forall$ |
+| h-bar | `\hbar`| $\hbar$ |  | `\emptyset` | $\emptyset$ |  | `\exists` | $\exists$ |
+|  | `\imath` | $\imath$ |  | `\nabla` | $\nabla$ |  | `\neg`, `\lnot` | $\neg$, $\lnot$ |
+|  | `\jmath` | $\jmath$ |  | `\surd` | $\surd$ |  | `\flat` | $\flat$ |
+|  | `\ell` | $\ell$ |  | `\top` | $\top$ |  | `\natural` | $\natural$ |
+|  | `\wp` | $\wp$ |  | `\bot` | $\bot$ |  | `\sharp` | $\sharp$ |
+|  | `\jmath` | $\hbar$ |  | `\\|` | $\\\|$ |  | `\clubsuit` | $\clubsuit$ |
+|  | `\Re` | $\Re$ |  | `\angle` | $\angle$ |  | `\diamondsuit` | $\diamondsuit$ |
+|  | `\Im` | $\Im$ |  | `\triangle` | $\triangle$ |  | `\heartsuit` | $\heartsuit$ |
+|  | `\infty` | $\infty$ |  | `\backslash` | $\backslash$ |  | `\spadesuit` | $\spadesuit$ |
 
 #### Large Operators
 
-| Name | Code | Symbol |
-| --- | --- | :---: |
-| summation | `\sum`| $$\sum$$ |
-| product | `\prod`| $$\prod$$ |
-| coproduct | `\prod`| $$\prod$$ |
-|  | `\int`| $$\int$$ |
-|  | `\oint`| $$\oint$$ |
-|  | `\bigcap`| $$\bigcap$$ |
-|  | `\bigcup`| $$\bigcup$$ |
-|  | `\bigsqcup`| $$\bigsqcup$$ |
-|  | `\bigvee`| $$\bigvee$$ |
-|  | `\bigwedge`| $$\bigwedge$$ |
-|  | `\bigodot`| $$\bigodot$$ |
-|  | `\bigotimes`| $$\bigotimes$$ |
-|  | `\bigoplus`| $$\bigoplus$$ |
-|  | `\biguplus`| $$\biguplus$$ |
+| Name | Code | Symbol | Name | Code | Symbol | Name | Code | Symbol |
+| --- | --- | :---: | --- | --- | :---: | --- | --- | :---: |
+| summation | `\sum`| $$\sum$$ |  | `\bigcap`| $$\bigcap$$ |  | `\bigodot`| $$\bigodot$$ |
+| product | `\prod`| $$\prod$$ |  | `\bigcup`| $$\bigcup$$ |  | `\bigotimes`| $$\bigotimes$$ |
+| coproduct | `\prod`| $$\prod$$ |  | `\bigsqcup`| $$\bigsqcup$$ |  | `\bigoplus`| $$\bigoplus$$ |
+|  | `\int`| $$\int$$ |  | `\bigvee`| $$\bigvee$$ |  | `\biguplus`| $$\biguplus$$ |
+|  | `\oint`| $$\oint$$ |  | `\bigwedge`| $$\bigwedge$$ |
 
 #### Binary Operations
 
-| Name | Code | Symbol |
-| --- | --- | :---: |
-| plus-minus sign | `\pm`| $\pm$ |
-| minus-plus sign | `\mp`| $\mp$ |
-|  | `\setminus`| $\setminus$ |
-|  | `\cdot`| $\cdot$ |
-|  | `\times`| $\times$ |
-|  | `\ast`| $\ast$ |
-|  | `\star`| $\star$ |
-|  | `\diamond`| $\diamond$ |
-|  | `\circ`| $\circ$ |
-|  | `\bullet`| $\bullet$ |
-|  | `\div`| $\div$ |
-|  | `\cap`| $\cap$ |
-|  | `\cup`| $\cup$ |
-|  | `\uplus`| $\uplus$ |
-|  | `\sqcap`| $\sqcap$ |
-|  | `\sqcup`| $\sqcup$ |
-|  | `\triangleleft`| $\triangleleft$ |
-|  | `\triangleright`| $\triangleright$ |
-|  | `\wr`| $\wr$ |
-|  | `\bigcirc`| $\bigcirc$ |
-|  | `\bigtriangleup`| $\bigtriangleup$ |
-|  | `\bigtriangledown`| $\bigtriangledown$ |
-|  | `\vee`, `\lor` | $\vee$, $\lor$ |
-|  | `\wedge`, `\land` | $\wedge$, $\land$ |
-|  | `\oplus`| $\oplus$ |
-|  | `\ominus`| $\ominus$ |
-|  | `\otimes`| $\otimes$ |
-|  | `\oslash`| $\oslash$ |
-|  | `\odot`| $\odot$ |
-|  | `\dagger`| $\dagger$ |
-|  | `\ddagger`| $\ddagger |
-|  | `\amalg`| $\amalg$ |
+| Name | Code | Symbol | Name | Code | Symbol | Name | Code | Symbol |
+| --- | --- | :---: | --- | --- | :---: | --- | --- | :---: |
+| plus-minus sign | `\pm`| $\pm$ |  | `\cap`| $\cap$ |  | `\vee`, `\lor` | $\vee$, $\lor$ |
+| minus-plus sign | `\mp`| $\mp$ | | `\cup`| $\cup$ |  | `\wedge`, `\land` | $\wedge$, $\land$ |
+|  | `\setminus`| $\setminus$ |  | `\uplus`| $\uplus$ |  | `\oplus`| $\oplus$ |
+|  | `\cdot`| $\cdot$ |  | `\sqcap`| $\sqcap$ |  | `\ominus`| $\ominus$ |
+|  | `\times`| $\times$ |  | `\sqcup`| $\sqcup$ |  | `\otimes`| $\otimes$ |
+|  | `\ast`| $\ast$ |  | `\triangleleft`| $\triangleleft$ |  | `\oslash`| $\oslash$ |
+|  | `\star`| $\star$ |  | `\triangleright`| $\triangleright$ |  | `\odot`| $\odot$ |
+|  | `\diamond`| $\diamond$ |  | `\wr`| $\wr$ |  | `\dagger`| $\dagger$ |
+|  | `\circ`| $\circ$ |  | `\bigcirc`| $\bigcirc$ |  | `\ddagger`| $\ddagger$ |
+|  | `\bullet`| $\bullet$ |  | `\bigtriangleup`| $\bigtriangleup$ |  | `\amalg`| $\amalg$ |
+|  | `\div`| $\div$ |  | `\bigtriangledown`| $\bigtriangledown$ |
 
 #### Relations
 
-| Name | Code | Symbol |
-| --- | --- | :---: |
-|  | `\leq`, `\le` | $\leq$, $\le$ |
-|  | `\geq`, `\ge` | $\geq$, $\ge$ |
-|  | `\equiv` | $\equiv$ |
-|  | `\prec` | $\prec$ |
-|  | `\succ` | $\succ$ |
-|  | `\sim` | $\sim$ |
-|  | `\preceq` | $\preceq$ |
-|  | `\succeq` | $\succeq$ |
-|  | `\simeq` | $\simeq$ |
-|  | `\ll` | $\ll$ |
-|  | `\gg` | $\gg$ |
-|  | `\asymp` | $\asymp$ |
-|  | `\subset` | $\subset$ |
-|  | `\supset` | $\supset$ |
-|  | `\approx` | $\approx$ |
-|  | `\subseteq` | $\subseteq$ |
-|  | `\supseteq` | $\supseteq$ |
-|  | `\cong` | $\cong$ |
-|  | `\sqsubseteq` | $\sqsubseteq$ |
-|  | `\sqsupseteq` | $\sqsupseteq$ |
-|  | `\bowtie` | $\bowtie$ |
-|  | `\in` | $\in$ |
-|  | `\notin` | $\notin$ |
-|  | `\ni`, `\owns` | $\ni$, $\owns$ |
-|  | `\vdash` | $\vdash$ |
-|  | `\dashv` | $\dashv$ |
-|  | `\models` | $\models$ |
-|  | `\smile` | $\smile$ |
-|  | `\frown` | $\frown$ |
-|  | `\mid` | $\mid$ |
-|  | `\doteq` | $\doteq$ |
-|  | `\parallel` | $\parallel$ |
-|  | `\perp` | $\perp$ |
+| Name | Code | Symbol | Name | Code | Symbol | Name | Code | Symbol |
+| --- | --- | :---: | --- | --- | :---: | --- | --- | :---: |
+|  | `\leq`, `\le` | $\leq$, $\le$ |  | `\geq`, `\ge` | $\geq$, $\ge$ |  | `\equiv` | $\equiv$ |
+|  | `\prec` | $\prec$ |  | `\succ` | $\succ$ |  | `\sim` | $\sim$ |
+|  | `\preceq` | $\preceq$ |  | `\succeq` | $\succeq$ |  | `\simeq` | $\simeq$ |
+|  | `\ll` | $\ll$ |  | `\gg` | $\gg$ |  | `\asymp` | $\asymp$ |
+|  | `\subset` | $\subset$ |  | `\supset` | $\supset$ |   | `\approx` | $\approx$ |
+|  | `\subseteq` | $\subseteq$ |   | `\supseteq` | $\supseteq$ |  | `\cong` | $\cong$ |
+|  | `\sqsubseteq` | $\sqsubseteq$ |  | `\sqsupseteq` | $\sqsupseteq$ |  | `\bowtie` | $\bowtie$ |
+|  | `\in` | $\in$ |  | `\notin` | $\notin$ |  | `\ni`, `\owns` | $\ni$, $\owns$ |
+|  | `\vdash` | $\vdash$ |  | `\dashv` | $\dashv$ |  | `\models` | $\models$ |
+|  | `\smile` | $\smile$ |  | `\mid` | $\mid$ |  | `\doteq` | $\doteq$ |
+|  | `\frown` | $\frown$ |  | `\parallel` | $\parallel$ |  | `\perp` | $\perp$ |
 |  | `\propto` | $\propto$ |
+
+Most relations can be negated by prefixing them with $\backslash\texttt{not}$.
+
+| Name | Code | Symbol | Name | Code | Symbol | Name | Code | Symbol |
+| --- | --- | :---: | --- | --- | :---: | --- | --- | :---: |
+|  | `\not\equiv` | $\not\equiv$ |  | `\notin` | $\notin$ |  | `\ne` | $\ne$ |
+
+#### Arrows
+
+| Name | Code | Symbol | Name | Code | Symbol |
+| --- | --- | :---: | --- | --- | :---: |
+|  | `\leftarrow`, `\gets` | $\leftarrow$, $\gets$ |  | `\longleftarrow` | $\longleftarrow$ |
+|  | `\Leftarrow` | $\Leftarrow$ |  | `\Longleftarrow` | $\Longleftarrow$ |
+|  | `\rightarrow`, `\to` | $\rightarrow$, $\to$ |  | `\longrightarrow` | $\longrightarrow$ |  
+|  | `\Rightarrow` | $\Rightarrow$ |  | `\Longrightarrow` | $\Longrightarrow$ |
+|  | `\leftrightarrow` | $\leftrightarrow$ |  | `\longleftrightarrow` | $\longleftrightarrow$ | 
+|  | `\Leftrightarrow` | $\Leftrightarrow$ |  | `\Longleftrightarrow` | $\Longleftrightarrow$ |
+|  | `\mapsto` | $\mapsto$ |  | `\longmapsto` | $\longmapsto$ |
+|  | `\hookleftarrow` | $\hookleftarrow$ |  | `\hookrightarrow` | $\hookrightarrow$ |
+|  | `\uparrow` | $\uparrow$ |  | `\Uparrow` | $\Uparrow$ |
+|  | `\downarrow` | $\downarrow$ |  | `\Downarrow` | $\Downarrow$ |
+|  | `\updownarrow` | $\updownarrow$ |  | `\Updownarrow` | $\Updownarrow$ |
+|  | `\nearrow` | $\nearrow$ |  | `\searrow` | $\searrow$ |
+|  | `\nwarrow` | $\nwarrow$ |  | `\swarrow` | $\swarrow$ |
+
+The $\backslash\texttt{buildrel}$ macro puts one symbol over another. The format is $\backslash\texttt{buildrel}\langle\textnormal{superscript}\rangle\backslash\texttt{over}\langle\textnormal{relation}\rangle$.
+
+`\buildrel\alpha\beta\over\longrightarrow` $\buildrel\alpha\beta\over\longrightarrow$
+
+`f(x) \; {\buildrel\rm def\over=} \; x+1`
+$f(x) \\; {\buildrel\rm def\over=} \\; x+1$
+
+#### Delimiters
+
+| Name | Code | Symbol | Name | Code | Symbol | Name | Code | Symbol |
+| --- | --- | :---: | --- | --- | :---: | --- | --- | :---: |
+|  | `\lbrack`, `[` | $\lbrack$, $[$ |  | `\lbrace`, `\{` | $\lbrace$, $\\{$ |  | `\langle` | $\langle$ |
+|  | `\rbrack`, `[` | $\rbrack$, $]$ |  | `\rbrace`, `\}` | $\rbrace$, $\\}$ |  | `\rangle` | $\rangle$ |
+|  | `\vert`, `\|` | $\vert$, $\\|$ |  | `\lfloor` | $\lfloor$ |  | `\lceil` | $\lceil$ |
+|  | `\Vert`, `\\|` | $\Vert$, $\\\|$ |  | `\rfloor` | $\rfloor$ |  | `\rceil` | $\rceil$ |
+|  | `[\![` | $[\\![$ |  | `(\!(` | $(\\!($ |  | `\langle\!\langle` | $\langle\\!\langle$ |
+|  | `]\!]` | $]\\!]$ |  | `)\!)` | $)\\!)$ |  | `\rangle\!\rangle` | $\rangle\\!\rangle$ |
+
+Left and right delimeters will be enlarged if they are prefixed with \left or \right. Each \left must have a matching \right, one of which may be an empty delimeter (\left. or \right.). To specify a particular size, use the following:
+\bigl, \bigr \Bigl, \Bigr \biggl, \biggr You can also say \bigm for a large delimenter in the middle of a formula, or just \big for one that acts as an ordinary symbol.
+
+#### Accents
+
+
 
 ***
 
