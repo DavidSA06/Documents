@@ -1,7 +1,5 @@
 # $\LaTeX{}$ Cheatsheet
 
-
-
 ## Contents
 
 | [Document classes](#document-classes) | [Document Structure](#document-structure) | [Text properties](#text-properties) | [Text-mode symbols](#text-mode-symbols)| [Tabular environments](#tabular-environments) | [Math mode](#math-mode) | [Bibliography and citations](#bibliography-and-citations) |
@@ -34,17 +32,17 @@
 
 | Name | Code | Symbol |
 | --- | --- | :---: |
-| ampersand | `\&` | $\&$ |
+| ampersand | `\&` | $\\&$ |
 | backslash | `\backslash` | $\backslash $ |
 | bullet symbol | `\bullet` | $\bullet $ |
-| circumflex | `\^{}` | $\^{} $ |
-| dollar sign | `\$` | $\$ $ |
+| circumflex | `\^{}`, `\textasciicircum{}` | $\textasciicircum{}$ |
+| dollar sign | `\$` | $\\$ $ |
 | ellipsis | `\ldots` | $\ldots $ |
-| number sign | `\#` | $\# $ |
-| percentage sign | `\%` | $\% $ |
-| section sign | `\S` | $\S $ |
-| tilde | `\~{}` | $\~{} $ |
-| underscore | `\_` | $\_ $ |
+| number sign | `\#` | $\\# $ |
+| percentage sign | `\%` | $\\% $ |
+| section sign | `\S` | $\\S $ |
+| tilde | `\~{}`, `\textasciitilde{}` | $\textasciitilde{}$ |
+| underscore | `\_` | $\\_ $ |
 | vertical bar (pipe) | `\|`, `\mid`, `\textpipe`, `\textbar` | $\\|$ |
 
 #### Accents
@@ -236,8 +234,12 @@ $f(x) \\; {\buildrel\rm def\over=} \\; x+1$
 |  | `[\![` | $[\\![$ |  | `(\!(` | $(\\!($ |  | `\langle\!\langle` | $\langle\\!\langle$ |
 |  | `]\!]` | $]\\!]$ |  | `)\!)` | $)\\!)$ |  | `\rangle\!\rangle` | $\rangle\\!\rangle$ |
 
-Left and right delimeters will be enlarged if they are prefixed with \left or \right. Each \left must have a matching \right, one of which may be an empty delimeter (\left. or \right.). To specify a particular size, use the following:
-\bigl, \bigr \Bigl, \Bigr \biggl, \biggr You can also say \bigm for a large delimenter in the middle of a formula, or just \big for one that acts as an ordinary symbol.
+Left and right delimeters will be enlarged if they are prefixed with $\backslash\mathtt{left}$ or $\backslash\mathtt{right}$. Each $\backslash\mathtt{left}$ must have a matching $\backslash\mathtt{right}$, one of which may be an empty delimeter ($\backslash\mathtt{left.}$ or $\backslash\mathtt{right.}$). To specify a particular size, use the following:
+$\backslash\mathtt{bigl}$, $\backslash\mathtt{bigr}$
+$\backslash\mathtt{Bigl}$, $\backslash\mathtt{Bigr}$ 
+$\backslash\mathtt{biggl}$, $\backslash\mathtt{biggr}$
+\biggl, \biggr
+You can also say $\backslash\mathtt{bigm}$ for a large delimenter in the middle of a formula, or just $\backslash\mathtt{big}$ for one that acts as an ordinary symbol.
 
 #### Accents
 
