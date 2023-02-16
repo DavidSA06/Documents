@@ -12,6 +12,9 @@
 |  |  |  |  |  | [Relations](#relations) |  |
 |  |  |  |  |  | [Arrows](#arrows) |  |
 |  |  |  |  |  | [Delimiters](#delimiters) |  |
+|  |  |  |  |  | [Accents](#accents) |  |
+|  |  |  |  |  | [Elementary Math Control Sequences](#elementary-math-control-sequences) |  |
+|  |  |  |  |  | [Non-Italic Function Names](#non-italic-function-names) |  |
 
 
 ### Document classes
@@ -49,35 +52,34 @@
 
 | Name | Code | Symbol |
 | --- | --- | :---: |
-|  | `\‘o` | $\‘o$ |
-|  | `\’o` | $\’o$ |
-|  | `\^o` | $\^{}$ |
-|  | `\~o` | $\~o$ |
-|  | `\=o` | $\=o$ |
-|  | `\.o` | $\.o$ |
-|  | `\"o` | $\"o$ |
-|  | `\c o` | $\c o$ |
-|  | `\v o ` | $\v o $ |
-|  | `\H o ` | $\H o $ |
-|  | `\c c` | $\c c$ |
-|  | `\d o ` | $\d{o}$ |
-|  | `\b o` | $\b o$ |
-|  | `\t oo` | $\t oo$ |
-|  | `\oe` | $\oe$ |
-|  | `\OE` | $\OE$ |
-|  | `\ae` | $\ae$ |
-|  | `\AE` | $\AE$ |
-|  | `\aa` | $\aa$ |
-|  | `\AA` | $\AA$ |
-|  | `\o` | $\o$ |
-|  | `\O ` | $\O $ |
-|  | `\l` | $\l$ |
-|  | ` \L` | $\L$ |
-|  | `\i ` | $\i $ |
-|  | `\j ` | $\j $ |
-|  | `~‘` | $~‘$ |
-|  | `?‘` | $?‘$ |
-
+|  | `\‘o` | $\textnormal{\\\`o}$ |
+|  | `\’o` | $\textnormal{\\'o}$ |
+|  | `\^{}` | $\textnormal{\\^{}}$ |
+|  | `\~{o}` | $\textnormal{\\~{o}}$ |
+|  | `\={o}` | $\textnormal{\\={o}}$ |
+|  | `\.{o}` | $\textnormal{\\.{o}}$ |
+|  | `\"{o}` | $\textnormal{\\"{o}}$ |
+|  | `\co` | $\textnormal{\\co}$ |
+|  | `\v{o}` | $\textnormal{\\v{o}}$ |
+|  | `\H o ` | $\textnormal{\\H{o}}$ |
+|  | `\c c` | $\textnormal{\\c{c}}$ |
+|  | `\d o ` | $\textnormal{\\d{o}}$ |
+|  | `\b o` | $\textnormal{\\b{o}}$ |
+|  | `\t oo` | $\textnormal{\\t{oo}}$ |
+|  | `\oe` | $\textnormal{\\oe}$ |
+|  | `\OE` | $\textnormal{\\OE}$ |
+|  | `\ae` | $\textnormal{\\ae}$ |
+|  | `\AE` | $\textnormal{\\AE}$ |
+|  | `\aa` | $\textnormal{\\aa}$ |
+|  | `\AA` | $\\textnormal{\AA}$ |
+|  | `\o` | $\\textnormal{\o}$ |
+|  | `\O ` | $\\textnormal{\O}$ |
+|  | `\l` | $\\textnormal{\l}$ |
+|  | ` \L` | $\\textnormal{\L}$ |
+|  | `\i ` | $\\textnormal{\i}$ |
+|  | `\j ` | $\\textnormal{\j}$ |
+|  | `~‘` | $\textnormal{~\`}$ |
+|  | `?‘` | $\textnormal{?\`}$ |
 
 ***
 
@@ -101,9 +103,9 @@
 | fraction | `\frac{x}{y}` | $\frac{x}{y} $ | $$\frac{x}{y} $$ |
 | product | `\prod_{k=1}^{n}` | $\prod_{k=1}^{n} $ | $$\prod_{k=1}^{n} $$ |
 | radical symbol | `\sqrt[n]{x}` | $\sqrt[n]{x} $ | $$\sqrt[n]{x} $$ |
-| subscript | `_{x}` | $s_{x}$ | $$s_{x} $$ |
+| subscript | `s_{x}` | $s_{x}$ | $$s_{x} $$ |
 | summation | `\sum_{k=1}^{n}` | $\sum_{k=1}^{n} $ | $$\sum_{k=1}^{n} $$ |
-| superscript | `^{x}` | $s^{x} $ | $$s^{x} $$ |
+| superscript | `s^{x}` | $s^{x} $ | $$s^{x} $$ |
 
 #### Greek alphabet
 
@@ -242,6 +244,79 @@ $\backslash\mathtt{biggl}$, $\backslash\mathtt{biggr}$
 You can also say $\backslash\mathtt{bigm}$ for a large delimenter in the middle of a formula, or just $\backslash\mathtt{big}$ for one that acts as an ordinary symbol.
 
 #### Accents
+
+| Name | Text mode | Math mode | Symbol |
+| --- | --- | --- | :---: |
+| hat | `\^` | `\hat` | $\hat{a}$ |
+| expanding hat |  | `\widehat` | $\widehat{abc}$ |
+| check | `\v` | `\check` | $\check{a}$ |
+| tilde | `\~` | `\tilde` | $\tilde{a}$ |
+| expanding tilde |  | `\widetilde` | $\widetilde{abc}$ |
+| acute | `\'` | `\acute` | $\acute{a}$ |
+| grave | `\’` | `\grave` | $\grave{a}$ |
+| dot | `\.` | `\dot` | $\dot{a}$ |
+| double dot | `\"` | `\ddot` | $\ddot{a}$ |
+| breve | `\u` | `\breve` | $\breve{a}$ |
+| bar | `\=` | `\bar` | $\bar{a}$ |
+| vector |  | `\vec` | $\vec{a}$ |
+
+The $\backslash\texttt{skew}\langle$number$\rangle$ command shifts accents for proper positioning,the larger the $\langle$number$\rangle$, the more right the shift. Compare
+
+`\hat{\hat{A}}` gives $\hat{\hat{A}}$, `skew6\hat{\hat{A}}` gives $\skew6\hat{\hat{A}}$.
+
+#### Elementary Math Control Sequences
+
+| Name | Code | Example |
+| --- | --- | :---: |
+| overline a formula | `\overline{x+y}` | $$\overline{x+y}$$ |
+| underline a formula | `\underline{x+y}` | $$\underline{x+y}$$ |
+| square root | `\sqrt{x+y}` | $$\sqrt{x+y}$$ |
+| higher order roots | `\root n\of{x+y}` | $$\root n\of{x+y}$$ |
+| fraction | `{n+1\over 3}` | $${n+1\over 3}$$ |
+| fraction, no line | `{n+1\atop 3}` | $${n+1\atop 3}$$ |
+| binomial coeff. | `{n+1\choose 3}` | $${n+1\choose 3}$$ |
+| braced fraction | `{n+1\brace 3}` | $${n+1\brace 3}$$ |
+| bracketed fraction | `{n+1\brack 3}` | $${n+1\brack 3}$$ |
+
+The following specify a style for typesetting formulas.
+$\backslash\texttt{displaystyle}\\; \backslash\texttt{textstyle}\\; \backslash\texttt{scriptstyle}\\; \backslash\texttt{scriptscriptstyle}$
+
+#### Non-Italic Function Names
+
+| Name | Code | Example |
+| --- | --- | :---: |
+|  | `\arccos` | $\arccos$ |
+|  | `\arcsin` | $\arcsin$ |
+|  | `\arctan` | $\arctan$ |
+|  | `\arg` | $\arg$ |
+|  | `\cos` | $\cos$ |
+|  | `\cosh` | $\cosh$ |
+|  | `\cot` | $\cot$ |
+|  | `\coth` | $\coth$ |
+|  | `\csc` | $\csc$ |
+|  | `\deg` | $\deg$ |
+|  | `\det` | $\det$ |
+|  | `\dim` | $\dim$ |
+|  | `\exp` | $\exp$ |
+|  | `\gcd` | $\gcd$ |
+|  | `\hom` | $\hom$ |
+|  | `\inf` | $\inf$ |
+|  | `\ker` | $\ker$ |
+|  | `\lg` | $\lg$ |
+|  | `\lim` | $\lim$ |
+|  | `\liminf` | $\liminf$ |
+|  | `\limsup` | $\limsup$ |
+|  | `\ln` | $\ln$ |
+|  | `\log` | $\log$ |
+|  | `\max` | $\max$ |
+|  | `\min` | $\min$ |
+|  | `\Pr` | $\Pr$ |
+|  | `\sec` | $\sec$ |
+|  | `\sin` | $\sin$ |
+|  | `\sinh` | $\sinh$ |
+|  | `\sup` | $\sup$ |
+|  | `\tan` | $\tan$ |
+|  | `\tanh` | $\tanh$ |
 
 
 
