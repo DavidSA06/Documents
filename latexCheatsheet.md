@@ -157,7 +157,7 @@
 | --- | --- | :---: | --- | --- | :---: | --- | --- | :---: |
 | summation | `\sum`| $$\sum$$ |  | `\bigcap`| $$\bigcap$$ |  | `\bigodot`| $$\bigodot$$ |
 | product | `\prod`| $$\prod$$ |  | `\bigcup`| $$\bigcup$$ |  | `\bigotimes`| $$\bigotimes$$ |
-| coproduct | `\prod`| $$\prod$$ |  | `\bigsqcup`| $$\bigsqcup$$ |  | `\bigoplus`| $$\bigoplus$$ |
+| coproduct | `\coprod`| $$\coprod$$ |  | `\bigsqcup`| $$\bigsqcup$$ |  | `\bigoplus`| $$\bigoplus$$ |
 |  | `\int`| $$\int$$ |  | `\bigvee`| $$\bigvee$$ |  | `\biguplus`| $$\biguplus$$ |
 |  | `\oint`| $$\oint$$ |  | `\bigwedge`| $$\bigwedge$$ |
 
