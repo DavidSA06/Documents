@@ -4,17 +4,18 @@
 
 | [Document classes](#document-classes) | [Document Structure](#document-structure) | [Text properties](#text-properties) | [Text-mode symbols](#text-mode-symbols)| [Tabular environments](#tabular-environments) | [Math mode](#math-mode) | [Bibliography and citations](#bibliography-and-citations) |
 | --- | --- | --- | --- | --- | --- | --- |
-|  |  |  | [Symbols](#symbols) |  | [Sensible size examples](#sensible-size-examples) |  |
-|  |  |  | [Accents](#accents) |  | [Greek alphabet](#greek-alphabet)  |  |
-|  |  |  | |  | [Symbols of Type Ord](#symbols-of-type-ord) |  |
-|  |  |  |  |  | [Large Operators](#large-operators) |  |
-|  |  |  |  |  | [Binary Operations](#binary-operations) |  |
+|  |  |  | [Symbols](#symbols) |  | [Sensible size examples](#sensible-size-examples) | [Citation types](#citation-types) |
+|  |  |  | [Accents](#accents) |  | [Greek alphabet](#greek-alphabet) | [BibTex entry types](#bibtex-entry-types) |
+|  |  |  | |  | [Symbols of Type Ord](#symbols-of-type-ord) | [Bibtex fields](#bibtex-fields) |
+|  |  |  |  |  | [Large Operators](#large-operators) | [Common BibTeX style files](#common-bibtex-style-files) |
+|  |  |  |  |  | [Binary Operations](#binary-operations) | [BibTex example](#bibtex-example) |
 |  |  |  |  |  | [Relations](#relations) |  |
 |  |  |  |  |  | [Arrows](#arrows) |  |
 |  |  |  |  |  | [Delimiters](#delimiters) |  |
 |  |  |  |  |  | [Accents](#accents) |  |
 |  |  |  |  |  | [Elementary Math Control Sequences](#elementary-math-control-sequences) |  |
 |  |  |  |  |  | [Non-Italic Function Names](#non-italic-function-names) |  |
+
 
 
 ### Document classes
@@ -30,7 +31,7 @@
 ***
 
 ### Text-mode symbols
-
+<!--
 #### Symbols
 
 | Name | Code | Symbol |
@@ -150,6 +151,12 @@
 |  | `\Re` | $\Re$ |  | `\angle` | $\angle$ |  | `\diamondsuit` | $\diamondsuit$ |
 |  | `\Im` | $\Im$ |  | `\triangle` | $\triangle$ |  | `\heartsuit` | $\heartsuit$ |
 |  | `\infty` | $\infty$ |  | `\backslash` | $\backslash$ |  | `\spadesuit` | $\spadesuit$ |
+
+#### Special symbols
+
+Degree: 
+
+^{\circ} $Ex: `22^{\circ}\mathrm{C}`: $22^{\circ}\mathrm{C}$.
 
 #### Large Operators
 
@@ -280,7 +287,7 @@ The $\backslash\texttt{skew}\langle$number$\rangle$ command shifts accents for p
 
 The following specify a style for typesetting formulas.
 $\backslash\texttt{displaystyle}\\; \backslash\texttt{textstyle}\\; \backslash\texttt{scriptstyle}\\; \backslash\texttt{scriptscriptstyle}$
-
+-->
 #### Non-Italic Function Names
 
 | Name | Code | Example |
@@ -319,7 +326,143 @@ $\backslash\texttt{displaystyle}\\; \backslash\texttt{textstyle}\\; \backslash\t
 |  | `\tanh` | $\tanh$ |
 
 
+mod with parentheses `a \pmod{m}` $a \pmod{m}$
+
+mod without parentheses `a \bmod m` $a \bmod m$
+
+The following examples use \mathop to create function names.
+
+| Example | Command | Plain $\TeX{}$ Definition |
+| --- | --- | :---: |
+| `\def\lim{\mathop{\rm lim}}` | `\lim_{x\to2}` | $\lim_{x\to2}$ |
+| `\def\log{\mathop{\rm log}\nolimits}` | `\log_2` | $\log_{2}$ |
 
 ***
 
 ### Bibliography and citations
+
+When using $\mathrm{B\scriptstyle IB}\TeX{}$, you need to run latex, bibtex, and latex twice more to resolve dependencies.
+
+#### Citation Types
+
+`\cite{key}` Full author list and year. (Watson and Crick 1953)
+
+`\citeA{key}` Full author list. (Watson and Crick)
+
+`\citeN{key}` Full author list and year. Watson and Crick (1953)
+
+`\shortcite{key}` Abbreviated author list and year.
+
+`\shortciteA{key}` Abbreviated author list.
+
+`\shortciteN{key}` Abbreviated author list and year.
+
+`\citeyear{key}` Cite year only. (1953)
+
+All the above have an $\texttt{NP}$ variant without parentheses; Ex. `\citeNP`.
+
+#### Bibtex entry types
+
+`@article` Journal or magazine article.
+
+`@book`Book with publisher.
+
+`@booklet` Book without publisher.
+
+`@conference` Article in conference proceedings.
+
+`@inbook` A part of a book and/or range of pages.
+
+`@incollection`A part of book with its own title.
+
+`@manual` Technical documentation.
+
+`@mastersthesis` Master's thesis.
+
+`@misc`If nothing else fits.
+
+`@phdthesis` PhD. thesis.
+
+`@proceedings` Proceedings of a conference.
+
+`@techreport` Tech report, usually numbered in series.
+
+`@unpublished` Unpublished.
+
+#### Bibtex fields
+
+`address` Address of publisher. Not necessary for major publishers.
+
+`author` Names of authors, of format ...
+
+`booktitle` Title of book when part of it is cited.
+
+`chapter` Chapter or section number.
+
+`edition` Edition of a book.
+
+`editor` Names of editors.
+
+`institution` Sponsoring institution of tech. report.
+
+`journal` Journal name.
+
+`key` Used for cross ref. when no author.
+
+`month` Month published. Use 3-letter abbreviation.
+
+`note` Any additional information.
+
+`number` Number of journal or magazine.
+
+`organization` Organization that sponsors a conference.
+
+`pages` Page range (2,6,9--12).
+
+`publisher` Publisher's name.
+
+`school` Name of school (for thesis).
+
+`series` Name of series of books.
+
+`title` Title of work.
+
+`type` Type of tech. report, ex. \\Research Note".
+
+`volume` Volume of a journal or book.
+
+`year` Year of publication.
+
+Not all fields need to be filled.
+
+#### Common BibTeX style files
+
+`abbrv` Standard
+`alpha` Standard
+`plain` Standard
+`abstract` $\texttt{alpha}$ with abstract
+`apa` APA
+`unsrt` Unsorted
+
+The $\LaTeX{}$ document should have the following two lines just
+before \end{document}, where $\texttt{bibfile.bib}$ is the name of the
+$\mathrm{B\scriptstyle IB}\TeX{}$ file.
+
+`\bibliographystyle{plain}`
+`\bibliography{bibfile}`
+
+#### BibTeX example
+
+The $\mathrm{B\scriptstyle IB}\TeX{}$ database goes in a file called $\textit{file}\texttt{.bib}$, which is processed with $\texttt{bibtex file}$.
+
+```
+@String{N = {Na\-ture}}
+@Article{WC:1953,
+  author = {James Watson and Francis Crick},
+  title = {A structure for Deoxyribose Nucleic Acid},
+  journal = N,
+  volume = {171},
+  pages = {737},
+  year = 1953
+}
+```
