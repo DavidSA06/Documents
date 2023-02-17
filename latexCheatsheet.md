@@ -4,10 +4,10 @@
 
 | [Document classes](#document-classes) | [Document Structure](#document-structure) | [Text properties](#text-properties) | [Text-mode symbols](#text-mode-symbols)| [Tabular environments](#tabular-environments) | [Math mode](#math-mode) | [Bibliography and citations](#bibliography-and-citations) |
 | --- | --- | --- | --- | --- | --- | --- |
-|  |  |  | [Symbols](#symbols) |  | [Sensible size examples](#sensible-size-examples) | [Citation types](#citation-types) |
-|  |  |  | [Accents](#accents) |  | [Greek alphabet](#greek-alphabet) | [BibTex entry types](#bibtex-entry-types) |
-|  |  |  | |  | [Symbols of Type Ord](#symbols-of-type-ord) | [Bibtex fields](#bibtex-fields) |
-|  |  |  |  |  | [Large Operators](#large-operators) | [Common BibTeX style files](#common-bibtex-style-files) |
+| [Common documentclass options](#common-documentclass-options) | [Text environments](#text-environments) |  | [Symbols](#symbols) |  | [Sensible size examples](#sensible-size-examples) | [Citation types](#citation-types) |
+| [Packages](#packages) | [Lists](#lists) |  | [Accents](#accents) |  | [Greek alphabet](#greek-alphabet) | [BibTex entry types](#bibtex-entry-types) |
+| [Title](#title) | [References](#references) |  |  |  | [Symbols of Type Ord](#symbols-of-type-ord) | [Bibtex fields](#bibtex-fields) |
+| [Miscellaneous](#miscellaneous) |  |  |  |  | [Large Operators](#large-operators) | [Common BibTeX style files](#common-bibtex-style-files) |
 |  |  |  |  |  | [Binary Operations](#binary-operations) | [BibTex example](#bibtex-example) |
 |  |  |  |  |  | [Relations](#relations) |  |
 |  |  |  |  |  | [Arrows](#arrows) |  |
@@ -15,14 +15,97 @@
 |  |  |  |  |  | [Accents](#accents) |  |
 |  |  |  |  |  | [Elementary Math Control Sequences](#elementary-math-control-sequences) |  |
 |  |  |  |  |  | [Non-Italic Function Names](#non-italic-function-names) |  |
-
-
+|  |  |  |  |  | [Fills, Leaders and Ellipses](#fills-leaders-and-ellipses) |  |
 
 ### Document classes
+
+| Class | Effect |
+| --- | --- |
+| $\texttt{book}$ | Default is two sided |
+| $\texttt{report}$ | No $\backslash\texttt{part}$ divisions. |
+| $\texttt{article}$ | No $\backslash\texttt{part}$ or $\backslash\texttt{chapter}$ divisions. |
+| $\texttt{letter}$ | Letter (?). |
+| $\texttt{slides}$ | Large sans-serif font. |
+
+Used at the very beginning of a document: <br>
+$\backslash\texttt{documentclass} \lbrace class \rbrace$. Use $\backslash\texttt{begi}\texttt{n} \lbrace document \rbrace$ to start contents and $\backslash\texttt{end}\lbrace document \rbrace$ to end the document.
+
+#### Common documentclass options
+
+| Option | Code |
+| --- | --- |
+| Font size | $\texttt{10pt/11pt/12pt}$ |
+| Paper size | $\texttt{letterpaper/a4paper}$ |
+| Use two columns | $\texttt{twocolumn}$ |
+| Set margins for two-sided | $\texttt{twoside}$ |
+| Landscape orientation. <br> Must use $\texttt{dvips-t landscape.}$ | $\texttt{landscape}$ |
+| Double-space lines. | $\texttt{draft}$ |
+
+Usage: $\backslash \texttt{documentclass}[opt,opt]\lbrace class \rbrace$
+
+#### Packages
+
+| Effect | Package |
+| --- | :---: |
+| Use 1 inch margins | $\texttt{fullpage}$ |
+| Set margins with $\backslash\texttt{marginsize}\lbrace l \rbrace\lbrace r\rbrace\lbrace t\rbrace\lbrace b\rbrace$. | $\texttt{anysize}$ |
+| Use $n$ columns with $\backslash\texttt{begi}\texttt{n}\lbrace \texttt{multicols} \rbrace \lbrace n \rbrace.$ | $\texttt{multicol}$ |
+| Use $\LaTeX{}$ symbol font. | $\texttt{latexsym}$ |
+
+Use before $\backslash\texttt{begi}\texttt{n}\lbrace document\rbrace$. Usage: $\backslash\texttt{usepackage}\lbrace package\rbrace$.
+
+#### Title
+
+| Effect | Package |
+| --- | :---: |
+| Author of document | $\backslash\texttt{author}\lbrace text\rbrace$ |
+| Title of document | $\backslash\texttt{title}\lbrace text\rbrace$ |
+| Date | $\backslash\texttt{date}\lbrace text\rbrace$ |
+
+These commands go before $\backslash\texttt{begi}\texttt{n}\lbrace \texttt{document} \rbrace$. The declaration $\backslash\texttt{maketitle}$ goes at the top of the document.
+
+#### Miscellaneous
+
+$\backslash \texttt{pagestyle}\lbrace empty\rbrace$ Empty header, footer and no page numbers.
 
 ***
 
 ### Document Structure
+
+$\backslash\texttt{part}\lbrace title \rbrace$<br>
+$\backslash\texttt{chapter}\lbrace title \rbrace$<br>
+$\backslash\texttt{section}\lbrace title \rbrace$<br>
+$\backslash\texttt{subsection}\lbrace title \rbrace$<br>
+$\backslash\texttt{subsubsection}\lbrace title \rbrace$<br>
+$\backslash\texttt{paragraph}\lbrace title \rbrace$<br>
+$\backslash\texttt{subparagraph}\lbrace title \rbrace$
+
+Section commands can be followed with an \*, like $\backslash\texttt{section*}\lbrace title \rbrace$, to supress heading numbers.
+$\backslash\texttt{setcounter}\lbrace \texttt{secnumdepth} \rbrace \lbrace x\rbrace$ supresses heading numbers of
+depth > $x$, where $\texttt{chapter}$ has depth 0.
+
+#### Text environments
+
+$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{comment} \rbrace$ Comment block (not printed).<br>
+$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{quote} \rbrace$ Indented quotation block.<br>
+$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{quotation} \rbrace$ Like $\texttt{quote}$ with indented paragraphs.<br>
+$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{verse} \rbrace$ Quotation block for verse.
+
+#### Lists
+
+$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{enumerate} \rbrace$ Numbered list.<br>
+$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{itemize} \rbrace$ Bulleted list.<br>
+$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{description} \rbrace$ Description list.<br>
+$\backslash\texttt{item} \\; text$ Add an item.<br>
+$\backslash\texttt{item}\lbrack x \rbrack \\; text$ Use $x$ instead of normal bullet or number.
+Required for descriptions.
+
+#### References
+
+$\backslash\texttt{label}\lbrace marker \rbrace$ Set a marker for cross-reference, often of the form $\backslash\texttt{label}\lbrace\texttt{sec:item}\rbrace$.<br>
+$\backslash\texttt{ref}\lbrace marker \rbrace$ Give section/body number of marker.<br>
+$\backslash\texttt{pageref}\lbrace marker \rbrace$ Give page number of marker.<br>
+$\backslash\texttt{footnote}\lbrace text \rbrace$ Print footnote at bottom of page.
 
 ***
 
@@ -336,6 +419,26 @@ The following examples use \mathop to create function names.
 | --- | --- | :---: |
 | `\def\lim{\mathop{\rm lim}}` | `\lim_{x\to2}` | $\lim_{x\to2}$ |
 | `\def\log{\mathop{\rm log}\nolimits}` | `\log_2` | $\log_{2}$ |
+
+#### Fills, Leaders and Ellipses
+
+Text or Math mode: `\dots` $\dots$ 
+
+Math mode:
+
+| Code | Example |
+| --- | :---: |
+| `\ldots` | $\ldots$ |
+| `\cdots` | $\cdots$ |
+| `\vdots` | $\vdots$ |
+| `\ddots` | $\ddots$ |
+
+The following fill space with the indicated item.
+$\backslash\texttt{hrulefill} \\; \backslash\texttt{rightarrowfill}  \\; \backslash\texttt{leftarrowfill} \\; \backslash\texttt{dotfill}$
+
+The general format for constructing leaders is <br>
+$\backslash\texttt{leaders}\langle box \\; or \\; rule \rangle \backslash \texttt{hskip}\langle glue\rangle$ repeat box or rule <br>
+$\backslash\texttt{leaders}\langle box \\; or \\; rule \rangle \backslash \texttt{hfill}$ fill space with box or rule
 
 ***
 
