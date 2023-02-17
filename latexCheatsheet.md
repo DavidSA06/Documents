@@ -4,10 +4,10 @@
 
 | [Document classes](#document-classes) | [Document Structure](#document-structure) | [Text properties](#text-properties) | [Text-mode symbols](#text-mode-symbols)| [Tabular environments](#tabular-environments) | [Math mode](#math-mode) | [Bibliography and citations](#bibliography-and-citations) |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Common documentclass options](#common-documentclass-options) | [Text environments](#text-environments) |  | [Symbols](#symbols) |  | [Sensible size examples](#sensible-size-examples) | [Citation types](#citation-types) |
-| [Packages](#packages) | [Lists](#lists) |  | [Accents](#accents) |  | [Greek alphabet](#greek-alphabet) | [BibTex entry types](#bibtex-entry-types) |
+| [Common documentclass options](#common-documentclass-options) | [Text environments](#text-environments) | [Font face](#font-face) | [Symbols](#symbols) |  | [Sensible size examples](#sensible-size-examples) | [Citation types](#citation-types) |
+| [Packages](#packages) | [Lists](#lists) | [Font size](#font-size) | [Accents](#accents) |  | [Greek alphabet](#greek-alphabet) | [BibTex entry types](#bibtex-entry-types) |
 | [Title](#title) | [References](#references) |  |  |  | [Symbols of Type Ord](#symbols-of-type-ord) | [Bibtex fields](#bibtex-fields) |
-| [Miscellaneous](#miscellaneous) |  |  |  |  | [Large Operators](#large-operators) | [Common BibTeX style files](#common-bibtex-style-files) |
+| [Miscellaneous](#miscellaneous) | [Floating bodies](#floating-bodies) |  |  |  | [Large Operators](#large-operators) | [Common BibTeX style files](#common-bibtex-style-files) |
 |  |  |  |  |  | [Binary Operations](#binary-operations) | [BibTex example](#bibtex-example) |
 |  |  |  |  |  | [Relations](#relations) |  |
 |  |  |  |  |  | [Arrows](#arrows) |  |
@@ -107,14 +107,57 @@ $\backslash\texttt{ref}\lbrace marker \rbrace$ Give section/body number of marke
 $\backslash\texttt{pageref}\lbrace marker \rbrace$ Give page number of marker.<br>
 $\backslash\texttt{footnote}\lbrace text \rbrace$ Print footnote at bottom of page.
 
+#### Floating bodies
+
+$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{table} \rbrace \lbrack place \rbrack$ Add numbered table.<br>
+$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{figure} \rbrace \lbrack place \rbrack$ Add numbered figure.<br>
+$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{equation} \rbrace \lbrack place \rbrack$ Add numbered equation.<br>
+$\backslash\texttt{caption}\lbrace text \rbrace$ Caption for the body.
+
+The $place$ is a list valid placements for the body. $\texttt{t}$=top, $\texttt{h}$=here, $\texttt{b}$=bottom, $\texttt{p}$=separate page, $\texttt{!}$=place even if ugly. Captions and label markers should be within the environment.
+
 ***
 
 ### Text properties
 
+#### Font face
+
+| Command | Declaration | Effect |
+| --- | --- | --- |
+| $\backslash\texttt{textrm}\lbrace text\rbrace$ | $\lbrace \backslash\texttt{rm} \\; text \rbrace$ | $\textrm{Roman family}$ |
+| $\backslash\texttt{textsf}\lbrace text\rbrace$ | $\lbrace \backslash\texttt{sf} \\; text \rbrace$ | $\textsf{Sans serif family}$ |
+| $\backslash\texttt{texttt}\lbrace text\rbrace$ | $\lbrace \backslash\texttt{tt} \\; text \rbrace$ | $\texttt{Typewriter family}$ |
+| $\backslash\texttt{textmd}\lbrace text\rbrace$ | $\lbrace \backslash\texttt{md} \\; text \rbrace$ | $\textmd{Medium series}$ |
+| $\backslash\texttt{textbf}\lbrace text\rbrace$ | $\lbrace \backslash\texttt{bf} \\; text \rbrace$ | $\textbf{Bold series}$ |
+| $\backslash\texttt{textup}\lbrace text\rbrace$ | $\lbrace \backslash\texttt{up} \\; text \rbrace$ | $\textup{Upright shape}$ |
+| $\backslash\texttt{textup}\lbrace text\rbrace$ | $\lbrace \backslash\texttt{it} \\; text \rbrace$ | $\textit{Italic shape}$ |
+| $\backslash\texttt{textsl}\lbrace text\rbrace$ | $\lbrace \backslash\texttt{sl} \\; text \rbrace$ | $\textsl{Slanted shape}$ |
+| $\backslash\texttt{textsc}\lbrace text\rbrace$ | $\lbrace \backslash\texttt{sc} \\; text \rbrace$ | $\textsc{small caps shape}$ |
+| $\backslash\texttt{emph}\lbrace text\rbrace$ | $\lbrace \backslash\texttt{em} \\; text \rbrace$ | $\emph{Emphasized}$ |
+| $\backslash\texttt{textnormal}\lbrace text\rbrace$ | $\lbrace \backslash\texttt{normalfont} \\; text \rbrace$ | $\textnormal{Document font}$ |
+| $\backslash\texttt{underline}\lbrace text\rbrace$ |  | $\underline{Underline}$ |
+
+#### Font face
+
+| Size | Example |
+| --- | --- |
+| $\backslash\texttt{tiny}$ | ${\tiny tiny}$ |
+| $\backslash\texttt{scriptsize}$ | ${\scriptsize scriptsize}$ |
+| $\backslash\texttt{footnotesize}$ | ${\footnotesize footnotesize}$ |
+| $\backslash\texttt{small}$ | ${\small small}$ |
+| $\backslash\texttt{normalsize}$ | ${\normalsize normalsize}$ |
+| $\backslash\texttt{large}$ | ${\large large}$ |
+| $\backslash\texttt{Large}$ | ${\Large Large}$ |
+| $\backslash\texttt{LARGE}$ | ${\LARGE LARGE}$ |
+| $\backslash\texttt{huge}$ | ${\huge huge}$ |
+| $\backslash\texttt{Huge}$ | ${\Huge Huge}$ |
+
+These are declarations and should be used in the form $\lbrace \texttt{small} \ldots \rbrace$ or without braces to affect the entire document.
+
 ***
 
 ### Text-mode symbols
-<!--
+
 #### Symbols
 
 | Name | Code | Symbol |
@@ -370,7 +413,7 @@ The $\backslash\texttt{skew}\langle$number$\rangle$ command shifts accents for p
 
 The following specify a style for typesetting formulas.
 $\backslash\texttt{displaystyle}\\; \backslash\texttt{textstyle}\\; \backslash\texttt{scriptstyle}\\; \backslash\texttt{scriptscriptstyle}$
--->
+
 #### Non-Italic Function Names
 
 | Name | Code | Example |
