@@ -6,9 +6,9 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [Common documentclass options](#common-documentclass-options) | [Text environments](#text-environments) | [Font face](#font-face) | [Symbols](#symbols) |  | [Sensible size examples](#sensible-size-examples) | [Citation types](#citation-types) |
 | [Packages](#packages) | [Lists](#lists) | [Font size](#font-size) | [Accents](#accents) |  | [Greek alphabet](#greek-alphabet) | [BibTex entry types](#bibtex-entry-types) |
-| [Title](#title) | [References](#references) |  |  |  | [Symbols of Type Ord](#symbols-of-type-ord) | [Bibtex fields](#bibtex-fields) |
-| [Miscellaneous](#miscellaneous) | [Floating bodies](#floating-bodies) |  |  |  | [Large Operators](#large-operators) | [Common BibTeX style files](#common-bibtex-style-files) |
-|  |  |  |  |  | [Binary Operations](#binary-operations) | [BibTex example](#bibtex-example) |
+| [Title](#title) | [References](#references) | [Verbatim text](#verbatim-text) | [Dashes](#dashes) |  | [Symbols of Type Ord](#symbols-of-type-ord) | [Bibtex fields](#bibtex-fields) |
+| [Miscellaneous documents classes](#miscellaneous-documents-classes) | [Floating bodies](#floating-bodies) | [Justification](#justification) |  |  | [Large Operators](#large-operators) | [Common BibTeX style files](#common-bibtex-style-files) |
+|  |  | [Miscellaneous text properties](#miscellaneous-text-properties) |  |  | [Binary Operations](#binary-operations) | [BibTex example](#bibtex-example) |
 |  |  |  |  |  | [Relations](#relations) |  |
 |  |  |  |  |  | [Arrows](#arrows) |  |
 |  |  |  |  |  | [Delimiters](#delimiters) |  |
@@ -64,7 +64,7 @@ Use before $\backslash\texttt{begi}\texttt{n}\lbrace document\rbrace$. Usage: $\
 
 These commands go before $\backslash\texttt{begi}\texttt{n}\lbrace \texttt{document} \rbrace$. The declaration $\backslash\texttt{maketitle}$ goes at the top of the document.
 
-#### Miscellaneous
+#### Miscellaneous documents classes
 
 $\backslash \texttt{pagestyle}\lbrace empty\rbrace$ Empty header, footer and no page numbers.
 
@@ -137,7 +137,7 @@ The $place$ is a list valid placements for the body. $\texttt{t}$=top, $\texttt{
 | $\backslash\texttt{textnormal}\lbrace text\rbrace$ | $\lbrace \backslash\texttt{normalfont} \\; text \rbrace$ | $\textnormal{Document font}$ |
 | $\backslash\texttt{underline}\lbrace text\rbrace$ |  | $\underline{Underline}$ |
 
-#### Font face
+#### Font size
 
 | Size | Example |
 | --- | --- |
@@ -153,6 +153,24 @@ The $place$ is a list valid placements for the body. $\texttt{t}$=top, $\texttt{
 | $\backslash\texttt{Huge}$ | ${\Huge Huge}$ |
 
 These are declarations and should be used in the form $\lbrace \texttt{small} \ldots \rbrace$ or without braces to affect the entire document.
+
+#### Verbatim text
+
+$\backslash\texttt{begi}\texttt{n}\lbrace\texttt{verbatim}\rbrace$ Verbatim environment.<br>
+$\backslash\texttt{begi}\texttt{n}\lbrace\texttt{verbatim*}\rbrace$ Spaces are shown as $\textvisiblespace$.<br>
+$\backslash\texttt{verb!}\texttt{text!}$ Text between the delimiting characters (in this case $\texttt{!}$) is verbatim.
+
+#### Justification
+
+| Environment | Declaration |
+| --- | --- |
+| $\backslash\texttt{begi}\texttt{n}\lbrace\texttt{center}\rbrace$ | $\backslash\texttt{centering}$ |
+| $\backslash\texttt{begi}\texttt{n}\lbrace\texttt{flushleft}\rbrace$ | $\backslash\texttt{raggedright}$ |
+| $\backslash\texttt{begi}\texttt{n}\lbrace\texttt{flushright}\rbrace$ | $\backslash\texttt{raggedleft}$ |
+
+#### Miscellaneous text properties
+
+$\backslash\texttt{linespread}\lbrace x\rbrace$ changes the line spacing by the multiplier $x$.
 
 ***
 
@@ -207,6 +225,31 @@ These are declarations and should be used in the form $\lbrace \texttt{small} \l
 |  | `\j ` | $\\textnormal{\j}$ |
 |  | `~‘` | $\textnormal{~\`}$ |
 |  | `?‘` | $\textnormal{?\`}$ |
+
+#### Dashes
+
+| Name | Source | Example | Usage |
+| --- | --- | --- | --- |
+| hyphen | - | X $\textnormal{-}$ ray | In words. |
+| en-dash | -- | 1 $\textnormal{--}$ 5 | Between numbers. |
+| em-dash | --- | Yes $\textnormal{---}$ or no? | Punctuation. |
+
+#### Line and page breaks
+
+| Code | Description |
+| --- | --- |
+| `\\` | Begin new line without new paragraph |
+| `\\*` | Prohibit pagebreak after linebreak |
+| $\backslash\texttt{kill}$ | Don't print current line |
+| $\backslash\texttt{pagebreak}$ | Start new page |
+| $\backslash\texttt{noindent}$ | Do not indent current line |
+
+#### Miscellaneous text-mode symbols
+
+| Code | Description |
+| --- | --- |
+| $\backslash\texttt{today}$ | February 17, 2023 |
+| $ \$ \backslash\texttt{sim} \$ $ |  |
 
 ***
 
@@ -277,6 +320,7 @@ These are declarations and should be used in the form $\lbrace \texttt{small} \l
 |  | `\Re` | $\Re$ |  | `\angle` | $\angle$ |  | `\diamondsuit` | $\diamondsuit$ |
 |  | `\Im` | $\Im$ |  | `\triangle` | $\triangle$ |  | `\heartsuit` | $\heartsuit$ |
 |  | `\infty` | $\infty$ |  | `\backslash` | $\backslash$ |  | `\spadesuit` | $\spadesuit$ |
+|  | `\textvisiblespace` | $\textvisiblespace$ |  |  |  |
 
 #### Special symbols
 
