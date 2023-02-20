@@ -360,7 +360,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | --- | --- | :---: |
 | aleph | `\aleph` | $\aleph$ |
 | beth | `\beth` | $\beth$ |
-| gimmel | `\gimmel` | $\gimmel$ |
+| gimel | `\gimel` | $\gimel$ |
 
 #### Symbols of Type Ord
 
