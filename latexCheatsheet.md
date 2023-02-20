@@ -4,10 +4,10 @@
 
 | [Document classes](#document-classes) | [Document Structure](#document-structure) | [Text properties](#text-properties) | [Text-mode symbols](#text-mode-symbols)| [Tabular environments](#tabular-environments) | [Math mode](#math-mode) | [Bibliography and citations](#bibliography-and-citations) |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Common documentclass options](#common-documentclass-options) | [Text environments](#text-environments) | [Font face](#font-face) | [Symbols](#symbols) |  | [Sensible size examples](#sensible-size-examples) | [Citation types](#citation-types) |
-| [Packages](#packages) | [Lists](#lists) | [Font size](#font-size) | [Accents](#accents) |  | [Greek alphabet](#greek-alphabet) | [BibTex entry types](#bibtex-entry-types) |
-| [Title](#title) | [References](#references) | [Verbatim text](#verbatim-text) | [Dashes](#dashes) |  | [Symbols of Type Ord](#symbols-of-type-ord) | [Bibtex fields](#bibtex-fields) |
-| [Miscellaneous documents classes](#miscellaneous-documents-classes) | [Floating bodies](#floating-bodies) | [Justification](#justification) |  |  | [Large Operators](#large-operators) | [Common BibTeX style files](#common-bibtex-style-files) |
+| [Common documentclass options](#common-documentclass-options) | [Text environments](#text-environments) | [Font face](#font-face) | [Symbols](#symbols) | [tabbing environment](#tabbing-environment) | [Sensible size examples](#sensible-size-examples) | [Citation types](#citation-types) |
+| [Packages](#packages) | [Lists](#lists) | [Font size](#font-size) | [Accents](#accents) | [tabular environment](#tabular-environment) | [Greek alphabet](#greek-alphabet) | [BibTex entry types](#bibtex-entry-types) |
+| [Title](#title) | [References](#references) | [Verbatim text](#verbatim-text) | [Dashes](#dashes) | [tabular column specification](#tabular-column-specification) | [Symbols of Type Ord](#symbols-of-type-ord) | [Bibtex fields](#bibtex-fields) |
+| [Miscellaneous documents classes](#miscellaneous-documents-classes) | [Floating bodies](#floating-bodies) | [Justification](#justification) |  | [tabular elements](#tabular-elements) | [Large Operators](#large-operators) | [Common BibTeX style files](#common-bibtex-style-files) |
 |  |  | [Miscellaneous text properties](#miscellaneous-text-properties) |  |  | [Binary Operations](#binary-operations) | [BibTex example](#bibtex-example) |
 |  |  |  |  |  | [Relations](#relations) |  |
 |  |  |  |  |  | [Arrows](#arrows) |  |
@@ -259,6 +259,35 @@ $\backslash\texttt{linespread}\lbrace x\rbrace$ changes the line spacing by the 
 ***
 
 ### Tabular environments
+
+#### tabbing environment
+
+$\backslash\texttt{=}$ Set tab stop.<br>
+$\backslash\texttt{>}$ Go to tab stop.<br>
+Tab stops can be set on "invisible" lines with $\backslash\texttt{kill}$ at the end of the line. Normally $\backslash\backslash$ is used to separate lines.
+
+#### tabular environment
+
+$\backslash\texttt{begi}\texttt{n}\lbrace\texttt{array}\rbrace\lbrack pos \rbrack\lbrace cols \rbrace$<br>
+$\backslash\texttt{begi}\texttt{n}\lbrace\texttt{tabular}\rbrace\lbrack pos \rbrack\lbrace cols \rbrace$<br>
+$\backslash\texttt{begi}\texttt{n}\lbrace\texttt{tabular*}\rbrace\lbrace width \rbrace\lbrack pos \rbrack\lbrace cols \rbrace$
+
+#### tabular column specification
+
+| Code | Description |
+| --- | --- |
+| $\texttt{l}$ | Left-justified column. |
+| $\texttt{c}$ | Centered column. |
+| $\texttt{r}$ | Right-justified column. |
+| $\texttt{p}\texttt{\\{ width \\}}$ | Same as $\backslash\texttt{parbox[t]\\{width\\}}$. |
+| $\texttt{@}\texttt{\\{ decl \\}}$ | Insert $decl$ instead of inter-column space. |
+| $\texttt{\\|}$ | Inserts a vertical line between columns. |
+
+#### tabular elements
+
+$\backslash\texttt{hline}$ Horizontal line between rows.<br>
+$\backslash\texttt{cline \\{ x-y \\}}$ Horizontal line across columns $x$ through $y$.<br>
+$\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text \rbrace$ A cell that spans $n$ columns, with $cols$ column specification.
 
 ***
 
