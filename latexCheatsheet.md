@@ -249,7 +249,12 @@ $\backslash\texttt{linespread}\lbrace x\rbrace$ changes the line spacing by the 
 | Code | Description |
 | --- | --- |
 | $\backslash\texttt{today}$ | February 17, 2023 |
-| $ \$ \backslash\texttt{sim} \$ $ |  |
+| $\\$\backslash\texttt{sim}\\$$ | Prints $\sim$ instead of `\~{}`, which makes $\textnormal{\\~{ }}$. |
+| $\texttt{\\~{ }}$ | Space, disallow linebreak $\texttt{(W.J.\\~{ }Clinton)}$. |
+| $\backslash\texttt{@.}$ | Indicate that the $\texttt{.}$ ends a sentence when following an uppercase letter. |
+| $\backslash\texttt{hspace \\{ l \\}}$ | Horizontal space of length $l$ (Ex: l = $\texttt{20pt}$). |
+| $\backslash\texttt{vspace \\{ l \\}}$ | Vertical space of length $l$. |
+ $\backslash\texttt{vspace \\{ w \\}}\\{ h \\}}$ | Line of width $w$ and height $h$. |
 
 ***
 
