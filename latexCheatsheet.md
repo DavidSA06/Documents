@@ -178,16 +178,21 @@ $\backslash\texttt{linespread}\lbrace x\rbrace$ changes the line spacing by the 
 
 #### Symbols
 
-| Name | Code | Symbol |
+| Name | Command | Symbol |
 | --- | --- | :---: |
 | ampersand | `\&` | $\\&$ |
 | backslash | `\backslash` | $\backslash $ |
 | bullet symbol | `\bullet` | $\bullet $ |
 | circumflex | `\^{}`, `\textasciicircum{}` | $\textasciicircum{}$ |
+| copyright symbol/sign | `\copyright` | $\copyright$ |
+| dagger, obelisk, obelus | `\dag` | $\dag$ |
 | dollar sign | `\$` | $\\$ $ |
+| double dagger, diesis | `\ddag` | $\ddag$ |
 | ellipsis | `\ldots` | $\ldots $ |
 | number sign | `\#` | $\\# $ |
 | percentage sign | `\%` | $\\% $ |
+| pilcrow | `\P` | $\P$ |
+| pound sign | `\pounds` | $\pounds$ |
 | section sign | `\S` | $\\S $ |
 | tilde | `\~{}`, `\textasciitilde{}` | $\textasciitilde{}$ |
 | underscore | `\_` | $\\_ $ |
@@ -195,36 +200,37 @@ $\backslash\texttt{linespread}\lbrace x\rbrace$ changes the line spacing by the 
 
 #### Accents
 
-| Name | Code | Symbol |
+| Name | Command | Symbol |
 | --- | --- | :---: |
 |  | `\‘o` | $\textnormal{\\\`o}$ |
 |  | `\’o` | $\textnormal{\\'o}$ |
 |  | `\^{}` | $\textnormal{\\^{}}$ |
 |  | `\~{o}` | $\textnormal{\\~{o}}$ |
-|  | `\={o}` | $\textnormal{\\={o}}$ |
-|  | `\.{o}` | $\textnormal{\\.{o}}$ |
-|  | `\"{o}` | $\textnormal{\\"{o}}$ |
-|  | `\co` | $\textnormal{\\co}$ |
+|  | `\={o}` | $\textnormal{\\\={o}}$ |
+|  | `\.{o}` | $\textnormal{\\\.{o}}$ |
+|  | `\"{o}` | $\textnormal{\\\"{o}}$ |
+|  | `\c{o}` | $\textnormal{\\co}$ |
 |  | `\v{o}` | $\textnormal{\\v{o}}$ |
-|  | `\H o ` | $\textnormal{\\H{o}}$ |
-|  | `\c c` | $\textnormal{\\c{c}}$ |
-|  | `\d o ` | $\textnormal{\\d{o}}$ |
-|  | `\b o` | $\textnormal{\\b{o}}$ |
-|  | `\t oo` | $\textnormal{\\t{oo}}$ |
+|  | `\H{o}` | $\textnormal{\\H{o}}$ |
+|  | `\c{c}` | $\textnormal{\\c{c}}$ |
+|  | `\d{o}` | $\textnormal{\\d{o}}$ |
+|  | `\b{o}` | $\textnormal{\\b{o}}$ |
+|  | `\t{oo}` | $\textnormal{\\t{oo}}$ |
 |  | `\oe` | $\textnormal{\\oe}$ |
 |  | `\OE` | $\textnormal{\\OE}$ |
 |  | `\ae` | $\textnormal{\\ae}$ |
 |  | `\AE` | $\textnormal{\\AE}$ |
 |  | `\aa` | $\textnormal{\\aa}$ |
-|  | `\AA` | $\\textnormal{\AA}$ |
-|  | `\o` | $\\textnormal{\o}$ |
-|  | `\O ` | $\\textnormal{\O}$ |
-|  | `\l` | $\\textnormal{\l}$ |
-|  | ` \L` | $\\textnormal{\L}$ |
-|  | `\i ` | $\\textnormal{\i}$ |
-|  | `\j ` | $\\textnormal{\j}$ |
-|  | `~‘` | $\textnormal{~\`}$ |
-|  | `?‘` | $\textnormal{?\`}$ |
+|  | `\AA` | $\\textnormal{\\AA}$ |
+|  | `\o` | $\\textnormal{\\o}$ |
+|  | `\O ` | $\\textnormal{\\O}$ |
+|  | `\l` | $\\textnormal{\\l}$ |
+|  | `\L` | $\\textnormal{\\L}$ |
+|  | `\i ` | $\\textnormal{\\i}$ |
+|  | `\j ` | $\\textnormal{\\j}$ |
+|  | `\ss` | $\\textnormal{\\\ss}$ |
+|  | `~‘` | $\textnormal{\~\`}$ |
+|  | `?‘` | $\textnormal{\?\`}$ |
 
 #### Dashes
 
@@ -331,14 +337,18 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | xi | `\Xi`, `\xi` | $\Xi$ | $\xi$ |  |
 | omicron | `\omicron` |  | $\omicron$ |  |
 | pi | `\Pi`, `\pi` | $\Pi$ | $\pi$ |  |
-| rho | `\rho` |  | $\rho$ |  |
-| sigma | `\Sigma`, `\sigma` | $\Sigma$ | $\sigma$ |  |
+| rho | `\rho`, `varrho` |  | $\rho$ | $\varrho$ |
+| sigma | `\Sigma`, `\sigma`, `\varsigma` | $\Sigma$ | $\sigma$ | $\varsigma$ |
 | tau | `\tau` |  | $\tau$ |  |
 | upsilon | `\Upsilon`, `\upsilon` | $\Upsilon$ | $\upsilon$ |  |
-| phi | `\Phi`, `\phi` | $\Phi$ | $\phi$ | $\varphi $ |
+| phi | `\Phi`, `\phi`, `\varphi` | $\Phi$ | $\phi$ | $\varphi $ |
 | chi | `\chi` |  | $\chi$ |  |
 | psi | `\Psi`, `\psi` | $\Psi$ | $\psi$ |  |
 | omega | `\Omega`, `\omega` | $\Omega$ | $\omega$ |  |
+
+| name | code | upppercase | lowercase | variant |
+| --- | --- | :---: | :---: | :---: |
+| digamma | `\Digamma`, `\digamma` | $\Digamma$ | $\digamma$ |  |
 
 #### Symbols of Type Ord
 
@@ -390,20 +400,37 @@ Degree:
 
 #### Relations
 
-| Name | Code | Symbol | Name | Code | Symbol | Name | Code | Symbol |
-| --- | --- | :---: | --- | --- | :---: | --- | --- | :---: |
-|  | `\leq`, `\le` | $\leq$, $\le$ |  | `\geq`, `\ge` | $\geq$, $\ge$ |  | `\equiv` | $\equiv$ |
-|  | `\prec` | $\prec$ |  | `\succ` | $\succ$ |  | `\sim` | $\sim$ |
-|  | `\preceq` | $\preceq$ |  | `\succeq` | $\succeq$ |  | `\simeq` | $\simeq$ |
-|  | `\ll` | $\ll$ |  | `\gg` | $\gg$ |  | `\asymp` | $\asymp$ |
-|  | `\subset` | $\subset$ |  | `\supset` | $\supset$ |   | `\approx` | $\approx$ |
-|  | `\subseteq` | $\subseteq$ |   | `\supseteq` | $\supseteq$ |  | `\cong` | $\cong$ |
-|  | `\sqsubseteq` | $\sqsubseteq$ |  | `\sqsupseteq` | $\sqsupseteq$ |  | `\bowtie` | $\bowtie$ |
-|  | `\in` | $\in$ |  | `\notin` | $\notin$ |  | `\ni`, `\owns` | $\ni$, $\owns$ |
-|  | `\vdash` | $\vdash$ |  | `\dashv` | $\dashv$ |  | `\models` | $\models$ |
-|  | `\smile` | $\smile$ |  | `\mid` | $\mid$ |  | `\doteq` | $\doteq$ |
-|  | `\frown` | $\frown$ |  | `\parallel` | $\parallel$ |  | `\perp` | $\perp$ |
-|  | `\propto` | $\propto$ |
+| Name | Code | Symbol | Name | Code | Symbol |
+| --- | --- | :---: | --- | --- | :---: |
+|  | `\leq`, `\le` | $\leq$, $\le$ |  | `\geq`, `\ge` | $\geq$, $\ge$ |
+|  | `\prec` | $\prec$ |  | `\succ` | $\succ$ |
+|  | `\preceq` | $\preceq$ |  | `\succeq` | $\succeq$ |
+|  | `\ll` | $\ll$ |  | `\gg` | $\gg$ |
+|  | `\subset` | $\subset$ |  | `\supset` | $\supset$ |
+|  | `\subseteq` | $\subseteq$ |  | `\supseteq` | $\supseteq$ |
+|  | `\sqsubseteq` | $\sqsubseteq$ |  | `\sqsupseteq` | $\sqsupseteq$ |
+
+| Name | Code | Symbol |
+| --- | --- | :---: |
+| is equal to | `=` | $=$ |
+|  | `\doteq` | $\doteq$ |
+| is equivalent to | `\equiv` | $\equiv$ |
+| is approximately | `\approx` | $\approx$ |
+| is congruent to | `\cong` | $\cong$ |
+| is similar or equal to | `\simeq` | $\simeq$ |
+| is similar to | `\sim` | $\sim$ |
+| is proportional to | `\propto` | $\propto$ |
+| is not equal to | `\neq`, `\ne` | $\neq$, $\ne$ |
+
+| Name | Code | Symbol | Name | Code | Symbol |
+| --- | --- | --- | --- | --- | --- |
+| is parallel with | `\parallel` | $\parallel$ | is not parallel with | `\nparallel` | $\nparallel$ |
+| is asymptotic to | `\asymp` | $\asymp$ |  | `\bowtie` | $\bowtie$ |
+|  | `\vdash` | $\vdash$ |  | `\dashv` | $\dashv$ |
+| is member of | `\in` | $\in$ | has member, owns | `\ni`, `\owns` | $\ni$, $\owns$ |
+|  | `\smile` | $\smile$ |  | `\frown` | $\frown$ |
+| models | `\models` | $\models$ | is not member of | `\notin` | $\notin$ |
+| is perpendicular with | `\perp` | $\perp$ | divides | `\mid` | $\mid$ |
 
 Most relations can be negated by prefixing them with $\backslash\texttt{not}$.
 
@@ -496,39 +523,38 @@ $\backslash\texttt{displaystyle}\\; \backslash\texttt{textstyle}\\; \backslash\t
 
 | Name | Code | Example |
 | --- | --- | :---: |
-|  | `\arccos` | $\arccos$ |
-|  | `\arcsin` | $\arcsin$ |
-|  | `\arctan` | $\arctan$ |
-|  | `\arg` | $\arg$ |
-|  | `\cos` | $\cos$ |
-|  | `\cosh` | $\cosh$ |
-|  | `\cot` | $\cot$ |
-|  | `\coth` | $\coth$ |
-|  | `\csc` | $\csc$ |
-|  | `\deg` | $\deg$ |
-|  | `\det` | $\det$ |
-|  | `\dim` | $\dim$ |
-|  | `\exp` | $\exp$ |
-|  | `\gcd` | $\gcd$ |
-|  | `\hom` | $\hom$ |
-|  | `\inf` | $\inf$ |
-|  | `\ker` | $\ker$ |
-|  | `\lg` | $\lg$ |
-|  | `\lim` | $\lim$ |
-|  | `\liminf` | $\liminf$ |
-|  | `\limsup` | $\limsup$ |
-|  | `\ln` | $\ln$ |
-|  | `\log` | $\log$ |
-|  | `\max` | $\max$ |
-|  | `\min` | $\min$ |
-|  | `\Pr` | $\Pr$ |
-|  | `\sec` | $\sec$ |
-|  | `\sin` | $\sin$ |
-|  | `\sinh` | $\sinh$ |
-|  | `\sup` | $\sup$ |
-|  | `\tan` | $\tan$ |
-|  | `\tanh` | $\tanh$ |
-
+| arccosine | `\arccos` | $\arccos$ |
+| arcsine | `\arcsin` | $\arcsin$ |
+| arctangent | `\arctan` | $\arctan$ |
+| argument of | `\arg` | $\arg$ |
+| cosine | `\cos` | $\cos$ |
+| hyperbolic cosine | `\cosh` | $\cosh$ |
+| cotangent | `\cot` | $\cot$ |
+| hyperbolic cotangent | `\coth` | $\coth$ |
+| cosecant | `\csc` | $\csc$ |
+| degree | `\deg` | $\deg$ |
+| determinant | `\det` | $\det$ |
+| dimension | `\dim` | $\dim$ |
+| exponential function | `\exp` | $\exp$ |
+| greatest common divisor | `\gcd` | $\gcd$ |
+| hom-class | `\hom` | $\hom$ |
+| infimum of a set | `\inf` | $\inf$ |
+| kernel | `\ker` | $\ker$ |
+| common logarithm ($\log_{10}$, $\log_{2}$) | `\lg` | $\lg$ |
+| limit (sequence, function) | `\lim` | $\lim$ |
+| limit inferior | `\liminf` | $\liminf$ |
+| limit superior | `\limsup` | $\limsup$ |
+| natural logarithm ($\log_{e}$) | `\ln` | $\ln$ |
+| logarithm ($\log_{10}$, $\log_{e}$) | `\log` | $\log$ |
+| maximum of a set | `\max` | $\max$ |
+| minimum of a set | `\min` | $\min$ |
+| probability of an event | `\Pr` | $\Pr$ |
+| secant | `\sec` | $\sec$ |
+| sine | `\sin` | $\sin$ |
+| hyperbolic sine | `\sinh` | $\sinh$ |
+| supremum of a set. | `\sup` | $\sup$ |
+| tangent | `\tan` | $\tan$ |
+| hyperbolic tangent | `\tanh` | $\tanh$ |
 
 mod with parentheses `a \pmod{m}` $a \pmod{m}$
 
@@ -569,93 +595,61 @@ When using $\mathrm{B\scriptstyle IB}\TeX{}$, you need to run latex, bibtex, and
 
 #### Citation Types
 
-`\cite{key}` Full author list and year. (Watson and Crick 1953)
-
-`\citeA{key}` Full author list. (Watson and Crick)
-
-`\citeN{key}` Full author list and year. Watson and Crick (1953)
-
-`\shortcite{key}` Abbreviated author list and year.
-
-`\shortciteA{key}` Abbreviated author list.
-
-`\shortciteN{key}` Abbreviated author list and year.
-
-`\citeyear{key}` Cite year only. (1953)
+| Entry | Description |
+| --- | --- |
+| `\cite{key}` | Full author list and year. (Watson and Crick 1953) |
+| `\citeA{key}` | Full author list. (Watson and Crick) |
+| `\citeN{key}` | Full author list and year. Watson and Crick (1953) |
+| `\shortcite{key}` | Abbreviated author list and year. |
+| `\shortciteA{key}` | Abbreviated author list. |
+| `\shortciteN{key}` | Abbreviated author list and year. |
+| `\citeyear{key}` | Cite year only. (1953) |
 
 All the above have an $\texttt{NP}$ variant without parentheses; Ex. `\citeNP`.
 
 #### Bibtex entry types
 
-`@article` Journal or magazine article.
-
-`@book`Book with publisher.
-
-`@booklet` Book without publisher.
-
-`@conference` Article in conference proceedings.
-
-`@inbook` A part of a book and/or range of pages.
-
-`@incollection`A part of book with its own title.
-
-`@manual` Technical documentation.
-
-`@mastersthesis` Master's thesis.
-
-`@misc`If nothing else fits.
-
-`@phdthesis` PhD. thesis.
-
-`@proceedings` Proceedings of a conference.
-
-`@techreport` Tech report, usually numbered in series.
-
-`@unpublished` Unpublished.
+| Entry | Description |
+| --- | --- |
+| `@article` | Journal or magazine article. |
+| `@book` | Book with publisher. |
+| `@booklet` | Book without publisher. |
+| `@conference` | Article in conference proceedings. |
+| `@inbook` | A part of a book and/or range of pages. |
+| `@incollection` | A part of book with its own title. |
+| `@manual` |  Technical documentation. |
+| `@mastersthesis` | Master's thesis. |
+| `@misc` | If nothing else fits. |
+| `@phdthesis` | PhD. thesis. |
+| `@proceedings` | Proceedings of a conference. |
+| `@techreport` | Tech report, usually numbered in series. |
+| `@unpublished` | Unpublished. | 
 
 #### Bibtex fields
 
-`address` Address of publisher. Not necessary for major publishers.
-
-`author` Names of authors, of format ...
-
-`booktitle` Title of book when part of it is cited.
-
-`chapter` Chapter or section number.
-
-`edition` Edition of a book.
-
-`editor` Names of editors.
-
-`institution` Sponsoring institution of tech. report.
-
-`journal` Journal name.
-
-`key` Used for cross ref. when no author.
-
-`month` Month published. Use 3-letter abbreviation.
-
-`note` Any additional information.
-
-`number` Number of journal or magazine.
-
-`organization` Organization that sponsors a conference.
-
-`pages` Page range (2,6,9--12).
-
-`publisher` Publisher's name.
-
-`school` Name of school (for thesis).
-
-`series` Name of series of books.
-
-`title` Title of work.
-
-`type` Type of tech. report, ex. \\Research Note".
-
-`volume` Volume of a journal or book.
-
-`year` Year of publication.
+| Entry | Description |
+| --- | --- |
+| `address` | Address of publisher. Not necessary for major publishers. |
+| `author` | Names of authors, of format ... |
+| `booktitle` | Title of book when part of it is cited. |
+| `chapter` | Chapter or section number. |
+| `edition` | Edition of a book. |
+| `editor` | Names of editors. |
+| `institution` | Sponsoring institution of tech. report. |
+| `journal` | Journal name. |
+| `key` | Used for cross ref. when no author. |
+| `month` | Month published. Use 3-letter abbreviation. |
+| `note` | Any additional information. |
+| `number` | Number of journal or magazine. |
+| `organization` | Organization that sponsors a conference. |
+| `pages` | Page range (2,6,9--12). | 
+| `publisher` | Publisher's name. |
+| `school` | Name of school (for thesis). |
+| `series` | Name of series of books. |
+| `title` | Title of work. |
+| `type` | Type of tech. report, ex. \\Research Note". |
+| `volume` | Volume of a journal or book. | 
+| `year` | Year of publication. |
 
 Not all fields need to be filled.
 
