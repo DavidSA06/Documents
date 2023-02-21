@@ -472,7 +472,7 @@ Degree:
 | $\precnsim$ | `\precnsim` |  | $\succnsim$ | `\succnsim` |  |
 | $\precnapprox$ | `\precnapprox` |  | $\succnapprox$ | `\succnapprox` |  |
 | $\nsim$ | `\nsim	` | is not similar to	| $\ncong$ | `\ncong` | is not congruent to |
-| $\nshortmid	 | `\nshortmid` |  | $\nshortparallel$ | `\nshortparallel` |  |
+| $\nshortmid$	 | `\nshortmid` |  | $\nshortparallel$ | `\nshortparallel` |  |
 | $\nmid$ | `\nmid` |  | $\nparallel$ | `\nparallel	` | is not parallel with |
 | $\nvdash$ | `\nvdash` |  | $\nvDash$ | `\nvDash` |  |
 | $\nVdash$ | `\nVdash` |  | $\nVDash$ | `\nVDash` |  |
