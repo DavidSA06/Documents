@@ -422,13 +422,13 @@ Degree:
 | $\nleqslant$ | `\nleqslant` | is neither less than nor equal to | $\ngeqslant$ | `\ngeqslant	` | is neither greater than nor equal to |
 | $\prec$ | `\prec` | precedes | $\succ$ | `\succ` | succeeds |
 | $\nprec$	| `\nprec` | doesn't precede | $\nsucc$ | `\nsucc` | doesn't succeed |
-| precedes or equals | `\preceq` | $\preceq$ | succeeds or equals | `\succeq` | $\succeq$ |
+| $\preceq$ | `\preceq` | precedes or equals | $\succeq$ | `\succeq` | succeeds or equals |
 | $\npreceq$ | `\npreceq` | neither precedes nor equals | $\nsucceq$ | `\nsucceq` | neither succeeds nor equals |
 | $\ll$ | `\ll` |  | $\gg$ | `\gg` |  |
 | $\ll$ | `\lll` |  | $\gg$ | `\ggg` |  |
 | $\subset$ | `\subset` | is a proper subset of | $\supset$ | `\supset` | is a proper superset of |
 | $\not\subset	$ | `\not\subset	` | is not a proper subset of | $\not\supset$ | `\not\supset	` | is not a proper superset of |
-| \subseteq$ | `\subseteq` | is a subset of$ | $\supseteq$ | `\supseteq` | is a superset of |
+| $\subseteq$ | `\subseteq` | is a subset of$ | $\supseteq$ | `\supseteq` | is a superset of |
 | $\sqsubset$ | `\sqsubset` |  | $\sqsupset$ | `\sqsupset` |  |
 | $\sqsubseteq$ | `\sqsubseteq` |  | $\sqsupseteq$ | `\sqsupseteq` |  |
 
