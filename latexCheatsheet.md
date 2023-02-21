@@ -86,33 +86,40 @@ depth > $x$, where $\texttt{chapter}$ has depth 0.
 
 #### Text environments
 
-$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{comment} \rbrace$ Comment block (not printed).<br>
-$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{quote} \rbrace$ Indented quotation block.<br>
-$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{quotation} \rbrace$ Like $\texttt{quote}$ with indented paragraphs.<br>
-$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{verse} \rbrace$ Quotation block for verse.
+| Command | Description |
+| :---: | --- |
+| $\backslash\texttt{begi}\texttt{n}\lbrace \texttt{comment} \rbrace$ | Comment block (not printed) |
+| $\backslash\texttt{begi}\texttt{n}\lbrace \texttt{quote} \rbrace$ | Indented quotation block |
+| $\backslash\texttt{begi}\texttt{n}\lbrace \texttt{quotation} \rbrace$ Like $\texttt{quote}$ | with indented paragraphs |
+| $\backslash\texttt{begi}\texttt{n}\lbrace \texttt{verse} \rbrace$ | Quotation block for verse |
 
 #### Lists
 
-$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{enumerate} \rbrace$ Numbered list.<br>
-$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{itemize} \rbrace$ Bulleted list.<br>
-$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{description} \rbrace$ Description list.<br>
-$\backslash\texttt{item} \\; text$ Add an item.<br>
-$\backslash\texttt{item}\lbrack x \rbrack \\; text$ Use $x$ instead of normal bullet or number.
-Required for descriptions.
+| Command | Description |
+| :---: | --- |
+| $\backslash\texttt{begi}\texttt{n}\lbrace \texttt{enumerate} \rbrace$ | Numbered list |
+| $\backslash\texttt{begi}\texttt{n}\lbrace \texttt{itemize} \rbrace$ | Bulleted list |
+| $\backslash\texttt{begi}\texttt{n}\lbrace \texttt{description} \rbrace$ | Description list |
+| $\backslash\texttt{item} \\; text$ | Add an item |
+| $\backslash\texttt{item}\lbrack x \rbrack \\; text$ | Use $x$ instead of normal bullet or number<br>Required for descriptions |
 
 #### References
 
-$\backslash\texttt{label}\lbrace marker \rbrace$ Set a marker for cross-reference, often of the form $\backslash\texttt{label}\lbrace\texttt{sec:item}\rbrace$.<br>
-$\backslash\texttt{ref}\lbrace marker \rbrace$ Give section/body number of marker.<br>
-$\backslash\texttt{pageref}\lbrace marker \rbrace$ Give page number of marker.<br>
-$\backslash\texttt{footnote}\lbrace text \rbrace$ Print footnote at bottom of page.
+| Command | Description |
+| :---: | --- |
+| $\backslash\texttt{label}\lbrace marker \rbrace$ | Set a marker for cross-reference, often of the form $\backslash\texttt{label}\lbrace\texttt{sec:item}\rbrace$ |
+| $\backslash\texttt{ref}\lbrace marker \rbrace$ | Give section/body number of marker |
+| $\backslash\texttt{pageref}\lbrace marker \rbrace$ | Give page number of marker |
+| $\backslash\texttt{footnote}\lbrace text \rbrace$ | Print footnote at bottom of page |
 
 #### Floating bodies
 
-$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{table} \rbrace \lbrack place \rbrack$ Add numbered table.<br>
-$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{figure} \rbrace \lbrack place \rbrack$ Add numbered figure.<br>
-$\backslash\texttt{begi}\texttt{n}\lbrace \texttt{equation} \rbrace \lbrack place \rbrack$ Add numbered equation.<br>
-$\backslash\texttt{caption}\lbrace text \rbrace$ Caption for the body.
+| Command | Description |
+| :---: | --- |
+| $\backslash\texttt{begi}\texttt{n}\lbrace \texttt{table} \rbrace \lbrack place \rbrack$ | Add numbered table |
+| $\backslash\texttt{begi}\texttt{n}\lbrace \texttt{figure} \rbrace \lbrack place \rbrack$ | Add numbered figure |
+| $\backslash\texttt{begi}\texttt{n}\lbrace \texttt{equation} \rbrace \lbrack place \rbrack$ | Add numbered equation |
+| $\backslash\texttt{caption}\lbrace text \rbrace$ | Caption for the body |
 
 The $place$ is a list valid placements for the body. $\texttt{t}$=top, $\texttt{h}$=here, $\texttt{b}$=bottom, $\texttt{p}$=separate page, $\texttt{!}$=place even if ugly. Captions and label markers should be within the environment.
 
@@ -156,9 +163,11 @@ These are declarations and should be used in the form $\lbrace \texttt{small} \l
 
 #### Verbatim text
 
-$\backslash\texttt{begi}\texttt{n}\lbrace\texttt{verbatim}\rbrace$ Verbatim environment.<br>
-$\backslash\texttt{begi}\texttt{n}\lbrace\texttt{verbatim*}\rbrace$ Spaces are shown as $\textvisiblespace$.<br>
-$\backslash\texttt{verb!}\texttt{text!}$ Text between the delimiting characters (in this case $\texttt{!}$) is verbatim.
+| Command | Description |
+| :---: | --- |
+| $\backslash\texttt{begi}\texttt{n}\lbrace\texttt{verbatim}\rbrace$ | Verbatim environment |
+| $\backslash\texttt{begi}\texttt{n}\lbrace\texttt{verbatim*}\rbrace$ | Spaces are shown as $\textvisiblespace$ |
+| $\backslash\texttt{verb!}\texttt{text!}$ | Text between the delimiting characters (in this case $\texttt{!}$) is verbatim |
 
 #### Justification
 
@@ -281,7 +290,7 @@ $\backslash\texttt{begi}\texttt{n}\lbrace\texttt{tabular*}\rbrace\lbrace width \
 #### tabular column specification
 
 | Command | Description |
-| --- | --- |
+| :---: | --- |
 | $\texttt{l}$ | Left-justified column. |
 | $\texttt{c}$ | Centered column. |
 | $\texttt{r}$ | Right-justified column. |
@@ -300,7 +309,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 ### Math mode
 
 | Inline math | Displayed math |
-| :---: | --- |
+| --- | --- |
 | `\(...\)` | `\[...\]` |
 | `$...$` | `$$...$$` |
 |  | `\begin{equation}` <br> `...` <br> `\end{equation}` |
@@ -317,6 +326,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | summation | `\sum_{k=1}^{n}` | $\sum_{k=1}^{n} $ | $$\sum_{k=1}^{n} $$ |
 | superscript | `s^{x}` | $s^{x} $ | $$s^{x} $$ |
 
+
 #### letters
 
 ##### Greek alphabet
@@ -332,18 +342,18 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | eta | `\eta` |  | $\eta$ |  |
 | theta | `\Theta`, `\theta`, `\vartheta` | $\Theta$ | $\theta$ | $\vartheta$ |
 | iota | `\iota` |  | $\iota$ |  |
-| kappa | `\kappa` |  | $\kappa$ |  |
+| kappa | `\kappa`, `\varkappa` |  | $\kappa$ | $\varkappa$ |
 | lambda | `\Lambda`, `\lambda` | $\Lambda$ | $\lambda$ |  |
 | mu | `\mu` |  | $\mu$ |  |
 | nu | `\nu` |  | $\nu$ |  |
 | xi | `\Xi`, `\xi` | $\Xi$ | $\xi$ |  |
 | omicron | `\omicron` |  | $\omicron$ |  |
-| pi | `\Pi`, `\pi` | $\Pi$ | $\pi$ |  |
+| pi | `\Pi`, `\pi`, `\varpi` | $\Pi$ | $\pi$ | $\varpi$ |
 | rho | `\rho`, `varrho` |  | $\rho$ | $\varrho$ |
 | sigma | `\Sigma`, `\sigma`, `\varsigma` | $\Sigma$ | $\sigma$ | $\varsigma$ |
 | tau | `\tau` |  | $\tau$ |  |
 | upsilon | `\Upsilon`, `\upsilon` | $\Upsilon$ | $\upsilon$ |  |
-| phi | `\Phi`, `\phi`, `\varphi` | $\Phi$ | $\phi$ | $\varphi $ |
+| phi | `\Phi`, `\phi`, `\varphi` | $\Phi$ | $\phi$ | $\varphi$ |
 | chi | `\chi` |  | $\chi$ |  |
 | psi | `\Psi`, `\psi` | $\Psi$ | $\psi$ |  |
 | omega | `\Omega`, `\omega` | $\Omega$ | $\omega$ |  |
@@ -352,30 +362,47 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 
 | name | code | upppercase | lowercase | variant |
 | --- | --- | :---: | :---: | :---: |
-| digamma | `\Digamma`, `\digamma` | $\Digamma$ | $\digamma$ |  |
+| digamma | `\digamma` |  | $\digamma$ |  |
 
 ##### Hebrew letters
 
-| name | code | Symbol |
+| Name | Command | Symbol |
 | --- | --- | :---: |
 | aleph | `\aleph` | $\aleph$ |
 | beth | `\beth` | $\beth$ |
 | gimel | `\gimel` | $\gimel$ |
+| daleth | `\daleth` | $\daleth$ |
+
+##### Other letters
+
+| Name | Command | Symbol |
+| --- | --- | :---: |
+|  | `\complement` | $\complement$ |
+|  | `\ell` | $\ell$ |
+|  | `\eth` | $\eth$ |
+|  | `\Finv` | $\Finv$ |
+| h-bar, reduced Plancks's constant | `\hbar` | $\hbar$ |
+|  | `\hslash` | $\hslash$ |
+|  | `\Bbbk` | $\Bbbk$ |
+|  | `\mho` | $\mho$ |
+| partial derivative | `\partial` | $\partial$ |
+|  | `\circledS` | $\circledS$ |
+| [Weierstrass] powerset | `\wp` | $\wp$ |
 
 #### Symbols of Type Ord
 
 | Symbol | Command | Name | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- | :---: | --- | --- |
-|  |  |  | $\prime$ | `\prime` |  | $\forall$ | `\forall` | for all |
-| $\hbar$ | `\hbar`| h-bar | $\emptyset$ | `\emptyset` |  | $\exists$ | `\exists` | there exists at least one |
-| $\imath$ | `\imath` |  | $\nabla$ | `\nabla` |  | $\exists!$ | `\exists!` | there exists one and only one |
-| $\jmath$ | `\jmath` |  | $\surd$ | `\surd` |  | $\nexists$ | `\nexists` | there is no |
-| $\ell$ | `\ell` |  | $\flat$ | `\flat` |  | $\neg$, $\lnot$ | `\neg`, `\lnot` | logical not |
-| $\wp$ | `\wp` |  | $\natural$ | `\natural` |  | $\top$ | `\top` |  |
-| $\Re$ | `\Re` |  | $\sharp$ | `\sharp` |  | $\bot$ | `\bot` |  |
-| $\Im$ | `\Im` |  | $\\\|$ | `\\|` |  | $\clubsuit$ | `\clubsuit` |  |
-| $\partial$ | `\partial` |  | $\angle$ | `\angle` |  | $\diamondsuit$ | `\diamondsuit` |  |
-| $\infty$ | `\infty` |  | $\triangle$ | `\triangle` |  | $\heartsuit$ | `\heartsuit` |  |
+| $\forall$ | `\forall` | for all | $\prime$ | `\prime` |  |  |  |  |
+| $\exists$ | `\exists` | there exists at least one | $\emptyset$ | `\emptyset` |  |  |  |  |
+| $\exists!$ | `\exists!` | there exists one and only one | $\nabla$ | `\nabla` | del, nabla |  |  |  |
+| $\nexists$ | `\nexists` | there is no | $\surd$ | `\surd` |  |  |  |  |
+| $\imath$ | `\imath` |  | $\flat$ | `\flat` |  | $\neg$, $\lnot$ | `\neg`, `\lnot` | logical not |
+| $\jmath$ | `\jmath` |  | $\natural$ | `\natural` |  | $\top$ | `\top` |  |
+| $\Re$ | `\Re` | real part | $\sharp$ | `\sharp` |  | $\bot$ | `\bot` |  |
+| $\Im$ | `\Im` | imaginary part | $\\\|$ | `\\|` |  | $\clubsuit$ | `\clubsuit` |  |
+|  |  |  | $\angle$ | `\angle` |  | $\diamondsuit$ | `\diamondsuit` |  |
+| $\infty$ | `\infty` | infinity | $\triangle$ | `\triangle` |  | $\heartsuit$ | `\heartsuit` |  |
 | $\textvisiblespace$ | `\textvisiblespace` |  | $\backslash$ | `\backslash` |  | $\spadesuit$ | `\spadesuit` |  |
 
 #### Special symbols
@@ -425,7 +452,7 @@ Degree:
 | $\preceq$ | `\preceq` | precedes or equals | $\succeq$ | `\succeq` | succeeds or equals |
 | $\npreceq$ | `\npreceq` | neither precedes nor equals | $\nsucceq$ | `\nsucceq` | neither succeeds nor equals |
 | $\ll$ | `\ll` |  | $\gg$ | `\gg` |  |
-| $\ll$ | `\lll` |  | $\gg$ | `\ggg` |  |
+| $\lll$, $\llless$ | `\lll`, `\llless` |  | $\ggg$, $\gggtr$ | `\ggg`, `\gggtr` |  |
 | $\subset$ | `\subset` | is a proper subset of | $\supset$ | `\supset` | is a proper superset of |
 | $\not\subset	$ | `\not\subset	` | is not a proper subset of | $\not\supset$ | `\not\supset	` | is not a proper superset of |
 | $\subseteq$ | `\subseteq` | is a subset of$ | $\supseteq$ | `\supseteq` | is a superset of |
@@ -493,21 +520,40 @@ Most relations can be negated by prefixing them with $\backslash\texttt{not}$.
 
 #### Arrows
 
-| Name | Code | Symbol | Name | Code | Symbol |
-| --- | --- | :---: | --- | --- | :---: |
-|  | `\leftarrow`, `\gets` | $\leftarrow$, $\gets$ |  | `\longleftarrow` | $\longleftarrow$ |
-|  | `\Leftarrow` | $\Leftarrow$ |  | `\Longleftarrow` | $\Longleftarrow$ |
-|  | `\rightarrow`, `\to` | $\rightarrow$, $\to$ |  | `\longrightarrow` | $\longrightarrow$ |  
-|  | `\Rightarrow` | $\Rightarrow$ |  | `\Longrightarrow` | $\Longrightarrow$ |
-|  | `\leftrightarrow` | $\leftrightarrow$ |  | `\longleftrightarrow` | $\longleftrightarrow$ | 
-|  | `\Leftrightarrow` | $\Leftrightarrow$ |  | `\Longleftrightarrow` | $\Longleftrightarrow$ |
-|  | `\mapsto` | $\mapsto$ |  | `\longmapsto` | $\longmapsto$ |
-|  | `\hookleftarrow` | $\hookleftarrow$ |  | `\hookrightarrow` | $\hookrightarrow$ |
-|  | `\uparrow` | $\uparrow$ |  | `\Uparrow` | $\Uparrow$ |
-|  | `\downarrow` | $\downarrow$ |  | `\Downarrow` | $\Downarrow$ |
-|  | `\updownarrow` | $\updownarrow$ |  | `\Updownarrow` | $\Updownarrow$ |
-|  | `\nearrow` | $\nearrow$ |  | `\searrow` | $\searrow$ |
-|  | `\nwarrow` | $\nwarrow$ |  | `\swarrow` | $\swarrow$ |
+| Symbol | Code | Name | Symbol | Code | Name |
+| :---: | --- | --- | :---: | --- | --- |
+| $\circlearrowleft$ | `\circlearrowleft` |  | $\circlearrowright$ | `\circlearrowright` |  |
+| $\leftarrow$, $\gets$ | `\leftarrow`, `\gets` |  | $\longleftarrow$ | `\longleftarrow` |  |
+| $\curvearrowleft$ | `\curvearrowleft` |  | $\curvearrowright$ | `\curvearrowright` |  |
+| $\upuparrows$ | `\upuparrows` |  | $\downdownarrows$ | `\downdownarrows` |  |
+| $\downharpoonleft$ | `\downharpoonleft` |  | $\downharpoonright$ | `\downharpoonright` |  |
+| $\leftarrowtail$ | `\leftarrowtail` |  | $\rightarrowtail$ | `\rightarrowtail` |  |
+| $\leftharpoondown$ | `\leftharpoondown` |  | $\leftharpoonup$ | `\leftharpoonup` |  |
+| $\leftleftarrows$ | `\leftleftarrows` |  | $\rightrightarrows$ | `\rightrightarrows` |  |
+| $\leftrightarrows$ | `\leftrightarrows` |  | $\rightleftarrows$ | `\rightleftarrows` |  |
+| $\Lleftarrow$ | `\Lleftarrow` |  | $\Rrightarrow$ | `\Rrightarrow` |  |
+| $\Lsh$ | `\Lsh` |  | $\Rsh$ | `\Rsh` |  |
+| $\upharpoonleft$ | `\upharpoonleft` |  | $\upharpoonright$, $\restriction$ | `\upharpoonright`, `\restriction` |  |
+| $\twoheadleftarrow$ | `\twoheadleftarrow` |  | $\twoheadrightarrow$ | `\twoheadrightarrow` |  |
+| $\leftrightsquigarrow$ | `\leftrightsquigarrow` |  | $\rightsquigarrow$ | `\rightsquigarrow` |  |
+| $\leftrightharpoons$ | `$\leftrightharpoons$` |  | $\rightleftharpoons$ | `\rightleftharpoons` |  |
+| $\rightharpoondown$ | `\rightharpoondown` |  | $\rightharpoonup$ | `\rightharpoonup` |  |
+| $\nLeftarrow$ | `\nLeftarrow` |  | $\nRightarrow$ | `\nRightarrow` |  |
+| $\looparrowleft$ | `\looparrowleft` |  | $\looparrowright$ | `\looparrowright` |  |
+| $\nleftarrow$ | `\nleftarrow` |  | $\nrightarrow$ | `\nrightarrow` |  |
+| $\nleftrightarrow$ | `\nleftrightarrow` |  | $\multimap$ | `\multimap` |  |
+| $\Leftarrow$ | `\Leftarrow` |  | $\Longleftarrow$ | `\Longleftarrow` |  |
+| $\rightarrow$, $\to$ | `\rightarrow`, `\to` |  | $\longrightarrow$ | `\longrightarrow` |  |  
+| $\Rightarrow$ | `\Rightarrow` |  | $\Longrightarrow$, $\implies$ | `\Longrightarrow`, `\implies` |  |
+| $\leftrightarrow$ | `\leftrightarrow` |  | $\longleftrightarrow$ | `\longleftrightarrow` |  | 
+| $\Leftrightarrow$ | `\Leftrightarrow` |  | $\Longleftrightarrow$ | `\Longleftrightarrow` |  |
+| $\mapsto$ | `\mapsto` |  | $\longmapsto$ | `\longmapsto` |  |
+| $\hookleftarrow$ | `\hookleftarrow` |  | $\hookrightarrow$ | `\hookrightarrow` |  |
+| $\uparrow$ | `\uparrow` |  | $\Uparrow$ | `\Uparrow` |  |
+| $\downarrow$ | `\downarrow` |  | $\Downarrow$ | `\Downarrow` |  |
+| $\updownarrow$ | `\updownarrow` |  | $\Updownarrow$ | `\Updownarrow` |  |
+| $\nearrow$ | `\nearrow` |  | $\searrow$ | `\searrow` |  |
+| $\nwarrow$ | `\nwarrow` |  | $\swarrow$ | `\swarrow` |  |
 
 The $\backslash\texttt{buildrel}$ macro puts one symbol over another. The format is $\backslash\texttt{buildrel}\langle\textnormal{superscript}\rangle\backslash\texttt{over}\langle\textnormal{relation}\rangle$.
 
@@ -518,14 +564,14 @@ $f(x) \\; {\buildrel\rm def\over=} \\; x+1$
 
 #### Delimiters
 
-| Name | Code | Symbol | Name | Code | Symbol | Name | Code | Symbol |
-| --- | --- | :---: | --- | --- | :---: | --- | --- | :---: |
-|  | `\lbrack`, `[` | $\lbrack$, $[$ |  | `\lbrace`, `\{` | $\lbrace$, $\\{$ |  | `\langle` | $\langle$ |
-|  | `\rbrack`, `[` | $\rbrack$, $]$ |  | `\rbrace`, `\}` | $\rbrace$, $\\}$ |  | `\rangle` | $\rangle$ |
-|  | `\vert`, `\|` | $\vert$, $\\|$ |  | `\lfloor` | $\lfloor$ |  | `\lceil` | $\lceil$ |
-|  | `\Vert`, `\\|` | $\Vert$, $\\\|$ |  | `\rfloor` | $\rfloor$ |  | `\rceil` | $\rceil$ |
-|  | `[\![` | $[\\![$ |  | `(\!(` | $(\\!($ |  | `\langle\!\langle` | $\langle\\!\langle$ |
-|  | `]\!]` | $]\\!]$ |  | `)\!)` | $)\\!)$ |  | `\rangle\!\rangle` | $\rangle\\!\rangle$ |
+| Symbol | Code | Name | Symbol | Code | Name | Symbol | Code | Name |
+| :---: | --- | --- | :---: | --- | --- | :---: | --- | --- |
+| $\lbrack$, $[$ | `\lbrack`, `[` |  | $\lbrace$, $\\{$ | `\lbrace`, `\{` |  | $\langle$ | `\langle` |  |
+| $\rbrack$, $]$ | `\rbrack`, `[` |  | $\rbrace$, $\\}$ | `\rbrace`, `\}` |  | $\rangle$ | `\rangle` |  |
+| $\vert$, $\\|$ | `\vert`, `\|` |  | $\lfloor$ | `\lfloor` |  | $\lceil$ | `\lceil` |  |
+| $\Vert$, $\\\|$ | `\Vert`, `\\|` |  | $\rfloor$ | `\rfloor` |  | $\rceil$ | `\rceil` |  |
+| $[\\![$ | `[\![` |  | $(\\!($ | `(\!(` |  | $\langle\\!\langle$ | `\langle\!\langle` |  |
+| $]\\!]$ | `]\!]` |  | $)\\!)$ | `)\!)` |  | $\rangle\\!\rangle$ | `\rangle\!\rangle` |  |
 
 Left and right delimeters will be enlarged if they are prefixed with $\backslash\mathtt{left}$ or $\backslash\mathtt{right}$. Each $\backslash\mathtt{left}$ must have a matching $\backslash\mathtt{right}$, one of which may be an empty delimeter ($\backslash\mathtt{left.}$ or $\backslash\mathtt{right.}$). To specify a particular size, use the following:
 $\backslash\mathtt{bigl}$, $\backslash\mathtt{bigr}$
@@ -550,6 +596,19 @@ You can also say $\backslash\mathtt{bigm}$ for a large delimenter in the middle 
 | breve | `\u` | `\breve` | $\breve{a}$ |
 | bar | `\=` | `\bar` | $\bar{a}$ |
 | vector |  | `\vec` | $\vec{a}$ |
+|  |  | `\overset{*}{X}` | $\overset{\*}{X}$ |
+|  |  | `\underset{*}{X}` | $\underset{\*}{X}$ |
+|  |  | `\sideset{}{'}\sum` | $\sideset{}{'}\sum$ |
+|  |  | `\sideset{_1^2}{_3^4}\sum` | $\sideset{\_1^2}{\_3^4}\sum$ |
+| overline |  | `\overline{abc}` | $\overline{abc}$ |
+| underline |  | `\underline{abc}` | $\underline{abc}$ |
+| overbrace |  | `\overbrace{abc}` | $\overbrace{abc}$ |
+| underbrace |  | `\underbrace{abc}` | $\underbrace{abc}$ |
+|  |  | `\overleftarrow{abc}` | $\overleftarrow{abc}$ |
+|  |  | `\overrightarrow{abc}` | $\overrightarrow{abc}$ |
+|  |  | `\overleftrightarrow{abc}` | $\overleftrightarrow{abc}$ |
+|  |  | `\xleftarrow[under]{over}` | $\xleftarrow[under]{over}$ |
+|  |  | `\xrightarrow[under]{over}` | $\xrightarrow[under]{over}$ |
 
 The $\backslash\texttt{skew}\langle$number$\rangle$ command shifts accents for proper positioning,the larger the $\langle$number$\rangle$, the more right the shift. Compare
 
@@ -557,57 +616,64 @@ The $\backslash\texttt{skew}\langle$number$\rangle$ command shifts accents for p
 
 #### Elementary Math Control Sequences
 
-| Name | Code | Example |
-| --- | --- | :---: |
-| overline a formula | `\overline{x+y}` | $$\overline{x+y}$$ |
-| underline a formula | `\underline{x+y}` | $$\underline{x+y}$$ |
-| square root | `\sqrt{x+y}` | $$\sqrt{x+y}$$ |
-| higher order roots | `\root n\of{x+y}` | $$\root n\of{x+y}$$ |
-| fraction | `{n+1\over 3}` | $${n+1\over 3}$$ |
-| fraction, no line | `{n+1\atop 3}` | $${n+1\atop 3}$$ |
-| binomial coeff. | `{n+1\choose 3}` | $${n+1\choose 3}$$ |
-| braced fraction | `{n+1\brace 3}` | $${n+1\brace 3}$$ |
-| bracketed fraction | `{n+1\brack 3}` | $${n+1\brack 3}$$ |
+| Example | Code | Name |
+| :---: | --- | --- |
+| $$\overline{x+y}$$ | `\overline{x+y}` | overline a formula |
+| $$\underline{x+y}$$ | `\underline{x+y}` | underline a formula |
+| $$\sqrt{x+y}$$ | `\sqrt{x+y}` | square root |
+| $$\root n\of{x+y}$$ | `\root n\of{x+y}` | higher order roots |
+| $${n+1\over 3}$$ | `{n+1\over 3}` | fraction |
+| $${n+1\atop 3}$$ | `{n+1\atop 3}` | fraction, no line |
+| $${n+1\choose 3}$$ | `{n+1\choose 3}` | binomial coeff. |
+| $${n+1\brace 3}$$ | `{n+1\brace 3}` | braced fraction |
+| $${n+1\brack 3}$$ | `{n+1\brack 3}` | bracketed fraction |
 
 The following specify a style for typesetting formulas.
 $\backslash\texttt{displaystyle}\\; \backslash\texttt{textstyle}\\; \backslash\texttt{scriptstyle}\\; \backslash\texttt{scriptscriptstyle}$
 
 #### Non-Italic Function Names
 
-| Name | Code | Example |
-| --- | --- | :---: |
-| arccosine | `\arccos` | $\arccos$ |
-| arcsine | `\arcsin` | $\arcsin$ |
-| arctangent | `\arctan` | $\arctan$ |
-| argument of | `\arg` | $\arg$ |
-| cosine | `\cos` | $\cos$ |
-| hyperbolic cosine | `\cosh` | $\cosh$ |
-| cotangent | `\cot` | $\cot$ |
-| hyperbolic cotangent | `\coth` | $\coth$ |
-| cosecant | `\csc` | $\csc$ |
-| degree | `\deg` | $\deg$ |
-| determinant | `\det` | $\det$ |
-| dimension | `\dim` | $\dim$ |
-| exponential function | `\exp` | $\exp$ |
-| greatest common divisor | `\gcd` | $\gcd$ |
-| hom-class | `\hom` | $\hom$ |
-| infimum of a set | `\inf` | $\inf$ |
-| kernel | `\ker` | $\ker$ |
-| common logarithm ($\log_{10}$, $\log_{2}$) | `\lg` | $\lg$ |
-| limit (sequence, function) | `\lim` | $\lim$ |
-| limit inferior | `\liminf` | $\liminf$ |
-| limit superior | `\limsup` | $\limsup$ |
-| natural logarithm ($\log_{e}$) | `\ln` | $\ln$ |
-| logarithm ($\log_{10}$, $\log_{e}$) | `\log` | $\log$ |
-| maximum of a set | `\max` | $\max$ |
-| minimum of a set | `\min` | $\min$ |
-| probability of an event | `\Pr` | $\Pr$ |
-| secant | `\sec` | $\sec$ |
-| sine | `\sin` | $\sin$ |
-| hyperbolic sine | `\sinh` | $\sinh$ |
-| supremum of a set. | `\sup` | $\sup$ |
-| tangent | `\tan` | $\tan$ |
-| hyperbolic tangent | `\tanh` | $\tanh$ |
+| Example | Code | Name |
+| :---: | --- | --- |
+| $\arccos$ | `\arccos` | arccosine |
+| $\arcsin$ | `\arcsin` | arcsine |
+| $\arctan$ | `\arctan` | arctangent |
+| $\arg$ | `\arg` | argument of |
+| $\cos$ | `\cos` | cosine |
+| $\cosh$ | `\cosh` | hyperbolic cosine |
+| $\cot$ | `\cot` | cotangent |
+| $\coth$ | `\coth` | hyperbolic cotangent |
+| $\csc$ | `\csc` | cosecant |
+| $\deg$ | `\deg` | degree |
+| $\det$ | `\det` | determinant |
+| $\dim$ | `\dim` | dimension |
+| $\exp$ | `\exp` | exponential function |
+| $\gcd$ | `\gcd` | greatest common divisor |
+| $\hom$ | `\hom` | hom-class |
+| $\inf$ | `\inf` | infimum of a set |
+| $\ker$ | `\ker` | kernel |
+| $\lg$ | `\lg` | common logarithm ($\log_{10}$, $\log_{2}$) |
+| $\lim$ | `\lim` | limit (sequence, function) |
+| $\varinjlim$ | `\varinjlim` |  |
+| $\varprojlim$ | `\varprojlim` |  |
+| $\varliminf$ | `\varliminf` |  |
+| $\varliminf$ | `\varliminf` |  |
+| $\varlimsup$ | `\varlimsup` |  |
+| $\liminf$ | `\liminf` | limit inferior |
+| $\limsup$ | `\limsup` | limit superior |
+| $\ln$ | `\ln` | natural logarithm ($\log_{e}$) |
+| $\log$ | `\log` | logarithm ($\log_{10}$, $\log_{e}$) |
+| $\max$ | `\max` | maximum of a set |
+| $\min$ | `\min` | minimum of a set |
+| $\Pr$ | `\Pr` | probability of an event |
+| $\sec$ | `\sec` | secant |
+| $\sin$ | `\sin` | sine |
+| $\sinh$ | `\sinh` | hyperbolic sine |
+| $\sup$ | `\sup` | supremum of a set |
+| $\tan$ | `\tan` | tangent |
+| $\tanh$ | `\tanh` | hyperbolic tangent |
+| $\operatorname{zzz}\_{0}^{1}$ | `\operatorname{zzz}\_{0}^{1}` | generic operator |
+
 
 mod with parentheses `a \pmod{m}` $a \pmod{m}$
 
@@ -626,12 +692,12 @@ Text or Math mode: `\dots` $\dots$
 
 Math mode:
 
-| Code | Example |
-| --- | :---: |
-| `\ldots` | $\ldots$ |
-| `\cdots` | $\cdots$ |
-| `\vdots` | $\vdots$ |
-| `\ddots` | $\ddots$ |
+| Example | Command |
+| :---: | --- |
+| $\ldots$ | `\ldots` |
+| $\cdots$ | `\cdots` |
+| $\vdots$ | `\vdots` |
+| $\ddots$ | `\ddots` |
 
 The following fill space with the indicated item.
 $\backslash\texttt{hrulefill} \\; \backslash\texttt{rightarrowfill}  \\; \backslash\texttt{leftarrowfill} \\; \backslash\texttt{dotfill}$
