@@ -6,7 +6,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [Common documentclass options](#common-documentclass-options) | [Text environments](#text-environments) | [Font face](#font-face) | [Symbols](#symbols) | [tabbing environment](#tabbing-environment) | [Sensible size examples](#sensible-size-examples) | [Citation types](#citation-types) |
 | [Packages](#packages) | [Lists](#lists) | [Font size](#font-size) | [Accents](#accents) | [tabular environment](#tabular-environment) | [Letters](#letters) | [BibTex entry types](#bibtex-entry-types) |
-| [Title](#title) | [References](#references) | [Verbatim text](#verbatim-text) | [Dashes](#dashes) | [tabular column specification](#tabular-column-specification) | [Symbols of Type Ord](#symbols-of-type-ord) | [Bibtex fields](#bibtex-fields) |
+| [Title](#title) | [References](#references) | [Verbatim text](#verbatim-text) | [Dashes](#dashes) | [tabular column specification](#tabular-column-specification) | [Other symbols](#other-symbols) | [Bibtex fields](#bibtex-fields) |
 | [Miscellaneous documents classes](#miscellaneous-documents-classes) | [Floating bodies](#floating-bodies) | [Justification](#justification) |  | [tabular elements](#tabular-elements) | [Large Operators](#large-operators) | [Common BibTeX style files](#common-bibtex-style-files) |
 |  |  | [Miscellaneous text properties](#miscellaneous-text-properties) |  |  | [Binary Operations](#binary-operations) | [BibTex example](#bibtex-example) |
 |  |  |  |  |  | [Relations](#relations) |  |
@@ -381,6 +381,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 |  | `\ell` | $\ell$ |
 |  | `\eth` | $\eth$ |
 |  | `\Finv` | $\Finv$ |
+|  | `\Game` | $\Game$ |
 | h-bar, reduced Plancks's constant | `\hbar` | $\hbar$ |
 |  | `\hslash` | $\hslash$ |
 |  | `\Bbbk` | $\Bbbk$ |
@@ -389,21 +390,24 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 |  | `\circledS` | $\circledS$ |
 | [Weierstrass] powerset | `\wp` | $\wp$ |
 
-#### Symbols of Type Ord
+#### Other symbols
 
 | Symbol | Command | Name | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- | :---: | --- | --- |
-| $\forall$ | `\forall` | for all | $\prime$ | `\prime` |  |  |  |  |
-| $\exists$ | `\exists` | there exists at least one | $\emptyset$ | `\emptyset` |  |  |  |  |
-| $\exists!$ | `\exists!` | there exists one and only one | $\nabla$ | `\nabla` | del, nabla |  |  |  |
-| $\nexists$ | `\nexists` | there is no | $\surd$ | `\surd` |  |  |  |  |
-| $\imath$ | `\imath` |  | $\flat$ | `\flat` |  | $\neg$, $\lnot$ | `\neg`, `\lnot` | logical not |
-| $\jmath$ | `\jmath` |  | $\natural$ | `\natural` |  | $\top$ | `\top` |  |
-| $\Re$ | `\Re` | real part | $\sharp$ | `\sharp` |  | $\bot$ | `\bot` |  |
-| $\Im$ | `\Im` | imaginary part | $\\\|$ | `\\|` |  | $\clubsuit$ | `\clubsuit` |  |
-|  |  |  | $\angle$ | `\angle` |  | $\diamondsuit$ | `\diamondsuit` |  |
-| $\infty$ | `\infty` | infinity | $\triangle$ | `\triangle` |  | $\heartsuit$ | `\heartsuit` |  |
-| $\textvisiblespace$ | `\textvisiblespace` |  | $\backslash$ | `\backslash` |  | $\spadesuit$ | `\spadesuit` |  |
+| $\forall$ | `\forall` | for all | $\angle$ | `\angle` |  | $\clubsuit$ | `\clubsuit` |  |
+| $\exists$ | `\exists` | there exists at least one | $\measuredangle$ | `\measuredangle` |  | $\diamondsuit$ | `\diamondsuit` |  |
+| $\exists!$ | `\exists!` | there exists one and only one | $\sphericalangle$ | `\sphericalangle` |  | $\heartsuit$ | `\heartsuit` |  |
+| $\nexists$ | `\nexists` | there is no | $\top$ | `\top` |  | $\spadesuit$ | `\spadesuit` |  |
+| $\neg$, $\lnot$ | `\neg`, `\lnot` | logical not | $\bot$ | `\bot` |  | $\flat$ | `\flat` |  |
+| $\emptyset$ | `\emptyset` |  | $\triangle$ | `\triangle` |  | $\natural$ | `\natural` |  |
+| $\varnothing$ | `\varnothing` |  | $\vartriangle$ | `\vartriangle` |  | $\sharp$ | `\sharp` |  |
+| $\imath$ | `\imath` |  | $\square$ | `\square` |  | $\diagup$ | `\diagup` |  |
+| $\jmath$ | `\jmath` |  | $\lozenge$ | `\lozenge$` |  | $\diagdown$ | `\diagdown` |  |
+| $\Re$ | `\Re` | real part | $\blacktriangle$ | `\blacktriangle` |  | $\backslash$ | `\backslash` |  |
+| $\Im$ | `\Im` | imaginary part | $\blacktriangledown$ | `\blacktriangledown` |  | $\\\|$ | `\|` |  |
+| $\infty$ | `\infty` | infinity | $\blacksquare$ | `\blacksquare` |  | $\surd$ | `\surd` |  |
+| $\prime$ | `\prime` |  | $\blacklozenge$ | `\blacklozenge` |  | $\nabla$ | `\nabla` | del, nabla |
+| $\textvisiblespace$ | `\textvisiblespace` |  |  |  |  |  |  |  |
 
 #### Special symbols
 
@@ -522,38 +526,40 @@ Most relations can be negated by prefixing them with $\backslash\texttt{not}$.
 
 | Symbol | Code | Name | Symbol | Code | Name |
 | :---: | --- | --- | :---: | --- | --- |
-| $\circlearrowleft$ | `\circlearrowleft` |  | $\circlearrowright$ | `\circlearrowright` |  |
 | $\leftarrow$, $\gets$ | `\leftarrow`, `\gets` |  | $\longleftarrow$ | `\longleftarrow` |  |
-| $\curvearrowleft$ | `\curvearrowleft` |  | $\curvearrowright$ | `\curvearrowright` |  |
-| $\upuparrows$ | `\upuparrows` |  | $\downdownarrows$ | `\downdownarrows` |  |
-| $\downharpoonleft$ | `\downharpoonleft` |  | $\downharpoonright$ | `\downharpoonright` |  |
-| $\leftarrowtail$ | `\leftarrowtail` |  | $\rightarrowtail$ | `\rightarrowtail` |  |
-| $\leftharpoondown$ | `\leftharpoondown` |  | $\leftharpoonup$ | `\leftharpoonup` |  |
-| $\leftleftarrows$ | `\leftleftarrows` |  | $\rightrightarrows$ | `\rightrightarrows` |  |
-| $\leftrightarrows$ | `\leftrightarrows` |  | $\rightleftarrows$ | `\rightleftarrows` |  |
-| $\Lleftarrow$ | `\Lleftarrow` |  | $\Rrightarrow$ | `\Rrightarrow` |  |
-| $\Lsh$ | `\Lsh` |  | $\Rsh$ | `\Rsh` |  |
-| $\upharpoonleft$ | `\upharpoonleft` |  | $\upharpoonright$, $\restriction$ | `\upharpoonright`, `\restriction` |  |
-| $\twoheadleftarrow$ | `\twoheadleftarrow` |  | $\twoheadrightarrow$ | `\twoheadrightarrow` |  |
-| $\leftrightsquigarrow$ | `\leftrightsquigarrow` |  | $\rightsquigarrow$ | `\rightsquigarrow` |  |
-| $\leftrightharpoons$ | `$\leftrightharpoons$` |  | $\rightleftharpoons$ | `\rightleftharpoons` |  |
-| $\rightharpoondown$ | `\rightharpoondown` |  | $\rightharpoonup$ | `\rightharpoonup` |  |
-| $\nLeftarrow$ | `\nLeftarrow` |  | $\nRightarrow$ | `\nRightarrow` |  |
-| $\looparrowleft$ | `\looparrowleft` |  | $\looparrowright$ | `\looparrowright` |  |
+| $\rightarrow$, $\to$ | `\rightarrow`, `\to` |  | $\longrightarrow$ | `\longrightarrow` |  |
 | $\nleftarrow$ | `\nleftarrow` |  | $\nrightarrow$ | `\nrightarrow` |  |
-| $\nleftrightarrow$ | `\nleftrightarrow` |  | $\multimap$ | `\multimap` |  |
-| $\Leftarrow$ | `\Leftarrow` |  | $\Longleftarrow$ | `\Longleftarrow` |  |
-| $\rightarrow$, $\to$ | `\rightarrow`, `\to` |  | $\longrightarrow$ | `\longrightarrow` |  |  
-| $\Rightarrow$ | `\Rightarrow` |  | $\Longrightarrow$, $\implies$ | `\Longrightarrow`, `\implies` |  |
-| $\leftrightarrow$ | `\leftrightarrow` |  | $\longleftrightarrow$ | `\longleftrightarrow` |  | 
-| $\Leftrightarrow$ | `\Leftrightarrow` |  | $\Longleftrightarrow$ | `\Longleftrightarrow` |  |
+| $\uparrow$ | `\uparrow` |  | $\downarrow$ | `\downarrow` |  |
+| $\leftrightarrow$ | `\leftrightarrow` |  | $\longleftrightarrow$ | `\longleftrightarrow` |  |
+| $\updownarrow$ | `\updownarrow` |  | $\nleftrightarrow$ | `\nleftrightarrow` |  |
+| $\leftleftarrows$ | `\leftleftarrows` |  | $\rightrightarrows$ | `\rightrightarrows` |  |
+| $\upuparrows$ | `\upuparrows` |  | $\downdownarrows$ | `\downdownarrows` |  |
+| $\leftrightarrows$ | `\leftrightarrows` |  | $\rightleftarrows$ | `\rightleftarrows` |  |
+| $\twoheadleftarrow$ | `\twoheadleftarrow` |  | $\twoheadrightarrow$ | `\twoheadrightarrow` |  |
+| $\dashleftarrow$ | `\dashleftarrow` |  | $\dashrightarrow$ | `\dashrightarrow` |  |
+| $\leftarrowtail$ | `\leftarrowtail` |  | $\rightarrowtail$ | `\rightarrowtail` |  |
+| $\leftrightsquigarrow$ | `\leftrightsquigarrow` |  | $\rightsquigarrow$, $\leadsto$ | `\rightsquigarrow`, `\leadsto` |  |
 | $\mapsto$ | `\mapsto` |  | $\longmapsto$ | `\longmapsto` |  |
-| $\hookleftarrow$ | `\hookleftarrow` |  | $\hookrightarrow$ | `\hookrightarrow` |  |
-| $\uparrow$ | `\uparrow` |  | $\Uparrow$ | `\Uparrow` |  |
-| $\downarrow$ | `\downarrow` |  | $\Downarrow$ | `\Downarrow` |  |
-| $\updownarrow$ | `\updownarrow` |  | $\Updownarrow$ | `\Updownarrow` |  |
 | $\nearrow$ | `\nearrow` |  | $\searrow$ | `\searrow` |  |
 | $\nwarrow$ | `\nwarrow` |  | $\swarrow$ | `\swarrow` |  |
+| $\circlearrowleft$ | `\circlearrowleft` |  | $\circlearrowright$ | `\circlearrowright` |  |
+| $\curvearrowleft$ | `\curvearrowleft` |  | $\curvearrowright$ | `\curvearrowright` |  |
+| $\looparrowleft$ | `\looparrowleft` |  | $\looparrowright$ | `\looparrowright` |  |
+| $\hookleftarrow$ | `\hookleftarrow` |  | $\hookrightarrow$ | `\hookrightarrow` |  |
+| $\Lsh$ | `\Lsh` |  | $\Rsh$ | `\Rsh` |  |
+| $\Leftarrow$ | `\Leftarrow` |  | $\Longleftarrow$ | `\Longleftarrow` |  |
+| $\Rightarrow$ | `\Rightarrow` |  | $\Longrightarrow$, $\implies$ | `\Longrightarrow`, `\implies` |  |
+| $\Uparrow$ | `\Uparrow` |  | $\Downarrow$ | `\Downarrow` |  |
+| $\Leftrightarrow$ | `\Leftrightarrow` |  | $\Longleftrightarrow$ | `\Longleftrightarrow` |  |
+| $\nLeftarrow$ | `\nLeftarrow` |  | $\nRightarrow$ | `\nRightarrow` |  |
+| $\Updownarrow$ | `\Updownarrow` |  | $\nLeftrightarrow$ | `\nLeftrightarrow` |  |
+| $\Lleftarrow$ | `\Lleftarrow` |  | $\Rrightarrow$ | `\Rrightarrow` |  |
+| $\leftharpoonup$ | `\leftharpoonup` |  | $\leftharpoondown$ | `\leftharpoondown` |  |
+| $\rightharpoonup$ | `\rightharpoonup` |  | $\rightharpoondown$ | `\rightharpoondown` |  |
+| $\upharpoonleft$ | `\upharpoonleft` |  | $\upharpoonright$, $\restriction$ | `\upharpoonright`, `\restriction` |  |
+| $\downharpoonleft$ | `\downharpoonleft` |  | $\downharpoonright$ | `\downharpoonright` |  |
+| $\leftrightharpoons$ | `$\leftrightharpoons$` |  | $\rightleftharpoons$ | `\rightleftharpoons` |  |
+| $\multimap$ | `\multimap` |  |  |  |  |
 
 The $\backslash\texttt{buildrel}$ macro puts one symbol over another. The format is $\backslash\texttt{buildrel}\langle\textnormal{superscript}\rangle\backslash\texttt{over}\langle\textnormal{relation}\rangle$.
 
@@ -564,12 +570,16 @@ $f(x) \\; {\buildrel\rm def\over=} \\; x+1$
 
 #### Delimiters
 
-| Symbol | Code | Name | Symbol | Code | Name | Symbol | Code | Name |
-| :---: | --- | --- | :---: | --- | --- | :---: | --- | --- |
-| $\lbrack$, $[$ | `\lbrack`, `[` |  | $\lbrace$, $\\{$ | `\lbrace`, `\{` |  | $\langle$ | `\langle` |  |
-| $\rbrack$, $]$ | `\rbrack`, `[` |  | $\rbrace$, $\\}$ | `\rbrace`, `\}` |  | $\rangle$ | `\rangle` |  |
-| $\vert$, $\\|$ | `\vert`, `\|` |  | $\lfloor$ | `\lfloor` |  | $\lceil$ | `\lceil` |  |
-| $\Vert$, $\\\|$ | `\Vert`, `\\|` |  | $\rfloor$ | `\rfloor` |  | $\rceil$ | `\rceil` |  |
+| Symbol | Code | Name | Symbol | Code | Name |
+| :---: | --- | --- | :---: | --- | --- |
+| $\lbrack$, $[$ | `\lbrack`, `[` |  | $\rbrack$, $]$ | `\rbrack`, `[` |  |
+| $\lbrace$, $\\{$ | `\lbrace`, `\{` |  | $\rbrace$, $\\}$ | `\rbrace`, `\}` |  |
+| $\langle$ | `\langle` |  | $\rangle$ | `\rangle` |  |
+| $\vert$, $\\|$ | `\vert`, `\|` |  | $\Vert$, $\\\|$ | `\Vert`, `\\|` |
+| $\lceil$ | `\lceil` |  | $\rceil$ | `\rceil` |  |
+| $\lfloor$ | `\lfloor` |  | $\rfloor$ | `\rfloor` |  |
+| $\ulcorner$ | `\ulcorner` |  | $\urcorner$ | `\urcorner` |  |
+| $\llcorner$ | `\llcorner` |  | $\lrcorner$ | `\lrcorner` |  |
 | $[\\![$ | `[\![` |  | $(\\!($ | `(\!(` |  | $\langle\\!\langle$ | `\langle\!\langle` |  |
 | $]\\!]$ | `]\!]` |  | $)\\!)$ | `)\!)` |  | $\rangle\\!\rangle$ | `\rangle\!\rangle` |  |
 
