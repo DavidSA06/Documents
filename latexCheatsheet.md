@@ -381,7 +381,6 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 |  | `\ell` | $\ell$ |
 |  | `\backepsilon` | $\backepsilon$ |
 |  | `\eth` | $\eth$ |
-|  | `\Finv` | $\Finv$ |
 |  | `\Game` | $\Game$ |
 | h-bar, reduced Plancks's constant | `\hbar` | $\hbar$ |
 |  | `\hslash` | $\hslash$ |
@@ -391,51 +390,48 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 |  | `\circledS` | $\circledS$ |
 | [Weierstrass] powerset | `\wp` | $\wp$ |
 
-#### Other symbols
+#### Symbols
+
+##### Agrupations
 
 | Symbol | Command | Name | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- | :---: | --- | --- |
-| $\forall$ | `\forall` | for all | $\angle$ | `\angle` |  | $\clubsuit$ | `\clubsuit` |  |
-| $\exists$ | `\exists` | there exists at least one | $\measuredangle$ | `\measuredangle` |  | $\diamondsuit$ | `\diamondsuit` |  |
-| $\exists!$ | `\exists!` | there exists one and only one | $\sphericalangle$ | `\sphericalangle` |  | $\heartsuit$ | `\heartsuit` |  |
-| $\nexists$ | `\nexists` | there is no | $\top$ | `\top` |  | $\spadesuit$ | `\spadesuit` |  |
-| $\neg$, $\lnot$ | `\neg`, `\lnot` | logical not | $\bot$ | `\bot` |  | $\triangle$ | `\triangle` |  |
-| $\emptyset$ | `\emptyset` |  | $\flat$ | `\flat` |  | $\vartriangle$ | `\vartriangle` |  |
-| $\varnothing$ | `\varnothing` |  | $\natural$ | `\natural` |  | $\square$ | `\square` |  |
-| $\imath$ | `\imath` |  | $\sharp$ | `\sharp` |  | $\lozenge$ | `\lozenge` |  |
-| $\jmath$ | `\jmath` |  | $\diagup$ | `\diagup` |  | $\blacktriangle$ | `\blacktriangle` |  |
-| $\Re$ | `\Re` | real part | $\diagdown$ | `\diagdown` |  | $\blacktriangleleft$ | `\blacktriangleleft` |  |
-| $\Im$ | `\Im` | imaginary part | $\backslash$ | `\backslash` |  | $\blacktriangleright$ | `\blacktriangleright` |  |
-| $\infty$ | `\infty` | infinity | $\\\|$ | `\|` |  | $\blacktriangledown$ | `\blacktriangledown` |  |
-| $\prime$ | `\prime` |  | $\surd$ | `\surd` |  | $\blacksquare$ | `\blacksquare` |  |
-| $\textvisiblespace$ | `\textvisiblespace` |  | $\nabla$ | `\nabla` | del, nabla | $\blacklozenge$ | `\blacklozenge` |  |
-| $\therefore$ | `\therefore` |  | $\because$ | `\because` |  |  |  |  |
+| $$\bigcap_{i=a}^{b}$$ | `\bigcap_{i=a}^{b}` | set intersection | $$\bigcup_{i=a}^{b}$$ | `\bigcup_{i=a}^{b}` | set union | $$\biguplus_{i=a}^{b}$$ | `\biguplus_{i=a}^{b}` | multiset addition |
+| $$\bigwedge_{i=a}^{b}$$ | `\bigwedge_{i=a}^{b}` |  | $$\bigvee_{i=a}^{b}$$ | `\bigvee_{i=a}^{b}` |  | $\bigsqcup_{i=a}^{b}$ | `\bigsqcup_{i=a}^{b}` |
+| $$\prod_{i=a}^{b}$$ | `\prod_{i=a}^{b}` | product | $$\coprod_{i=a}^{b} $$ | `\coprod_{i=a}^{b} ` | coproduct | $$\sum_{i=a}^{b}$$ | `\sum_{i=a}^{b}` | summation |
+| $\bigodot_{i=a}^{b}$ | `\bigodot_{i=a}^{b}` |  | $\bigoplus_{i=a}^{b}$ | `\bigoplus_{i=a}^{b}` |  | $\bigotimes_{i=a}^{b}$ | `\bigotimes_{i=a}^{b}` |  |
 
-#### Special symbols
+##### Bars
 
-Degree: 
+| Symbol | Command | Name | Symbol | Command | Name |
+| :---: | --- | --- | :---: | --- | --- |
+| $\smallsetminus$ | `\setminus` |  |  |  |  |
+| $\setminus$ | `\setminus` |  | $/$ | `/` |  |
+| $\backslash$ | `\backslash` |  | $\not$ | `\not` |  |
+| $\diagdown$ | `\diagdown` |  | $\diagup$ | `\diagup` |  |
 
-^{\circ} $Ex: `22^{\circ}\mathrm{C}`: $22^{\circ}\mathrm{C}$.
+| Symbol | Command | Name | Symbol | Command | Name |
+| :---: | --- | --- | :---: | --- | --- |
+| $\mid$ | `\mid` |  | $\nmid$ | `\nmid` |  |
+| $\vert$ | `\vert` |  | $\Vert$ | `\Vert` |  |
+| $\lVert$ | `\lVert` |  | $\rVert$ | `\rVert` |  |
+| $\parallel$ | `\parallel` | is parallel with | $\nparallel$ | `\nparallel` | is not parallel with |
+| $\\|$ | `\|` |  |  |  |  |
 
-#### Large Operators
-
-| Symbol | Code | Name | Symbol | Code | Name | Symbol | Code | Name |
-| :---: | --- | --- | :---: | --- | --- | :---: | --- | --- |
-| $$\sum$$ | `\sum`| summation | $$\bigcap$$ | `\bigcap`| set intersection | $$\bigodot$$ | `\bigodot`|  |
-| $$\prod$$ | `\prod`| product | $$\bigcup$$ | `\bigcup`| set union | $$\bigotimes$$ | `\bigotimes`|  |
-| $$\coprod$$ | `\coprod`| coproduct | $$\bigsqcup$$ | `\bigsqcup`|  | $$\bigoplus$$ | `\bigoplus`|  |
-| $$\int$$ | `\int`|  | $$\bigvee$$ | `\bigvee`|  | $$\biguplus$$ | `\biguplus`| multiset addition |
-| $$\oint$$ | `\oint`|  | $$\bigwedge$$ | `\bigwedge`|  |  |  |  |
+| Symbol | Command | Name | Symbol | Command | Name |
+| :---: | --- | --- | :---: | --- | --- |
+| $\shortmid$ | `\shortmid` |  | $\nshortmid$ | `\nshortmid` |  |
+| $\shortparallel$ | `\shortparallel` |  | $\nshortparallel$ | `\nshortparallel` |  |
 
 #### Binary Operations
 
-| Symbol | Code | Name | Symbol | Code | Name | Symbol | Code | Name |
+| Symbol | Command | Name | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- | :---: | --- | --- |
-| $\pm$ | `\pm`| plus-minus sign | $\cap$ | `\cap`| set intersection | $\vee$, $\lor$ | `\vee`, `\lor` |  |
-| $\mp$ | `\mp`| minus-plus sign | $\cup$ | `\cup`| set union | $\wedge$, $\land$ | `\wedge`, `\land` |  |
-| $\setminus$ | `\setminus`| set diference | $\uplus$ | `\uplus`| multiset addition | $\oplus$ | `\oplus`|  |
-| $\cdot$ | `\cdot`|  | $\sqcap$ | `\sqcap`|  | $\ominus$ | `\ominus`|  |
-| $\times$ | `\times`|  | $\sqcup$ | `\sqcup`|  | $\otimes$ | `\otimes`|  |
+| $\pm$ | `\pm`| plus-minus sign | $\cap$ | `\cap`| set intersection |  |  |  |
+| $\mp$ | `\mp`| minus-plus sign | $\cup$ | `\cup`| set union |  |  |  |
+|  |  | set diference | $\uplus$ | `\uplus`| multiset addition | $\oplus$ | `\oplus`|  |
+| $\cdot$ | `\cdot`|  |  |  |  | $\ominus$ | `\ominus`|  |
+| $\times$ | `\times`|  |  | |  | $\otimes$ | `\otimes`|  |
 | $\ast$ | `\ast`|  | $\triangleleft$ | `\triangleleft`|  | $\oslash$ | `\oslash`|  |
 | $\star$ | `\star`|  | $\triangleright$ | `\triangleright`|  | $\odot$ | `\odot`|  |
 | $\diamond$ | `\diamond`|  | $\wr$ | `\wr`|  | $\dagger$ | `\dagger`| dagger, obelisk, obelus |
@@ -443,96 +439,176 @@ Degree:
 | $\bullet$ | `\bullet`|  | $\bigtriangleup$ | `\bigtriangleup`|  | $\amalg$ | `\amalg`|  |
 | $\div$ | `\div`|  | $\bigtriangledown$ | `\bigtriangledown`|  |
 
-#### Relations
+##### Logic
 
-| Symbol | Code | Name | Symbol | Code | Name |
-| :---: | --- | --- | :---: | --- | --- |
-| $<$ | `<` | is less than | $>$ | `>` | is greater than |
-| $\nless$ | `\nless` | is not less than | $\ngtr$ | `\ngtr` | is not greater than |
-| $\leq$, $\le$ | `\leq`, `\le` | is less than or equal to | $\geq$, $\ge$ | `\geq`, `\ge` | is greater than or equal to |
-| $\leqslant$ | `\leqslant` | is less than or equal to | $\geqslant$ | `\geqslant` | is greater than or equal to |
-| $\nleq$ | `\nleq` | is neither less than nor equal to | $\ngeq$ | `\ngeq` | is neither greater than nor equal to |
-| $\nleqslant$ | `\nleqslant` | is neither less than nor equal to | $\ngeqslant$ | `\ngeqslant	` | is neither greater than nor equal to |
-| $\prec$ | `\prec` | precedes | $\succ$ | `\succ` | succeeds |
-| $\nprec$	| `\nprec` | doesn't precede | $\nsucc$ | `\nsucc` | doesn't succeed |
-| $\preceq$ | `\preceq` | precedes or equals | $\succeq$ | `\succeq` | succeeds or equals |
-| $\npreceq$ | `\npreceq` | neither precedes nor equals | $\nsucceq$ | `\nsucceq` | neither succeeds nor equals |
-| $\ll$ | `\ll` |  | $\gg$ | `\gg` |  |
-| $\lll$, $\llless$ | `\lll`, `\llless` |  | $\ggg$, $\gggtr$ | `\ggg`, `\gggtr` |  |
-| $\subset$ | `\subset` | is a proper subset of | $\supset$ | `\supset` | is a proper superset of |
-| $\not\subset	$ | `\not\subset	` | is not a proper subset of | $\not\supset$ | `\not\supset	` | is not a proper superset of |
-| $\subseteq$ | `\subseteq` | is a subset of$ | $\supseteq$ | `\supseteq` | is a superset of |
-| $\sqsubset$ | `\sqsubset` |  | $\sqsupset$ | `\sqsupset` |  |
-| $\sqsubseteq$ | `\sqsubseteq` |  | $\sqsupseteq$ | `\sqsupseteq` |  |
-| $\vdash$ | `\vdash` |  | $\vDash$ | `\vDash` |  |
-| $\Vdash$ | `\Vdash` |  | $\VDash$ | `\VDash` |  |
+| Symbol | Command | Name |
+| :---: | --- | --- |
+| $\exists$ | `\exists` | there exists at least one |
+| $\exists!$ | `\exists!` | there exists one and only one |
+| $\nexists$ | `\nexists` | there is no |
+| $\Finv$ | `\Finv` |  |
+| $\forall$ | `\forall` | for all |
+| $\land$ | `\land` |  |
+| $\wedge$ | `\wedge` |  |
+| $\lor$ | `\lor` |  |
+| $\vee$ | `\vee` |  |
+| $\neg$, $\lnot$ | `\neg`, `\lnot` | logical not |
+
+##### Relations
 
 | Symbol | Code | Name |
 | :---: | --- | --- |
 | $=$ | `=` | is equal to |
+| $\bumpeq$ | `\bumpeq` |  |
+| $\Bumpeq$ | `\Bumpeq` |  |
+| $\eqcirc$ | `\eqcirc` |  |
+| $\dot=$ | `\dot=` |  |
 | $\doteq$ | `\doteq` |  |
+| $\circeq$ | `\circeq` |  |
+| $\triangleq$ | `\triangleq` |  |
+| $\cong$ | `\cong` |  |
 | $\doteqdot$ | `\doteqdot` |  |
 | $\risingdotseq$ | `\risingdotseq` |  |
 | $\fallingdotseq$ | `\fallingdotseq` |  |
 | $\equiv$ | `\equiv` | is equivalent to |
+
+##### Proportion
+
+| Symbol | Code | Name |
+| :---: | --- | --- |
+| $\propto$ | `\propto` | is proportional to |
+| $\varpropto$ | `\varpropto` |  |
+
+##### Similarity or approximate
+
+| Symbol | Code | Name |
+| :---: | --- | --- |
 | $\approx$ | `\approx` | is approximately |
+| $\thickapprox$ | `\thickapprox` |  |
 | $\approxeq$ | `\approxeq` |  |
 | $\cong$ | `\cong` | is congruent to |
 | $\simeq$ | `\simeq` | is similar or equal to |
+| $\eqsim$ | `\eqsim` |  |
 | $\sim$ | `\sim` | is similar to |
+| $\thicksim$ | `\thicksim` |  |
 | $\backsim$ | `\backsim` |  |
 | $\backsimeq$ | `\backsimeq` |  |
-| $\propto$ | `\propto` | is proportional to |
-| $\varpropto$ | `\varpropto` |  |
-| $\neq$, $\ne$ | `\neq`, `\ne` | is not equal to |
+| $\nsim$ | `\nsim	` | is not similar to	|
+| $\ncong$ | `\ncong` | is not congruent to |
 
-| Name | Code | Symbol | Name | Code | Symbol |
-| --- | --- | :---: | --- | --- | :---: |
-| $\parallel$ | `\parallel` | is parallel with | $\nparallel$ | `\nparallel` | is not parallel with |
-| $\asymp$ | `\asymp` | is asymptotic to | $\bowtie$ | `\bowtie` |  |
-| $\vdash$ | `\vdash` |  | $\dashv$ | `\dashv` |  |
-| $\in$ | `\in` | is member of | $\ni$, $\owns$ | `\ni`, `\owns` | has member, owns |
-| $\smile$ | `\smile` |  | $\frown$ | `\frown` |  |
-| $\models$ | `\models` | models | $\notin$ | `\notin` | is not member of |
-| $\perp$ | `\perp` | is perpendicular with | $\mid$ | `\mid` | divides |
-| $\shortmid$ | `\shortmid` |  | $\shortparallel$ | `\shortparallel` |  |
 
-| Name | Code | Symbol | Name | Code | Symbol |
-| --- | --- | :---: | --- | --- | :---: |
-| $\neq$, $\ne$ | `\neq`,  `\ne` | is not equal to | $\notin	$ | `\notin	` | is not member of |
-| $\nless$ | `\nless` | is not less than | $\ngtr$ | `\ngtr` | is not greater than |
-| $\nleq$ | `\nleq` | is not less than or equal to | $\ngeq$ | `\ngeq` | is not greater than or equal to |
-| $\nleqslant	$ | `\nleqslant` |  | $\ngeqslant$ | `\ngeqslant` |  |
-| $\nleqq	$ | `\nleqq` |  | $\ngeqq$ | `ngeqq` |  |
+##### Comparison
+
+| Symbol | Code | Name | Symbol | Code | Name |
+| :---: | --- | --- | :---: | --- | --- |
+| $\lessdot$ | `\lessdot` |  | $\gtrdot$ | `\gtrdot` |  |
+| $<$ | `<` | is less than | $>$ | `>` | is greater than |
+| $\leq$, $\le$ | `\leq`, `\le` | is less than or equal to | $\geq$, $\ge$ | `\geq`, `\ge` | is greater than or equal to |
+| $\leqq$ | `\leqq` |  | $\geqq$ | `\geqq` |  |
+| $\leqslant$ | `\leqslant` | is less than or equal to | $\geqslant$ | `\geqslant` | is greater than or equal to |
+| $\eqslantless$ | `\eqslantless` |  | $\eqslantgtr$ | `\eqslantgtr` |  |
+| $\lesssim$ | `\lesssim` |  | $\gtrsim$ | `\gtrsim` |  |
+| $\lessapprox$ | `\lessapprox` |  | $\gtrapprox$ | `\gtrapprox` |  |
+| $\lessgtr$ | `\lessgtr` |  | $\gtrless$ | `\gtrless` |  |
+| $\lesseqgtr$ | `\lesseqgtr` |  | $\gtreqless$ | `\gtreqless` |  |
+| $\lesseqqgtr$ | `\lesseqqgtr` |  | $\gtreqqless$ | `\gtreqqless` |  |
+| $\ll$ | `\ll` |  | $\gg$ | `\gg` |  |
+| $\lll$, $\llless$ | `\lll`, `\llless` |  | $\ggg$, $\gggtr$ | `\ggg`, `\gggtr` |  |
+| $\nless$, $\not<$ | `\nless`, `\not<` | is not less than | $\ngtr$, $\not>$ | `\ngtr`, `\not>` | is not greater than |
+| $\lnsim	$ | `\lnsim` |  | $\gnsim$ | `\gnsim` |  |
+| $\lnapprox	$ | `\lnapprox` |  | $\gnapprox$ | `\gnapprox` |  |
 | $\lneq	$ | `\lneq` |  | $\gneq$ | `gneq` |  |
 | $\lneqq	$ | `\lneqq` |  | $\gneqq$ | `\gneqq` |  |
 | $\lvertneqq	$ | `\lvertneqq` |  | $\gvertneqq$ | `\gvertneqq` |  |
-| $\lnsim	$ | `\lnsim` |  | $\gnsim$ | `\gnsim` |  |
-| $\lnapprox	$ | `\lnapprox` |  | $\gnapprox$ | `\gnapprox` |  |
+| $\nleq$ | `\nleq` | is not less than or equal to | $\ngeq$ | `\ngeq` | is not greater than or equal to |
+| $\nleqq	$ | `\nleqq` |  | $\ngeqq$ | `ngeqq` |  |
+| $\nleqslant	$ | `\nleqslant` |  | $\ngeqslant$ | `\ngeqslant` |  |
+
+##### Order
+
+| Symbol | Code | Name | Symbol | Code | Name |
+| :---: | --- | --- | :---: | --- | --- |
+| $\curlywedge$ | `\curlywedge` |  | $\curlyvee$ | `\curlyvee` |  |
+| $\prec$ | `\prec` | precedes | $\succ$ | `\succ` | succeeds |
+| $\preceq$ | `\preceq` | precedes or equals | $\succeq$ | `\succeq` | succeeds or equals |
+| $\precsim$ | `\precsim` |  | $\succsim$ | `\succsim` |  |
+| $\precapprox$ | `\precapprox` |  | $\succapprox$ | `\succapprox` |  |
+| $\curlyeqprec$ | `\curlyeqprec` |  | $\curlyeqsucc$ | `\curlyeqsucc` |  |
+| $\preccurlyeq$ | `\preccurlyeq` |  | $\succcurlyeq$ | `\succcurlyeq` |  |
 | $\nprec$ | `\nprec` | does not precede | $\nsucc$ | `\nsucc` | does not succeed |
 | $\npreceq$ | `\npreceq` | neither precedes nor equals | $\nsucceq$ | `\nsucceq` | neither succedes nor equals |
-| $\precneqq$ | `\precneqq` |  | $\succneqq$ | `\succneqq` |  |
 | $\precnsim$ | `\precnsim` |  | $\succnsim$ | `\succnsim` |  |
 | $\precnapprox$ | `\precnapprox` |  | $\succnapprox$ | `\succnapprox` |  |
-| $\nsim$ | `\nsim	` | is not similar to	| $\ncong$ | `\ncong` | is not congruent to |
-| $\nshortmid$	 | `\nshortmid` |  | $\nshortparallel$ | `\nshortparallel` |  |
-| $\nmid$ | `\nmid` |  | $\nparallel$ | `\nparallel	` | is not parallel with |
-| $\nvdash$ | `\nvdash` |  | $\nvDash$ | `\nvDash` |  |
-| $\nVdash$ | `\nVdash` |  | $\nVDash$ | `\nVDash` |  |
-| $\ntriangleleft$ | `\ntriangleleft` |  | $\ntriangleright$ | `\ntriangleright` |  |
-| $\ntrianglelefteq$ | `\ntrianglelefteq` |  | $\ntrianglerighteq$ | `\ntrianglerighteq` |  |
+| $\precneqq$ | `\precneqq` |  | $\succneqq$ | `\succneqq` |  |
+
+##### Sets
+
+| Name | Code | Symbol | Name | Code | Symbol |
+| --- | --- | :---: | --- | --- | :---: |
+| $\empty$ | `\empty` |  | $\emptyset$ | `\emptyset` |  |
+| $\varnothing$ | `\varnothing` |  | $\uplus$ | `\uplus` |  |
+| $\cap$ | `\cap` |  | $\cup$ | `\cup` |  |
+| $\in$ | `\in` | is member of | $\ni$, $\owns$ | `\ni`, `\owns` | has member, owns |
+| $\notin$ | `\notin` | is not member of | $\pitchfork$ | `\pitchfork` |  |
+| $\subset$ | `\subset` | is a proper subset of | $\supset$ | `\supset` | is a proper superset of |
+| $\subseteq$ | `\subseteq` | is a subset of | $\supseteq$ | `\supseteq` | is a superset of |
+| $\subseteqq$ | `\subseteqq` |  | $\supseteqq$ | `\supseteqq` |  |
+| $\not\subset	$ | `\not\subset	` | is not a proper subset of | $\not\supset$ | `\not\supset	` | is not a proper superset of |
 | $\nsubseteq$ | `\nsubseteq` |  | $\nsupseteq$ | `\nsupseteq` |  |
 | $\nsubseteqq$ | `\nsubseteqq` |  | $\nsupseteqq$ | `\nsupseteqq` |  |
 | $\subsetneq$ | `\subsetneq` |  | $\supsetneq$ | `\supsetneq` |  |
 | $\varsubsetneq$ | `\varsubsetneq` |  | $\varsupsetneq$ | `\varsupsetneq` |  |
 | $\subsetneqq$| `\subsetneqq` |  | $\supsetneqq$ | `\supsetneqq` |  |
 | $\varsubsetneqq$ | `\varsubsetneqq` |  | $\varsupsetneqq$ | `\varsupsetneqq` |  |
+| $\sqcap$ | `\sqcap` |  | $\sqcup$ | `\sqcup` |  |
+| $\sqsubset$ | `\sqsubset` |  | $\sqsupset$ | `\sqsupset` |  |
+| $\sqsubseteq$ | `\sqsubseteq` |  | $\sqsupseteq$ | `\sqsupseteq` |  |
+| $\doublecap$ | `\doublecap` |  | $\Cap $ | `\Cap ` |  |
+| $\doublecup$ | `\doublecup` |  | $\Cup$ | `\Cup` |  |
+| $\Subset$ | `\Subset` |  | $\Supset$ | `\Supset` |  |
 
 Most relations can be negated by prefixing them with $\backslash\texttt{not}$.
 
 | Symbol | Code | Name | Symbol | Code | Name | SymbolName | Code | Name |
 | --- | --- | :---: | --- | --- | :---: | --- | --- | :---: |
 |  | `\not\equiv` | $\not\equiv$ |  | `\notin` | $\notin$ |  | `\ne` | $\ne$ |
+
+| Symbol | Command | Name | Symbol | Command | Name | Symbol | Command | Name |
+| :---: | --- | --- | :---: | --- | --- | :---: | --- | --- |
+|  |  |  | $\angle$ | `\angle` |  | $\clubsuit$ | `\clubsuit` |  |
+|  |  |  | $\measuredangle$ | `\measuredangle` |  | $\diamondsuit$ | `\diamondsuit` |  |
+|  |  |  | $\sphericalangle$ | `\sphericalangle` |  | $\heartsuit$ | `\heartsuit` |  |
+|  |  |  | $\top$ | `\top` |  | $\spadesuit$ | `\spadesuit` |  |
+|  |  |  | $\bot$ | `\bot` |  | $\triangle$ | `\triangle` |  |
+|  |  |  | $\flat$ | `\flat` |  | $\vartriangle$ | `\vartriangle` |  |
+|  |  |  | $\natural$ | `\natural` |  | $\square$ | `\square` |  |
+| $\imath$ | `\imath` |  | $\sharp$ | `\sharp` |  | $\lozenge$ | `\lozenge` |  |
+| $\jmath$ | `\jmath` |  |  |  |  | $\blacktriangle$ | `\blacktriangle` |  |
+| $\Re$ | `\Re` | real part |  |  |  | $\blacktriangleleft$ | `\blacktriangleleft` |  |
+| $\Im$ | `\Im` | imaginary part |  |  |  | $\blacktriangleright$ | `\blacktriangleright` |  |
+| $\infty$ | `\infty` | infinity | $\\\|$ | `\|` |  | $\blacktriangledown$ | `\blacktriangledown` |  |
+| $\prime$ | `\prime` |  | $\surd$ | `\surd` |  | $\blacksquare$ | `\blacksquare` |  |
+| $\textvisiblespace$ | `\textvisiblespace` |  | $\nabla$ | `\nabla` | del, nabla | $\blacklozenge$ | `\blacklozenge` |  |
+| $\therefore$ | `\therefore` |  | $\because$ | `\because` |  |  |  |  |
+
+Degree: 
+
+^{\circ} $Ex: `22^{\circ}\mathrm{C}`: $22^{\circ}\mathrm{C}$.
+
+| Name | Code | Symbol | Name | Code | Symbol |
+| --- | --- | :---: | --- | --- | :---: |
+| $\asymp$ | `\asymp` | is asymptotic to | $\bowtie$ | `\bowtie` |  |
+| $\vdash$ | `\vdash` |  | $\dashv$ | `\dashv` |  |
+| $\vdash$ | `\vdash` |  | $\vDash$ | `\vDash` |  |
+| $\Vdash$ | `\Vdash` |  | $\VDash$ | `\VDash` |  |
+| $\nvdash$ | `\nvdash` |  | $\nvDash$ | `\nvDash` |  |
+| $\nVdash$ | `\nVdash` |  | $\nVDash$ | `\nVDash` |  |
+| $\smile$ | `\smile` |  | $\frown$ | `\frown` |  |
+| $\models$ | `\models` | models |  |  |  |
+| $\perp$ | `\perp` | is perpendicular with | $\mid$ | `\mid` | divides |
+| $\neq$, $\ne$ | `\neq`,  `\ne` | is not equal to |  |  |  |
+| $\ntriangleleft$ | `\ntriangleleft` |  | $\ntriangleright$ | `\ntriangleright` |  |
+| $\ntrianglelefteq$ | `\ntrianglelefteq` |  | $\ntrianglerighteq$ | `\ntrianglerighteq` |  |
 
 #### Arrows
 
