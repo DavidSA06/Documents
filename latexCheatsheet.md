@@ -406,17 +406,17 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- |
 | $\smallsetminus$ | `\setminus` |  |  |  |  |
-| $\setminus$ | `\setminus` |  | $/$ | `/` |  |
+| $\setminus$ | `\setminus` | set diference | $/$ | `/` |  |
 | $\backslash$ | `\backslash` |  | $\not$ | `\not` |  |
 | $\diagdown$ | `\diagdown` |  | $\diagup$ | `\diagup` |  |
 
 | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- |
-| $\mid$ | `\mid` |  | $\nmid$ | `\nmid` |  |
+| $\mid$ | `\mid` | divides | $\nmid$ | `\nmid` |  |
 | $\vert$ | `\vert` |  | $\Vert$ | `\Vert` |  |
 | $\lVert$ | `\lVert` |  | $\rVert$ | `\rVert` |  |
 | $\parallel$ | `\parallel` | is parallel with | $\nparallel$ | `\nparallel` | is not parallel with |
-| $\\|$ | `\|` |  |  |  |  |
+| $\\\|$ | `\|` |  |  |  |  |
 
 | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- |
@@ -425,19 +425,56 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 
 #### Binary Operations
 
-| Symbol | Command | Name | Symbol | Command | Name | Symbol | Command | Name |
-| :---: | --- | --- | :---: | --- | --- | :---: | --- | --- |
-| $\pm$ | `\pm`| plus-minus sign | $\cap$ | `\cap`| set intersection |  |  |  |
-| $\mp$ | `\mp`| minus-plus sign | $\cup$ | `\cup`| set union |  |  |  |
-|  |  | set diference | $\uplus$ | `\uplus`| multiset addition | $\oplus$ | `\oplus`|  |
-| $\cdot$ | `\cdot`|  |  |  |  | $\ominus$ | `\ominus`|  |
-| $\times$ | `\times`|  |  | |  | $\otimes$ | `\otimes`|  |
-| $\ast$ | `\ast`|  | $\triangleleft$ | `\triangleleft`|  | $\oslash$ | `\oslash`|  |
-| $\star$ | `\star`|  | $\triangleright$ | `\triangleright`|  | $\odot$ | `\odot`|  |
-| $\diamond$ | `\diamond`|  | $\wr$ | `\wr`|  | $\dagger$ | `\dagger`| dagger, obelisk, obelus |
-| $\circ$ | `\circ`|  | $\bigcirc$ | `\bigcirc`|  | $\ddagger$ | `\ddagger`| double dagger, diesis |
-| $\bullet$ | `\bullet`|  | $\bigtriangleup$ | `\bigtriangleup`|  | $\amalg$ | `\amalg`|  |
-| $\div$ | `\div`|  | $\bigtriangledown$ | `\bigtriangledown`|  |
+| Symbol | Command | Name | Symbol | Command | Name |
+| :---: | --- | --- | :---: | --- | --- |
+| $\surd$ | `\surd` |  | $\dotplus$ | `\dotplus` |  |
+| $\pm$ | `\pm` | plus-minus sign | $\mp$ | `\mp` | minus-plus sign |
+| $\prime$ | `\prime` |  | $\backprime$ | `\backprime` |  |
+| $\because$ | `\because` |  | $\therefore$ | `\therefore` |  |
+| $\ast$ | `\ast` |  | $\times$ | `\times` |  |
+| $\ltimes$ | `\ltimes` | semidirect product of normal factor to the left | $\rtimes$ | `\rtimes` | semidirect product of normal factor to the right |
+| $\leftthreetimes$ | `\leftthreetimes` | semidirect product to the left | $\rightthreetimes$ | `\rightthreetimes` | semidirect product to the right |
+| $\star$ | `\star` |  | $\bigstar$ | `\bigstar` |  |
+| $\circ$ | `\circ` |  | $\bullet$ | `\bullet` |  |
+| $\cdot$ | `\cdot` |  | $\centerdot$ | `\centerdot` |  |
+| $\div$ | `\div` |  | $\divideontimes$ | `\divideontimes` |  |
+| $\oplus$ | `\oplus` |  | $\ominus$ | `\ominus` |  |
+| $\circledast$ | `\circledast` |  | $\circledcirc$ | `\circledcirc` |  |
+| $\odot$ | `\odot` |  | $\otimes$ | `\otimes` |  |
+| $\circleddash$ | `\circleddash` |  | $\oslash$ | `\oslash` |  |
+| $\bigcirc$ | `\bigcirc` |  | $\Box$ | `\Box` |  |
+| $\boxplus$ | `\boxplus` |  | $\boxminus$ | `\boxminus` |  |
+| $\boxdot$ | `\boxdot` |  | $\boxtimes$ | `\boxtimes` |  |
+| $\frown$ | `\frown` | cap product | $\smile$ | `\smile` | cup product |
+| $\smallfrown$ | `\smallfrown` | cap product | $\smallsmile$ | `\smallsmile` | cup product |
+| $\amalg$ | `\amalg` | disjoint union | $\Join$ | `\Join` |  |
+
+##### Geometry
+
+| Symbol | Command | Name | Symbol | Command | Name |
+| :---: | --- | --- | :---: | --- | --- |
+| $\vartriangleleft$ | `\vartriangleleft` |  | $\blacktriangleleft$ | `\blacktriangleleft` |  |
+| $\vartriangleright$ | `\vartriangleright` |  | $\blacktriangleright$ | `\blacktriangleright` |  |
+| $\vartriangle$ | `\vartriangle` |  | $\blacktriangle$ | `\blacktriangle` |  |
+| $\triangledown$ | `\triangledown` |  | $\blacktriangledown $ | `\blacktriangledown ` |  |
+| $\square$ | `\square` |  | $\blacksquare$ | `\blacksquare` |  |
+| $\lozenge$ | `\lozenge` |  | $\blacklozenge$ | `\blacklozenge` |  |
+| $\triangle$ | `\triangle` |  | $\bowtie$ | `\bowtie` |  |
+| $\bigtriangleup$ | `\bigtriangleup` |  | $\bigtriangledown$ | `\bigtriangledown` |  |
+| $\Diamond$ | `\Diamond` |  | $\diamond$ | `\diamond` |  |
+| $\triangleleft $ | `\triangleleft ` |  | $\triangleright$ | `\triangleright` |  |
+| $\ntriangleleft$ | `\ntriangleleft` |  | $\ntriangleright$ | `\ntriangleright` |  |
+| $\ntrianglelefteq$ | `\ntrianglelefteq` |  | $\ntrianglerighteq$ | `\ntrianglerighteq` |  |
+| $\angle$ | `\angle` |  |  |  |  |
+| $\measuredangle$ | `\measuredangle` |  | $\sphericalangle$ | `\sphericalangle` |  |
+| $\top$ | `\top` |  | $\bot$ | `\bot` |  |
+| $\vdash$ | `\vdash` |  | $\dashv$ | `\dashv` |  |
+| $\vdash$ | `\vdash` |  | $\vDash$ | `\vDash` |  |
+| $\Vdash$ | `\Vdash` |  | $\Vvdash$ | `\Vvdash` |  |
+| $\nvdash$ | `\nvdash` |  | $\nvDash$ | `\nvDash` |  |
+| $\nVdash$ | `\nVdash` |  | $\nVDash$ | `\nVDash` |  |
+| $\perp$ | `\perp` | is perpendicular with | $\not\perp$ | `\not\perp` | is not perpendicular with |
+| $\parallel$ | `\parallel` | is parallel with | $\nparallel$ | `\nparallel` | is not parallel with |
 
 ##### Logic
 
@@ -471,6 +508,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\risingdotseq$ | `\risingdotseq` |  |
 | $\fallingdotseq$ | `\fallingdotseq` |  |
 | $\equiv$ | `\equiv` | is equivalent to |
+| $\neq$, $\ne$ | `\neq`,  `\ne` | is not equal to |
 
 ##### Proportion
 
@@ -495,7 +533,6 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\backsimeq$ | `\backsimeq` |  |
 | $\nsim$ | `\nsim	` | is not similar to	|
 | $\ncong$ | `\ncong` | is not congruent to |
-
 
 ##### Comparison
 
@@ -546,8 +583,8 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | Name | Code | Symbol | Name | Code | Symbol |
 | --- | --- | :---: | --- | --- | :---: |
 | $\empty$ | `\empty` |  | $\emptyset$ | `\emptyset` |  |
-| $\varnothing$ | `\varnothing` |  | $\uplus$ | `\uplus` |  |
-| $\cap$ | `\cap` |  | $\cup$ | `\cup` |  |
+| $\varnothing$ | `\varnothing` |  | $\uplus$ | `\uplus` | multiset addition |
+| $\cap$ | `\cap` | set intersection | $\cup$ | `\cup` | set union |
 | $\in$ | `\in` | is member of | $\ni$, $\owns$ | `\ni`, `\owns` | has member, owns |
 | $\notin$ | `\notin` | is not member of | $\pitchfork$ | `\pitchfork` |  |
 | $\subset$ | `\subset` | is a proper subset of | $\supset$ | `\supset` | is a proper superset of |
@@ -573,42 +610,27 @@ Most relations can be negated by prefixing them with $\backslash\texttt{not}$.
 | --- | --- | :---: | --- | --- | :---: | --- | --- | :---: |
 |  | `\not\equiv` | $\not\equiv$ |  | `\notin` | $\notin$ |  | `\ne` | $\ne$ |
 
-| Symbol | Command | Name | Symbol | Command | Name | Symbol | Command | Name |
-| :---: | --- | --- | :---: | --- | --- | :---: | --- | --- |
-|  |  |  | $\angle$ | `\angle` |  | $\clubsuit$ | `\clubsuit` |  |
-|  |  |  | $\measuredangle$ | `\measuredangle` |  | $\diamondsuit$ | `\diamondsuit` |  |
-|  |  |  | $\sphericalangle$ | `\sphericalangle` |  | $\heartsuit$ | `\heartsuit` |  |
-|  |  |  | $\top$ | `\top` |  | $\spadesuit$ | `\spadesuit` |  |
-|  |  |  | $\bot$ | `\bot` |  | $\triangle$ | `\triangle` |  |
-|  |  |  | $\flat$ | `\flat` |  | $\vartriangle$ | `\vartriangle` |  |
-|  |  |  | $\natural$ | `\natural` |  | $\square$ | `\square` |  |
-| $\imath$ | `\imath` |  | $\sharp$ | `\sharp` |  | $\lozenge$ | `\lozenge` |  |
-| $\jmath$ | `\jmath` |  |  |  |  | $\blacktriangle$ | `\blacktriangle` |  |
-| $\Re$ | `\Re` | real part |  |  |  | $\blacktriangleleft$ | `\blacktriangleleft` |  |
-| $\Im$ | `\Im` | imaginary part |  |  |  | $\blacktriangleright$ | `\blacktriangleright` |  |
-| $\infty$ | `\infty` | infinity | $\\\|$ | `\|` |  | $\blacktriangledown$ | `\blacktriangledown` |  |
-| $\prime$ | `\prime` |  | $\surd$ | `\surd` |  | $\blacksquare$ | `\blacksquare` |  |
-| $\textvisiblespace$ | `\textvisiblespace` |  | $\nabla$ | `\nabla` | del, nabla | $\blacklozenge$ | `\blacklozenge` |  |
-| $\therefore$ | `\therefore` |  | $\because$ | `\because` |  |  |  |  |
+| Symbol | Command | Name | Symbol | Command | Name |
+| :---: | --- | --- | :---: | --- | --- |
+| $\asymp$ | `\asymp` | is asymptotic to | $\intercal$ | `\intercal` |  |
+| $\models$ | `\models` | models | $\between$ | `\between` |  |
+| $\lhd$ | `\lhd` |  | $\clubsuit$ | `\clubsuit` |  |
+| $\rhd$ | `\rhd` |  | $\diamondsuit$ | `\diamondsuit` |  |
+| $\unlhd$ | `\unlhd` |  | $\heartsuit$ | `\heartsuit` |  |
+| $\unrhd$ | `\unrhd` |  | $\spadesuit$ | `\spadesuit` |  |
+|  |  |  | $\flat$ | `\flat` |  |
+|  |  |  | $\natural$ | `\natural` |  |
+| $\imath$ | `\imath` |  | $\sharp$ | `\sharp` |  |
+| $\jmath$ | `\jmath` |  |  |  |  |
+| $\Re$ | `\Re` | real part | $\barwedge$ | `\barwedge` |  |
+| $\Im$ | `\Im` | imaginary part | $\doublebarwedge$ | `\doublebarwedge` |  |
+| $\infty$ | `\infty` | infinity | $\veebar$ | `\veebar` |  |
+| $\textvisiblespace$ | `\textvisiblespace` |  | $\nabla$ | `\nabla` | del, nabla |
+| $\checkmark$ | `\checkmark` |  | $\wr$ | `\wr`|  |
 
 Degree: 
 
 ^{\circ} $Ex: `22^{\circ}\mathrm{C}`: $22^{\circ}\mathrm{C}$.
-
-| Name | Code | Symbol | Name | Code | Symbol |
-| --- | --- | :---: | --- | --- | :---: |
-| $\asymp$ | `\asymp` | is asymptotic to | $\bowtie$ | `\bowtie` |  |
-| $\vdash$ | `\vdash` |  | $\dashv$ | `\dashv` |  |
-| $\vdash$ | `\vdash` |  | $\vDash$ | `\vDash` |  |
-| $\Vdash$ | `\Vdash` |  | $\VDash$ | `\VDash` |  |
-| $\nvdash$ | `\nvdash` |  | $\nvDash$ | `\nvDash` |  |
-| $\nVdash$ | `\nVdash` |  | $\nVDash$ | `\nVDash` |  |
-| $\smile$ | `\smile` |  | $\frown$ | `\frown` |  |
-| $\models$ | `\models` | models |  |  |  |
-| $\perp$ | `\perp` | is perpendicular with | $\mid$ | `\mid` | divides |
-| $\neq$, $\ne$ | `\neq`,  `\ne` | is not equal to |  |  |  |
-| $\ntriangleleft$ | `\ntriangleleft` |  | $\ntriangleright$ | `\ntriangleright` |  |
-| $\ntrianglelefteq$ | `\ntrianglelefteq` |  | $\ntrianglerighteq$ | `\ntrianglerighteq` |  |
 
 #### Arrows
 
@@ -682,22 +704,23 @@ You can also say $\backslash\mathtt{bigm}$ for a large delimenter in the middle 
 
 | Name | Text mode | Math mode | Symbol |
 | --- | --- | --- | :---: |
-| hat | `\^` | `\hat` | $\hat{a}$ |
-| expanding hat |  | `\widehat` | $\widehat{abc}$ |
-| check | `\v` | `\check` | $\check{a}$ |
-| tilde | `\~` | `\tilde` | $\tilde{a}$ |
-| expanding tilde |  | `\widetilde` | $\widetilde{abc}$ |
 | acute | `\'` | `\acute` | $\acute{a}$ |
-| grave | `\’` | `\grave` | $\grave{a}$ |
+| bar | `\=` | `\bar` | $\bar{a}$ |
+| breve | `\u` | `\breve` | $\breve{a}$ |
+| check | `\v` | `\check` | $\check{a}$ |
 | dot | `\.` | `\dot` | $\dot{a}$ |
 | double dot | `\"` | `\ddot` | $\ddot{a}$ |
-| breve | `\u` | `\breve` | $\breve{a}$ |
-| bar | `\=` | `\bar` | $\bar{a}$ |
+| grave | `\’` | `\grave` | $\grave{a}$ |
+| hat | `\^` | `\hat` | $\hat{a}$ |
+| ring |  | `\mathring{x}` | $\mathring{x}$ |
+| tilde | `\~` | `\tilde` | $\tilde{a}$ |
 | vector |  | `\vec` | $\vec{a}$ |
 |  |  | `\overset{*}{X}` | $\overset{\*}{X}$ |
 |  |  | `\underset{*}{X}` | $\underset{\*}{X}$ |
 |  |  | `\sideset{}{'}\sum` | $\sideset{}{'}\sum$ |
 |  |  | `\sideset{_1^2}{_3^4}\sum` | $\sideset{\_1^2}{\_3^4}\sum$ |
+| expanding hat |  | `\widehat` | $\widehat{abc}$ |
+| expanding tilde |  | `\widetilde` | $\widetilde{abc}$ |
 | overline |  | `\overline{abc}` | $\overline{abc}$ |
 | underline |  | `\underline{abc}` | $\underline{abc}$ |
 | overbrace |  | `\overbrace{abc}` | $\overbrace{abc}$ |
@@ -705,6 +728,9 @@ You can also say $\backslash\mathtt{bigm}$ for a large delimenter in the middle 
 |  |  | `\overleftarrow{abc}` | $\overleftarrow{abc}$ |
 |  |  | `\overrightarrow{abc}` | $\overrightarrow{abc}$ |
 |  |  | `\overleftrightarrow{abc}` | $\overleftrightarrow{abc}$ |
+|  |  | `\underleftarrow{abc}` | $\underleftarrow{abc}$ |
+|  |  | `\underrightarrow{abc}` | $\underrightarrow{abc}$ |
+|  |  | `\underleftrightarrow{abc}` | $\underleftrightarrow{abc}$ |
 |  |  | `\xleftarrow[under]{over}` | $\xleftarrow[under]{over}$ |
 |  |  | `\xrightarrow[under]{over}` | $\xrightarrow[under]{over}$ |
 
