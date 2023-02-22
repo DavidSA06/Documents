@@ -7,10 +7,8 @@
 | [Common documentclass options](#common-documentclass-options) | [Text environments](#text-environments) | [Font face](#font-face) | [Symbols](#symbols) | [tabbing environment](#tabbing-environment) | [Sensible size examples](#sensible-size-examples) | [Citation types](#citation-types) |
 | [Packages](#packages) | [Lists](#lists) | [Font size](#font-size) | [Accents](#accents) | [tabular environment](#tabular-environment) | [Letters](#letters) | [BibTex entry types](#bibtex-entry-types) |
 | [Title](#title) | [References](#references) | [Verbatim text](#verbatim-text) | [Dashes](#dashes) | [tabular column specification](#tabular-column-specification) | [Other symbols](#other-symbols) | [Bibtex fields](#bibtex-fields) |
-| [Miscellaneous documents classes](#miscellaneous-documents-classes) | [Floating bodies](#floating-bodies) | [Justification](#justification) |  | [tabular elements](#tabular-elements) | [Large Operators](#large-operators) | [Common BibTeX style files](#common-bibtex-style-files) |
+| [Miscellaneous documents classes](#miscellaneous-documents-classes) | [Floating bodies](#floating-bodies) | [Justification](#justification) |  | [tabular elements](#tabular-elements) | [Arrows](#arrows) | [Common BibTeX style files](#common-bibtex-style-files) |
 |  |  | [Miscellaneous text properties](#miscellaneous-text-properties) |  |  | [Binary Operations](#binary-operations) | [BibTex example](#bibtex-example) |
-|  |  |  |  |  | [Relations](#relations) |  |
-|  |  |  |  |  | [Arrows](#arrows) |  |
 |  |  |  |  |  | [Delimiters](#delimiters) |  |
 |  |  |  |  |  | [Accents](#accents) |  |
 |  |  |  |  |  | [Elementary Math Control Sequences](#elementary-math-control-sequences) |  |
@@ -190,10 +188,8 @@ $\backslash\texttt{linespread}\lbrace x\rbrace$ changes the line spacing by the 
 | Symbol | Command | Name |
 | :---: | --- | --- |
 | $\\&$ | `\&` | ampersand |
-| $\backslash$ | `\backslash` | backslash |
-| $\bullet$ | `\bullet` | bullet symbol |
+| $\checkmark$ | `\checkmark` | check mark |
 | $\textasciicircum{}$ | `\^{}`, `\textasciicircum{}` | circumflex |
-| $\copyright$ | `\copyright` | copyright symbol/sign |
 | $\dag$ | `\dag` | dagger, obelisk, obelus |
 | $\\$ $ | `\$` | dollar sign |
 | $\ddag$ | `\ddag` | double dagger, diesis |
@@ -206,6 +202,15 @@ $\backslash\texttt{linespread}\lbrace x\rbrace$ changes the line spacing by the 
 | $\textasciitilde{}$ | `\~{}`, `\textasciitilde{}` | tilde |
 | $\\_ $ | `\_` | underscore |
 | $\\|$ | `\|`, `\mid`, `\textpipe`, `\textbar` | vertical bar (pipe) |
+| $\textvisiblespace$ | `\textvisiblespace` |  |
+| $\wr$ | `\wr`|  |
+| $\clubsuit$ | `\clubsuit` |  |
+| $\diamondsuit$ | `\diamondsuit` |  |
+| $\heartsuit$ | `\heartsuit` |  |
+| $\spadesuit$ | `\spadesuit` |  |
+| $\flat$ | `\flat` |  |
+| $\natural$ | `\natural` |  |
+| $\sharp$ | `\sharp` |  |
 
 #### Accents
 
@@ -224,6 +229,8 @@ $\backslash\texttt{linespread}\lbrace x\rbrace$ changes the line spacing by the 
 | $\textnormal{\\c{c}}$ | `\c{c}` |  |
 | $\textnormal{\\d{o}}$ | `\d{o}` |  |
 | $\textnormal{\\b{o}}$ | `\b{o}` |  |
+| $\textnormal{\\u{o}}$ | `\u{o}` |  |
+| $\textnormal{\\r{o}}$ | `\r{o}` |  |
 | $\textnormal{\\t{oo}}$ | `\t{oo}` |  |
 | $\textnormal{\\oe}$ | `\oe` |  |
 | $\textnormal{\\OE}$ | `\OE` |  |
@@ -327,36 +334,36 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | superscript | `s^{x}` | $s^{x} $ | $$s^{x} $$ |
 
 
-#### letters
+#### Letters
 
 ##### Greek alphabet
 
-| name | code | upppercase | lowercase | variant |
-| --- | --- | :---: | :---: | :---: |
-| alpha | `\alpha` |  | $\alpha$ |  |
-| beta | `\beta` |  | $\beta$ |
-| gamma | `\Gamma`, `\gamma` | $\Gamma$ | $\gamma$ |  |
-| delta | `\Delta`, `\delta` | $\Delta$ | $\delta$ |  |
-| epsilon | `\epsilon`, `\varepsilon` |  | $\epsilon$ | $\varepsilon$ |
-| zeta | `\zeta` |  | $\zeta$ |  |
-| eta | `\eta` |  | $\eta$ |  |
-| theta | `\Theta`, `\theta`, `\vartheta` | $\Theta$ | $\theta$ | $\vartheta$ |
-| iota | `\iota` |  | $\iota$ |  |
-| kappa | `\kappa`, `\varkappa` |  | $\kappa$ | $\varkappa$ |
-| lambda | `\Lambda`, `\lambda` | $\Lambda$ | $\lambda$ |  |
-| mu | `\mu` |  | $\mu$ |  |
-| nu | `\nu` |  | $\nu$ |  |
-| xi | `\Xi`, `\xi` | $\Xi$ | $\xi$ |  |
-| omicron | `\omicron` |  | $\omicron$ |  |
-| pi | `\Pi`, `\pi`, `\varpi` | $\Pi$ | $\pi$ | $\varpi$ |
-| rho | `\rho`, `varrho` |  | $\rho$ | $\varrho$ |
-| sigma | `\Sigma`, `\sigma`, `\varsigma` | $\Sigma$ | $\sigma$ | $\varsigma$ |
-| tau | `\tau` |  | $\tau$ |  |
-| upsilon | `\Upsilon`, `\upsilon` | $\Upsilon$ | $\upsilon$ |  |
-| phi | `\Phi`, `\phi`, `\varphi` | $\Phi$ | $\phi$ | $\varphi$ |
-| chi | `\chi` |  | $\chi$ |  |
-| psi | `\Psi`, `\psi` | $\Psi$ | $\psi$ |  |
-| omega | `\Omega`, `\omega` | $\Omega$ | $\omega$ |  |
+| name | code | upppercase | variant |lowercase | variant |
+| --- | --- | :---: | :---: | :---: | :---: |
+| alpha | `\alpha` |  |  | $\alpha$ |  |
+| beta | `\beta` |  |  | $\beta$ |  |
+| gamma | `\Gamma`, `\varGamma`, `\gamma` | $\Gamma$ | $\varGamma$ | $\gamma$ |  |
+| delta | `\Delta`, `\varDelta`, `\delta` | $\Delta$ | $\varDelta$ | $\delta$ |  |
+| epsilon | `\epsilon`, `\varepsilon` |  |  | $\epsilon$ | $\varepsilon$ |
+| zeta | `\zeta` |  |  | $\zeta$ |  |
+| eta | `\eta` |  |  | $\eta$ |  |
+| theta | `\Theta`, `\varTheta`, `\theta`, `\vartheta` | $\Theta$ | $\varTheta$ | $\theta$ | $\vartheta$ |
+| iota | `\iota` |  |  | $\iota$ |  |
+| kappa | `\kappa`, `\varkappa` |  |  | $\kappa$ | $\varkappa$ |
+| lambda | `\Lambda`, `\varLambda`, `\lambda` | $\Lambda$ | $\varLambda$ | $\lambda$ |  |
+| mu | `\mu` |  |  | $\mu$ |  |
+| nu | `\nu` |  |  | $\nu$ |  |
+| xi | `\Xi`, `\varXi`, `\xi` | $\Xi$ | $\varXi$ | $\xi$ |  |
+| omicron | `\omicron` |  |  | $\omicron$ |  |
+| pi | `\Pi`, `\pi`, `varPi`, `\varpi` | $\Pi$ | $\varPi$ | $\pi$ | $\varpi$ |
+| rho | `\rho`, `varrho` |  |  | $\rho$ | $\varrho$ |
+| sigma | `\Sigma`, `$\varSigma$`, `\sigma`, `\varsigma` | $\Sigma$ | $\varSigma$ | $\sigma$ | $\varsigma$ |
+| tau | `\tau` |  |  | $\tau$ |  |
+| upsilon | `\Upsilon`, `\varUpsilon`, `\upsilon` | $\Upsilon$ | $\varUpsilon$ | $\upsilon$ |  |
+| phi | `\Phi`, `\varPhi`, `\phi`, `\varphi` | $\Phi$ | $\varPhi$ | $\phi$ | $\varphi$ |
+| chi | `\chi` |  |  | $\chi$ |  |
+| psi | `\Psi`, `\varPsi`, `\psi` | $\Psi$ | $\varPsi$ | $\psi$ |  |
+| omega | `\Omega`, `\varOmega`, `\omega` | $\Omega$ | $\varOmega$ | $\omega$ |  |
 
 ##### Archaic Greek
 
@@ -377,29 +384,40 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 
 | Name | Command | Symbol |
 | --- | --- | :---: |
-|  | `\complement` | $\complement$ |
-|  | `\ell` | $\ell$ |
 |  | `\backepsilon` | $\backepsilon$ |
+|  | `\Bbbk` | $\Bbbk$ |
+|  | `\circledR` | $\circledR$ |
+|  | `\circledS` | $\circledS$ |
+|  | `\complement` | $\complement$ |
+| copyright symbol/sign | `\copyright` | $\copyright$ |
+|  | `\ell` | $\ell$ |
 |  | `\eth` | $\eth$ |
 |  | `\Game` | $\Game$ |
 | h-bar, reduced Plancks's constant | `\hbar` | $\hbar$ |
 |  | `\hslash` | $\hslash$ |
-|  | `\Bbbk` | $\Bbbk$ |
+| imaginary part | `\Im` | $\Im$ |
+|  | `\imath` | $\imath$ |
+| infinity | `\infty` | $\infty$ |
+|  | `\intercal` | $\intercal$ |
+|  | `\jmath` | $\jmath$ |
 |  | `\mho` | $\mho$ |
+| del, nabla | `\nabla` | $\nabla$ |
 | partial derivative | `\partial` | $\partial$ |
-|  | `\circledS` | $\circledS$ |
+| real part | `\Re` | $\Re$ |
 | [Weierstrass] powerset | `\wp` | $\wp$ |
 
-#### Symbols
+**Degree:** ^{\circ} $Ex: `22^{\circ}\mathrm{C}`: $22^{\circ}\mathrm{C}$.
+
+#### Other symbols
 
 ##### Agrupations
 
 | Symbol | Command | Name | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- | :---: | --- | --- |
 | $$\bigcap_{i=a}^{b}$$ | `\bigcap_{i=a}^{b}` | set intersection | $$\bigcup_{i=a}^{b}$$ | `\bigcup_{i=a}^{b}` | set union | $$\biguplus_{i=a}^{b}$$ | `\biguplus_{i=a}^{b}` | multiset addition |
-| $$\bigwedge_{i=a}^{b}$$ | `\bigwedge_{i=a}^{b}` |  | $$\bigvee_{i=a}^{b}$$ | `\bigvee_{i=a}^{b}` |  | $\bigsqcup_{i=a}^{b}$ | `\bigsqcup_{i=a}^{b}` |
-| $$\prod_{i=a}^{b}$$ | `\prod_{i=a}^{b}` | product | $$\coprod_{i=a}^{b} $$ | `\coprod_{i=a}^{b} ` | coproduct | $$\sum_{i=a}^{b}$$ | `\sum_{i=a}^{b}` | summation |
-| $\bigodot_{i=a}^{b}$ | `\bigodot_{i=a}^{b}` |  | $\bigoplus_{i=a}^{b}$ | `\bigoplus_{i=a}^{b}` |  | $\bigotimes_{i=a}^{b}$ | `\bigotimes_{i=a}^{b}` |  |
+| $$\bigwedge_{i=a}^{b}$$ | `\bigwedge_{i=a}^{b}` |  | $$\bigvee_{i=a}^{b}$$ | `\bigvee_{i=a}^{b}` |  | $$\bigsqcup_{i=a}^{b}$$ | `\bigsqcup_{i=a}^{b}` |
+| $$\prod_{i=a}^{b}$$ | `\prod_{i=a}^{b}` | product | $$\coprod_{i=a}^{b}$$ | `\coprod_{i=a}^{b} ` | coproduct | $$\sum_{i=a}^{b}$$ | `\sum_{i=a}^{b}` | summation |
+| $$\bigodot_{i=a}^{b}$$ | `\bigodot_{i=a}^{b}` |  | $$\bigoplus_{i=a}^{b}$$ | `\bigoplus_{i=a}^{b}` |  | $$\bigotimes_{i=a}^{b}$$ | `\bigotimes_{i=a}^{b}` |  |
 
 ##### Bars
 
@@ -423,7 +441,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\shortmid$ | `\shortmid` |  | $\nshortmid$ | `\nshortmid` |  |
 | $\shortparallel$ | `\shortparallel` |  | $\nshortparallel$ | `\nshortparallel` |  |
 
-#### Binary Operations
+###### Binary Operations
 
 | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- |
@@ -448,6 +466,8 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\frown$ | `\frown` | cap product | $\smile$ | `\smile` | cup product |
 | $\smallfrown$ | `\smallfrown` | cap product | $\smallsmile$ | `\smallsmile` | cup product |
 | $\amalg$ | `\amalg` | disjoint union | $\Join$ | `\Join` |  |
+| $\lhd$ | `\lhd` |  | $\rhd$ | `\rhd` |  |
+| $\unlhd$ | `\unlhd` |  | $\unrhd$ | `\unrhd` |  |
 
 ##### Geometry
 
@@ -475,6 +495,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\nVdash$ | `\nVdash` |  | $\nVDash$ | `\nVDash` |  |
 | $\perp$ | `\perp` | is perpendicular with | $\not\perp$ | `\not\perp` | is not perpendicular with |
 | $\parallel$ | `\parallel` | is parallel with | $\nparallel$ | `\nparallel` | is not parallel with |
+| $\asymp$ | `\asymp` | is asymptotic to | $\models$ | `\models` | models |
 
 ##### Logic
 
@@ -489,6 +510,9 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\wedge$ | `\wedge` |  |
 | $\lor$ | `\lor` |  |
 | $\vee$ | `\vee` |  |
+| $\barwedge$ | `\barwedge` | NAND |
+| $\doublebarwedge$ | `\doublebarwedge` | conjunction with double bar |
+| $\veebar$ | `\veebar` | logical disjunction |
 | $\neg$, $\lnot$ | `\neg`, `\lnot` | logical not |
 
 ##### Relations
@@ -603,34 +627,13 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\doublecap$ | `\doublecap` |  | $\Cap $ | `\Cap ` |  |
 | $\doublecup$ | `\doublecup` |  | $\Cup$ | `\Cup` |  |
 | $\Subset$ | `\Subset` |  | $\Supset$ | `\Supset` |  |
+| $\between$ | `\between` |  |  |  |  |
 
 Most relations can be negated by prefixing them with $\backslash\texttt{not}$.
 
 | Symbol | Code | Name | Symbol | Code | Name | SymbolName | Code | Name |
 | --- | --- | :---: | --- | --- | :---: | --- | --- | :---: |
 |  | `\not\equiv` | $\not\equiv$ |  | `\notin` | $\notin$ |  | `\ne` | $\ne$ |
-
-| Symbol | Command | Name | Symbol | Command | Name |
-| :---: | --- | --- | :---: | --- | --- |
-| $\asymp$ | `\asymp` | is asymptotic to | $\intercal$ | `\intercal` |  |
-| $\models$ | `\models` | models | $\between$ | `\between` |  |
-| $\lhd$ | `\lhd` |  | $\clubsuit$ | `\clubsuit` |  |
-| $\rhd$ | `\rhd` |  | $\diamondsuit$ | `\diamondsuit` |  |
-| $\unlhd$ | `\unlhd` |  | $\heartsuit$ | `\heartsuit` |  |
-| $\unrhd$ | `\unrhd` |  | $\spadesuit$ | `\spadesuit` |  |
-|  |  |  | $\flat$ | `\flat` |  |
-|  |  |  | $\natural$ | `\natural` |  |
-| $\imath$ | `\imath` |  | $\sharp$ | `\sharp` |  |
-| $\jmath$ | `\jmath` |  |  |  |  |
-| $\Re$ | `\Re` | real part | $\barwedge$ | `\barwedge` |  |
-| $\Im$ | `\Im` | imaginary part | $\doublebarwedge$ | `\doublebarwedge` |  |
-| $\infty$ | `\infty` | infinity | $\veebar$ | `\veebar` |  |
-| $\textvisiblespace$ | `\textvisiblespace` |  | $\nabla$ | `\nabla` | del, nabla |
-| $\checkmark$ | `\checkmark` |  | $\wr$ | `\wr`|  |
-
-Degree: 
-
-^{\circ} $Ex: `22^{\circ}\mathrm{C}`: $22^{\circ}\mathrm{C}$.
 
 #### Arrows
 
@@ -817,6 +820,12 @@ Math mode:
 
 | Example | Command |
 | :---: | --- |
+| $\centerdot$ | `\centerdot` |
+| $\dotsb$ | `\dotsb` |
+| $\dotsc$ | `\dotsc` |
+| $\dotsi$ | `\dotsi` |
+| $\dotsm$ | `\dotsm` |
+| $\dotso$ | `\dotso` |
 | $\ldots$ | `\ldots` |
 | $\cdots$ | `\cdots` |
 | $\vdots$ | `\vdots` |
