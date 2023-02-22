@@ -379,6 +379,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | --- | --- | :---: |
 |  | `\complement` | $\complement$ |
 |  | `\ell` | $\ell$ |
+|  | `\backepsilon` | $\backepsilon$ |
 |  | `\eth` | $\eth$ |
 |  | `\Finv` | $\Finv$ |
 |  | `\Game` | $\Game$ |
@@ -398,16 +399,17 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\exists$ | `\exists` | there exists at least one | $\measuredangle$ | `\measuredangle` |  | $\diamondsuit$ | `\diamondsuit` |  |
 | $\exists!$ | `\exists!` | there exists one and only one | $\sphericalangle$ | `\sphericalangle` |  | $\heartsuit$ | `\heartsuit` |  |
 | $\nexists$ | `\nexists` | there is no | $\top$ | `\top` |  | $\spadesuit$ | `\spadesuit` |  |
-| $\neg$, $\lnot$ | `\neg`, `\lnot` | logical not | $\bot$ | `\bot` |  | $\flat$ | `\flat` |  |
-| $\emptyset$ | `\emptyset` |  | $\triangle$ | `\triangle` |  | $\natural$ | `\natural` |  |
-| $\varnothing$ | `\varnothing` |  | $\vartriangle$ | `\vartriangle` |  | $\sharp$ | `\sharp` |  |
-| $\imath$ | `\imath` |  | $\square$ | `\square` |  | $\diagup$ | `\diagup` |  |
-| $\jmath$ | `\jmath` |  | $\lozenge$ | `\lozenge$` |  | $\diagdown$ | `\diagdown` |  |
-| $\Re$ | `\Re` | real part | $\blacktriangle$ | `\blacktriangle` |  | $\backslash$ | `\backslash` |  |
-| $\Im$ | `\Im` | imaginary part | $\blacktriangledown$ | `\blacktriangledown` |  | $\\\|$ | `\|` |  |
-| $\infty$ | `\infty` | infinity | $\blacksquare$ | `\blacksquare` |  | $\surd$ | `\surd` |  |
-| $\prime$ | `\prime` |  | $\blacklozenge$ | `\blacklozenge` |  | $\nabla$ | `\nabla` | del, nabla |
-| $\textvisiblespace$ | `\textvisiblespace` |  |  |  |  |  |  |  |
+| $\neg$, $\lnot$ | `\neg`, `\lnot` | logical not | $\bot$ | `\bot` |  | $\triangle$ | `\triangle` |  |
+| $\emptyset$ | `\emptyset` |  | $\flat$ | `\flat` |  | $\vartriangle$ | `\vartriangle` |  |
+| $\varnothing$ | `\varnothing` |  | $\natural$ | `\natural` |  | $\square$ | `\square` |  |
+| $\imath$ | `\imath` |  | $\sharp$ | `\sharp` |  | $\lozenge$ | `\lozenge` |  |
+| $\jmath$ | `\jmath` |  | $\diagup$ | `\diagup` |  | $\blacktriangle$ | `\blacktriangle` |  |
+| $\Re$ | `\Re` | real part | $\diagdown$ | `\diagdown` |  | $\blacktriangleleft$ | `\blacktriangleleft` |  |
+| $\Im$ | `\Im` | imaginary part | $\backslash$ | `\backslash` |  | $\blacktriangleright$ | `\blacktriangleright` |  |
+| $\infty$ | `\infty` | infinity | $\\\|$ | `\|` |  | $\blacktriangledown$ | `\blacktriangledown` |  |
+| $\prime$ | `\prime` |  | $\surd$ | `\surd` |  | $\blacksquare$ | `\blacksquare` |  |
+| $\textvisiblespace$ | `\textvisiblespace` |  | $\nabla$ | `\nabla` | del, nabla | $\blacklozenge$ | `\blacklozenge` |  |
+| $\therefore$ | `\therefore` |  | $\because$ | `\because` |  |  |  |  |
 
 #### Special symbols
 
@@ -462,17 +464,26 @@ Degree:
 | $\subseteq$ | `\subseteq` | is a subset of$ | $\supseteq$ | `\supseteq` | is a superset of |
 | $\sqsubset$ | `\sqsubset` |  | $\sqsupset$ | `\sqsupset` |  |
 | $\sqsubseteq$ | `\sqsubseteq` |  | $\sqsupseteq$ | `\sqsupseteq` |  |
+| $\vdash$ | `\vdash` |  | $\vDash$ | `\vDash` |  |
+| $\Vdash$ | `\Vdash` |  | $\VDash$ | `\VDash` |  |
 
 | Symbol | Code | Name |
 | :---: | --- | --- |
 | $=$ | `=` | is equal to |
 | $\doteq$ | `\doteq` |  |
+| $\doteqdot$ | `\doteqdot` |  |
+| $\risingdotseq$ | `\risingdotseq` |  |
+| $\fallingdotseq$ | `\fallingdotseq` |  |
 | $\equiv$ | `\equiv` | is equivalent to |
 | $\approx$ | `\approx` | is approximately |
+| $\approxeq$ | `\approxeq` |  |
 | $\cong$ | `\cong` | is congruent to |
 | $\simeq$ | `\simeq` | is similar or equal to |
 | $\sim$ | `\sim` | is similar to |
+| $\backsim$ | `\backsim` |  |
+| $\backsimeq$ | `\backsimeq` |  |
 | $\propto$ | `\propto` | is proportional to |
+| $\varpropto$ | `\varpropto` |  |
 | $\neq$, $\ne$ | `\neq`, `\ne` | is not equal to |
 
 | Name | Code | Symbol | Name | Code | Symbol |
@@ -484,6 +495,7 @@ Degree:
 | $\smile$ | `\smile` |  | $\frown$ | `\frown` |  |
 | $\models$ | `\models` | models | $\notin$ | `\notin` | is not member of |
 | $\perp$ | `\perp` | is perpendicular with | $\mid$ | `\mid` | divides |
+| $\shortmid$ | `\shortmid` |  | $\shortparallel$ | `\shortparallel` |  |
 
 | Name | Code | Symbol | Name | Code | Symbol |
 | --- | --- | :---: | --- | --- | :---: |
@@ -683,7 +695,6 @@ $\backslash\texttt{displaystyle}\\; \backslash\texttt{textstyle}\\; \backslash\t
 | $\tan$ | `\tan` | tangent |
 | $\tanh$ | `\tanh` | hyperbolic tangent |
 | $\operatorname{zzz}\_{0}^{1}$ | `\operatorname{zzz}\_{0}^{1}` | generic operator |
-
 
 mod with parentheses `a \pmod{m}` $a \pmod{m}$
 
