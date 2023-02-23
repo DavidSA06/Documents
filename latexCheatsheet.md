@@ -417,7 +417,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 
 | Symbol | Command | Name | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- | :---: | --- | --- |
-| $$\bigcap_{i=a}^{b}$$ | `\bigcap_{i=a}^{b}` | set intersection | $$\bigcup_{i=a}^{b}$$ | `\bigcup_{i=a}^{b}` | set union | $$\biguplus_{i=a}^{b}$$ | `\biguplus_{i=a}^{b}` | multiset addition,disjoint/discriminated union |
+| $$\bigcap_{i=a}^{b}$$ | `\bigcap_{i=a}^{b}` | set intersection | $$\bigcup_{i=a}^{b}$$ | `\bigcup_{i=a}^{b}` | set union | $$\biguplus_{i=a}^{b}$$ | `\biguplus_{i=a}^{b}` | multiset addition, disjoint/discriminated union |
 | $$\bigwedge_{i=a}^{b}$$ | `\bigwedge_{i=a}^{b}` |  | $$\bigvee_{i=a}^{b}$$ | `\bigvee_{i=a}^{b}` |  | $$\bigsqcup_{i=a}^{b}$$ | `\bigsqcup_{i=a}^{b}` | disjoint/discriminated union |
 | $$\prod_{i=a}^{b}$$ | `\prod_{i=a}^{b}` | product | $$\coprod_{i=a}^{b}$$ | `\coprod_{i=a}^{b} ` | coproduct | $$\sum_{i=a}^{b}$$ | `\sum_{i=a}^{b}` | summation |
 | $$\bigodot_{i=a}^{b}$$ | `\bigodot_{i=a}^{b}` | Hadamard product | $$\bigoplus_{i=a}^{b}$$ | `\bigoplus_{i=a}^{b}` | direct sum | $$\bigotimes_{i=a}^{b}$$ | `\bigotimes_{i=a}^{b}` | Kronecker product |
