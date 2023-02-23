@@ -194,16 +194,16 @@ $\backslash\texttt{linespread}\lbrace x\rbrace$ changes the line spacing by the 
 | $\\$ $ | `\$` | dollar sign |
 | $\ddag$ | `\ddag` | double dagger, diesis |
 | $\ldots$ | `\ldots` | ellipsis |
-| $\\# $ | `\#` | number sign |
+| $\\# $ | `\#` | number sign, primorial |
 | $\\% $ | `\%` | percentage sign |
 | $\P$ | `\P` | pilcrow |
 | $\pounds$ | `\pounds` | pound sign |
+| $\qedsymbol$, $\qedhere$, $\qed$|| quod erat demonstrandum |
 | $\\S $ | `\S` | section sign |
 | $\textasciitilde{}$ | `\~{}`, `\textasciitilde{}` | tilde |
 | $\\_ $ | `\_` | underscore |
 | $\\|$ | `\|`, `\mid`, `\textpipe`, `\textbar` | vertical bar (pipe) |
 | $\textvisiblespace$ | `\textvisiblespace` |  |
-| $\wr$ | `\wr`|  |
 | $\clubsuit$ | `\clubsuit` |  |
 | $\diamondsuit$ | `\diamondsuit` |  |
 | $\heartsuit$ | `\heartsuit` |  |
@@ -327,12 +327,17 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | name | code | inline | displayed |
 | --- | --- | --- | :---: |
 | fraction | `\frac{x}{y}` | $\frac{x}{y} $ | $$\frac{x}{y} $$ |
+| integral | `\int` | $\int$ | $$\int$$ |
+| surface integral | `\iint` | $\iint$ | $$\iint$$ |
+| volume integral | `\iiint` | $\iiint$ | $$\iiint$$ |
+| curve integral | `\oint` | $\oint$ | $$\oint$$ |
 | product | `\prod_{k=1}^{n}` | $\prod_{k=1}^{n} $ | $$\prod_{k=1}^{n} $$ |
 | radical symbol | `\sqrt[n]{x}` | $\sqrt[n]{x} $ | $$\sqrt[n]{x} $$ |
 | subscript | `s_{x}` | $s_{x}$ | $$s_{x} $$ |
 | summation | `\sum_{k=1}^{n}` | $\sum_{k=1}^{n} $ | $$\sum_{k=1}^{n} $$ |
 | superscript | `s^{x}` | $s^{x} $ | $$s^{x} $$ |
-
+<!--| surface integral | `\oiint` | $\oiint$ | $$\oiint$$ |
+| volume integral | `\oiiint` | $\oiiint$ | $$\oiiint$$ |-->
 
 #### Letters
 
@@ -414,23 +419,23 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 
 | Symbol | Command | Name | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- | :---: | --- | --- |
-| $$\bigcap_{i=a}^{b}$$ | `\bigcap_{i=a}^{b}` | set intersection | $$\bigcup_{i=a}^{b}$$ | `\bigcup_{i=a}^{b}` | set union | $$\biguplus_{i=a}^{b}$$ | `\biguplus_{i=a}^{b}` | multiset addition |
-| $$\bigwedge_{i=a}^{b}$$ | `\bigwedge_{i=a}^{b}` |  | $$\bigvee_{i=a}^{b}$$ | `\bigvee_{i=a}^{b}` |  | $$\bigsqcup_{i=a}^{b}$$ | `\bigsqcup_{i=a}^{b}` |
+| $$\bigcap_{i=a}^{b}$$ | `\bigcap_{i=a}^{b}` | set intersection | $$\bigcup_{i=a}^{b}$$ | `\bigcup_{i=a}^{b}` | set union | $$\biguplus_{i=a}^{b}$$ | `\biguplus_{i=a}^{b}` | multiset addition,disjoint/discriminated union |
+| $$\bigwedge_{i=a}^{b}$$ | `\bigwedge_{i=a}^{b}` |  | $$\bigvee_{i=a}^{b}$$ | `\bigvee_{i=a}^{b}` |  | $$\bigsqcup_{i=a}^{b}$$ | `\bigsqcup_{i=a}^{b}` | disjoint/discriminated union |
 | $$\prod_{i=a}^{b}$$ | `\prod_{i=a}^{b}` | product | $$\coprod_{i=a}^{b}$$ | `\coprod_{i=a}^{b} ` | coproduct | $$\sum_{i=a}^{b}$$ | `\sum_{i=a}^{b}` | summation |
-| $$\bigodot_{i=a}^{b}$$ | `\bigodot_{i=a}^{b}` |  | $$\bigoplus_{i=a}^{b}$$ | `\bigoplus_{i=a}^{b}` |  | $$\bigotimes_{i=a}^{b}$$ | `\bigotimes_{i=a}^{b}` |  |
+| $$\bigodot_{i=a}^{b}$$ | `\bigodot_{i=a}^{b}` | Hadamard product | $$\bigoplus_{i=a}^{b}$$ | `\bigoplus_{i=a}^{b}` | direct sum | $$\bigotimes_{i=a}^{b}$$ | `\bigotimes_{i=a}^{b}` | Kronecker product |
 
 ##### Bars
 
 | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- |
-| $\smallsetminus$ | `\setminus` |  |  |  |  |
+| $\smallsetminus$ | `\setminus` | set diference |  |  |  |
 | $\setminus$ | `\setminus` | set diference | $/$ | `/` |  |
 | $\backslash$ | `\backslash` |  | $\not$ | `\not` |  |
 | $\diagdown$ | `\diagdown` |  | $\diagup$ | `\diagup` |  |
 
 | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- |
-| $\mid$ | `\mid` | divides | $\nmid$ | `\nmid` |  |
+| $\mid$ | `\mid` | divides | $\nmid$ | `\nmid` | non-divisibility |
 | $\vert$ | `\vert` |  | $\Vert$ | `\Vert` |  |
 | $\lVert$ | `\lVert` |  | $\rVert$ | `\rVert` |  |
 | $\parallel$ | `\parallel` | is parallel with | $\nparallel$ | `\nparallel` | is not parallel with |
@@ -448,17 +453,16 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\surd$ | `\surd` |  | $\dotplus$ | `\dotplus` |  |
 | $\pm$ | `\pm` | plus-minus sign | $\mp$ | `\mp` | minus-plus sign |
 | $\prime$ | `\prime` |  | $\backprime$ | `\backprime` |  |
-| $\because$ | `\because` |  | $\therefore$ | `\therefore` |  |
-| $\ast$ | `\ast` |  | $\times$ | `\times` |  |
+| $\ast$ | `\ast` | asterisk | $\times$ | `\times` | cross/vector product |
 | $\ltimes$ | `\ltimes` | semidirect product of normal factor to the left | $\rtimes$ | `\rtimes` | semidirect product of normal factor to the right |
 | $\leftthreetimes$ | `\leftthreetimes` | semidirect product to the left | $\rightthreetimes$ | `\rightthreetimes` | semidirect product to the right |
 | $\star$ | `\star` |  | $\bigstar$ | `\bigstar` |  |
-| $\circ$ | `\circ` |  | $\bullet$ | `\bullet` |  |
-| $\cdot$ | `\cdot` |  | $\centerdot$ | `\centerdot` |  |
-| $\div$ | `\div` |  | $\divideontimes$ | `\divideontimes` |  |
-| $\oplus$ | `\oplus` |  | $\ominus$ | `\ominus` |  |
+| $\circ$ | `\circ` | Hadamard product of matrices | $\bullet$ | `\bullet` |  |
+| $\cdot$ | `\cdot` | scalar/dot product | $\centerdot$ | `\centerdot` |  |
+| $\div$ | `\div` | divided by | $\divideontimes$ | `\divideontimes` |  |
+| $\oplus$ | `\oplus` | direct sum, exclusive disjunction | $\ominus$ | `\ominus` | symmetric difference |
 | $\circledast$ | `\circledast` |  | $\circledcirc$ | `\circledcirc` |  |
-| $\odot$ | `\odot` |  | $\otimes$ | `\otimes` |  |
+| $\odot$ | `\odot` | Hadamard product of power series | $\otimes$ | `\otimes` | Kronecker product, tensor product |
 | $\circleddash$ | `\circleddash` |  | $\oslash$ | `\oslash` |  |
 | $\bigcirc$ | `\bigcirc` |  | $\Box$ | `\Box` |  |
 | $\boxplus$ | `\boxplus` |  | $\boxminus$ | `\boxminus` |  |
@@ -468,6 +472,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\amalg$ | `\amalg` | disjoint union | $\Join$ | `\Join` |  |
 | $\lhd$ | `\lhd` |  | $\rhd$ | `\rhd` |  |
 | $\unlhd$ | `\unlhd` |  | $\unrhd$ | `\unrhd` |  |
+| $\wr$ | `\wr`| wreath product |  |  |  |
 
 ##### Geometry
 
@@ -477,7 +482,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\vartriangleright$ | `\vartriangleright` |  | $\blacktriangleright$ | `\blacktriangleright` |  |
 | $\vartriangle$ | `\vartriangle` |  | $\blacktriangle$ | `\blacktriangle` |  |
 | $\triangledown$ | `\triangledown` |  | $\blacktriangledown $ | `\blacktriangledown ` |  |
-| $\square$ | `\square` |  | $\blacksquare$ | `\blacksquare` |  |
+| $\square$ | `\square` | D'Alembert operator | $\blacksquare$ | `\blacksquare` |  |
 | $\lozenge$ | `\lozenge` |  | $\blacklozenge$ | `\blacklozenge` |  |
 | $\triangle$ | `\triangle` |  | $\bowtie$ | `\bowtie` |  |
 | $\bigtriangleup$ | `\bigtriangleup` |  | $\bigtriangledown$ | `\bigtriangledown` |  |
@@ -487,11 +492,10 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\ntrianglelefteq$ | `\ntrianglelefteq` |  | $\ntrianglerighteq$ | `\ntrianglerighteq` |  |
 | $\angle$ | `\angle` |  |  |  |  |
 | $\measuredangle$ | `\measuredangle` |  | $\sphericalangle$ | `\sphericalangle` |  |
-| $\top$ | `\top` |  | $\bot$ | `\bot` |  |
-| $\vdash$ | `\vdash` |  | $\dashv$ | `\dashv` |  |
-| $\vdash$ | `\vdash` |  | $\vDash$ | `\vDash` |  |
+| $\vdash$ | `\vdash` | turnstile, proves | $\dashv$ | `\dashv` |  |
+| $\vdash$ | `\vdash` |  | $\vDash$ | `\vDash` | double turnstile, models |
 | $\Vdash$ | `\Vdash` |  | $\Vvdash$ | `\Vvdash` |  |
-| $\nvdash$ | `\nvdash` |  | $\nvDash$ | `\nvDash` |  |
+| $\nvdash$ | `\nvdash` | does not prove | $\nvDash$ | `\nvDash` | not true |
 | $\nVdash$ | `\nVdash` |  | $\nVDash$ | `\nVDash` |  |
 | $\perp$ | `\perp` | is perpendicular with | $\not\perp$ | `\not\perp` | is not perpendicular with |
 | $\parallel$ | `\parallel` | is parallel with | $\nparallel$ | `\nparallel` | is not parallel with |
@@ -501,19 +505,23 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 
 | Symbol | Command | Name |
 | :---: | --- | --- |
-| $\exists$ | `\exists` | there exists at least one |
-| $\exists!$ | `\exists!` | there exists one and only one |
+| $\exists$ | `\exists` | existencial quantification |
+| $\exists!$ | `\exists!` | uniqueness quantification |
 | $\nexists$ | `\nexists` | there is no |
 | $\Finv$ | `\Finv` |  |
-| $\forall$ | `\forall` | for all |
-| $\land$ | `\land` |  |
-| $\wedge$ | `\wedge` |  |
+| $\forall$ | `\forall` | universal quantification |
+| $\land$ | `\land` | logical (inclusive) disjunction |
+| $\wedge$ | `\wedge` | logical conjunction |
 | $\lor$ | `\lor` |  |
 | $\vee$ | `\vee` |  |
 | $\barwedge$ | `\barwedge` | NAND |
 | $\doublebarwedge$ | `\doublebarwedge` | conjunction with double bar |
-| $\veebar$ | `\veebar` | logical disjunction |
-| $\neg$, $\lnot$ | `\neg`, `\lnot` | logical not |
+| $\veebar$ | `\veebar` | logical (exclusive) disjunction |
+| $\neg$, $\lnot$ | `\neg`, `\lnot` | negation |
+| $\top$ | `\top` | tautology |
+| $\bot$ | `\bot` | contradiction |
+| $\because$ | `\because` | because |
+| $\therefore$ | `\therefore` | therefore |
 
 ##### Relations
 
@@ -548,7 +556,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\approx$ | `\approx` | is approximately |
 | $\thickapprox$ | `\thickapprox` |  |
 | $\approxeq$ | `\approxeq` |  |
-| $\cong$ | `\cong` | is congruent to |
+| $\cong$ | `\cong` | is congruent/isomorphic to |
 | $\simeq$ | `\simeq` | is similar or equal to |
 | $\eqsim$ | `\eqsim` |  |
 | $\sim$ | `\sim` | is similar to |
@@ -556,7 +564,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\backsim$ | `\backsim` |  |
 | $\backsimeq$ | `\backsimeq` |  |
 | $\nsim$ | `\nsim	` | is not similar to	|
-| $\ncong$ | `\ncong` | is not congruent to |
+| $\ncong$ | `\ncong` | is not congruent/isomorphic to |
 
 ##### Comparison
 
@@ -573,7 +581,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\lessgtr$ | `\lessgtr` |  | $\gtrless$ | `\gtrless` |  |
 | $\lesseqgtr$ | `\lesseqgtr` |  | $\gtreqless$ | `\gtreqless` |  |
 | $\lesseqqgtr$ | `\lesseqqgtr` |  | $\gtreqqless$ | `\gtreqqless` |  |
-| $\ll$ | `\ll` |  | $\gg$ | `\gg` |  |
+| $\ll$ | `\ll` | much less than | $\gg$ | `\gg` | much greater than |
 | $\lll$, $\llless$ | `\lll`, `\llless` |  | $\ggg$, $\gggtr$ | `\ggg`, `\gggtr` |  |
 | $\nless$, $\not<$ | `\nless`, `\not<` | is not less than | $\ngtr$, $\not>$ | `\ngtr`, `\not>` | is not greater than |
 | $\lnsim	$ | `\lnsim` |  | $\gnsim$ | `\gnsim` |  |
@@ -583,7 +591,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\lvertneqq	$ | `\lvertneqq` |  | $\gvertneqq$ | `\gvertneqq` |  |
 | $\nleq$ | `\nleq` | is not less than or equal to | $\ngeq$ | `\ngeq` | is not greater than or equal to |
 | $\nleqq	$ | `\nleqq` |  | $\ngeqq$ | `ngeqq` |  |
-| $\nleqslant	$ | `\nleqslant` |  | $\ngeqslant$ | `\ngeqslant` |  |
+| $\nleqslant	$ | `\nleqslant` | is neither less than nor equal to | $\ngeqslant$ | `\ngeqslant` | is neither greater than nor equal to |
 
 ##### Order
 
@@ -615,17 +623,16 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\subseteq$ | `\subseteq` | is a subset of | $\supseteq$ | `\supseteq` | is a superset of |
 | $\subseteqq$ | `\subseteqq` |  | $\supseteqq$ | `\supseteqq` |  |
 | $\not\subset	$ | `\not\subset	` | is not a proper subset of | $\not\supset$ | `\not\supset	` | is not a proper superset of |
-| $\nsubseteq$ | `\nsubseteq` |  | $\nsupseteq$ | `\nsupseteq` |  |
+| $\nsubseteq$ | `\nsubseteq` | is not a subset of | $\nsupseteq$ | `\nsupseteq` | is not a superset of |
 | $\nsubseteqq$ | `\nsubseteqq` |  | $\nsupseteqq$ | `\nsupseteqq` |  |
 | $\subsetneq$ | `\subsetneq` |  | $\supsetneq$ | `\supsetneq` |  |
 | $\varsubsetneq$ | `\varsubsetneq` |  | $\varsupsetneq$ | `\varsupsetneq` |  |
 | $\subsetneqq$| `\subsetneqq` |  | $\supsetneqq$ | `\supsetneqq` |  |
 | $\varsubsetneqq$ | `\varsubsetneqq` |  | $\varsupsetneqq$ | `\varsupsetneqq` |  |
-| $\sqcap$ | `\sqcap` |  | $\sqcup$ | `\sqcup` |  |
+| $\sqcap$ | `\sqcap` |  | $\sqcup$ | `\sqcup` | disjoint/discriminated union) |
 | $\sqsubset$ | `\sqsubset` |  | $\sqsupset$ | `\sqsupset` |  |
 | $\sqsubseteq$ | `\sqsubseteq` |  | $\sqsupseteq$ | `\sqsupseteq` |  |
-| $\doublecap$ | `\doublecap` |  | $\Cap $ | `\Cap ` |  |
-| $\doublecup$ | `\doublecup` |  | $\Cup$ | `\Cup` |  |
+| $\doublecap$, $\Cap$ | `\doublecap`, `\Cap` | double intersection | $\doublecup$, $\Cup$ | `\doublecup`, `\Cup` | double union |
 | $\Subset$ | `\Subset` |  | $\Supset$ | `\Supset` |  |
 | $\between$ | `\between` |  |  |  |  |
 
@@ -640,10 +647,10 @@ Most relations can be negated by prefixing them with $\backslash\texttt{not}$.
 | Symbol | Code | Name | Symbol | Code | Name |
 | :---: | --- | --- | :---: | --- | --- |
 | $\leftarrow$, $\gets$ | `\leftarrow`, `\gets` |  | $\longleftarrow$ | `\longleftarrow` |  |
-| $\rightarrow$, $\to$ | `\rightarrow`, `\to` |  | $\longrightarrow$ | `\longrightarrow` |  |
+| $\rightarrow$, $\to$ | `\rightarrow`, `\to` | material implication | $\longrightarrow$ | `\longrightarrow` |  |
 | $\nleftarrow$ | `\nleftarrow` |  | $\nrightarrow$ | `\nrightarrow` |  |
 | $\uparrow$ | `\uparrow` |  | $\downarrow$ | `\downarrow` |  |
-| $\leftrightarrow$ | `\leftrightarrow` |  | $\longleftrightarrow$ | `\longleftrightarrow` |  |
+| $\leftrightarrow$ | `\leftrightarrow` | material equivalence | $\longleftrightarrow$ | `\longleftrightarrow` |  |
 | $\updownarrow$ | `\updownarrow` |  | $\nleftrightarrow$ | `\nleftrightarrow` |  |
 | $\leftleftarrows$ | `\leftleftarrows` |  | $\rightrightarrows$ | `\rightrightarrows` |  |
 | $\upuparrows$ | `\upuparrows` |  | $\downdownarrows$ | `\downdownarrows` |  |
@@ -652,7 +659,7 @@ Most relations can be negated by prefixing them with $\backslash\texttt{not}$.
 | $\dashleftarrow$ | `\dashleftarrow` |  | $\dashrightarrow$ | `\dashrightarrow` |  |
 | $\leftarrowtail$ | `\leftarrowtail` |  | $\rightarrowtail$ | `\rightarrowtail` |  |
 | $\leftrightsquigarrow$ | `\leftrightsquigarrow` |  | $\rightsquigarrow$, $\leadsto$ | `\rightsquigarrow`, `\leadsto` |  |
-| $\mapsto$ | `\mapsto` |  | $\longmapsto$ | `\longmapsto` |  |
+| $\mapsto$ | `\mapsto` | maplet | $\longmapsto$ | `\longmapsto` |  |
 | $\nearrow$ | `\nearrow` |  | $\searrow$ | `\searrow` |  |
 | $\nwarrow$ | `\nwarrow` |  | $\swarrow$ | `\swarrow` |  |
 | $\circlearrowleft$ | `\circlearrowleft` |  | $\circlearrowright$ | `\circlearrowright` |  |
@@ -661,9 +668,9 @@ Most relations can be negated by prefixing them with $\backslash\texttt{not}$.
 | $\hookleftarrow$ | `\hookleftarrow` |  | $\hookrightarrow$ | `\hookrightarrow` |  |
 | $\Lsh$ | `\Lsh` |  | $\Rsh$ | `\Rsh` |  |
 | $\Leftarrow$ | `\Leftarrow` |  | $\Longleftarrow$ | `\Longleftarrow` |  |
-| $\Rightarrow$ | `\Rightarrow` |  | $\Longrightarrow$, $\implies$ | `\Longrightarrow`, `\implies` |  |
+| $\Rightarrow$ | `\Rightarrow` | material implication | $\Longrightarrow$, $\implies$ | `\Longrightarrow`, `\implies` |  |
 | $\Uparrow$ | `\Uparrow` |  | $\Downarrow$ | `\Downarrow` |  |
-| $\Leftrightarrow$ | `\Leftrightarrow` |  | $\Longleftrightarrow$ | `\Longleftrightarrow` |  |
+| $\Leftrightarrow$ | `\Leftrightarrow` | material equivalence | $\Longleftrightarrow$ | `\Longleftrightarrow` |  |
 | $\nLeftarrow$ | `\nLeftarrow` |  | $\nRightarrow$ | `\nRightarrow` |  |
 | $\Updownarrow$ | `\Updownarrow` |  | $\nLeftrightarrow$ | `\nLeftrightarrow` |  |
 | $\Lleftarrow$ | `\Lleftarrow` |  | $\Rrightarrow$ | `\Rrightarrow` |  |
@@ -765,7 +772,7 @@ $\backslash\texttt{displaystyle}\\; \backslash\texttt{textstyle}\\; \backslash\t
 | $\arccos$ | `\arccos` | arccosine |
 | $\arcsin$ | `\arcsin` | arcsine |
 | $\arctan$ | `\arctan` | arctangent |
-| $\arg$ | `\arg` | argument of |
+| $\arg$ | `\arg` | argument of complex number |
 | $\cos$ | `\cos` | cosine |
 | $\cosh$ | `\cosh` | hyperbolic cosine |
 | $\cot$ | `\cot` | cotangent |
@@ -792,7 +799,7 @@ $\backslash\texttt{displaystyle}\\; \backslash\texttt{textstyle}\\; \backslash\t
 | $\log$ | `\log` | logarithm ($\log_{10}$, $\log_{e}$) |
 | $\max$ | `\max` | maximum of a set |
 | $\min$ | `\min` | minimum of a set |
-| $\Pr$ | `\Pr` | probability of an event |
+| $\Pr$ | `\Pr` | projection(linear algebra) |
 | $\sec$ | `\sec` | secant |
 | $\sin$ | `\sin` | sine |
 | $\sinh$ | `\sinh` | hyperbolic sine |
@@ -800,6 +807,7 @@ $\backslash\texttt{displaystyle}\\; \backslash\texttt{textstyle}\\; \backslash\t
 | $\tan$ | `\tan` | tangent |
 | $\tanh$ | `\tanh` | hyperbolic tangent |
 | $\operatorname{zzz}\_{0}^{1}$ | `\operatorname{zzz}\_{0}^{1}` | generic operator |
+<!--| $\mod$ | `\mod` | modulo operation |-->
 
 mod with parentheses `a \pmod{m}` $a \pmod{m}$
 
