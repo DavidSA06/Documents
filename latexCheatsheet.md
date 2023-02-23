@@ -393,7 +393,6 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 |  | `\Bbbk` | $\Bbbk$ |
 |  | `\circledR` | $\circledR$ |
 |  | `\circledS` | $\circledS$ |
-|  | `\complement` | $\complement$ |
 | copyright symbol/sign | `\copyright` | $\copyright$ |
 |  | `\ell` | $\ell$ |
 |  | `\eth` | $\eth$ |
@@ -403,7 +402,6 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | imaginary part | `\Im` | $\Im$ |
 |  | `\imath` | $\imath$ |
 | infinity | `\infty` | $\infty$ |
-|  | `\intercal` | $\intercal$ |
 |  | `\jmath` | $\jmath$ |
 |  | `\mho` | $\mho$ |
 | del, nabla | `\nabla` | $\nabla$ |
@@ -446,14 +444,14 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\shortmid$ | `\shortmid` |  | $\nshortmid$ | `\nshortmid` |  |
 | $\shortparallel$ | `\shortparallel` |  | $\nshortparallel$ | `\nshortparallel` |  |
 
-###### Binary Operations
+###### Operations
 
 | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- |
 | $\surd$ | `\surd` |  | $\dotplus$ | `\dotplus` |  |
 | $\pm$ | `\pm` | plus-minus sign | $\mp$ | `\mp` | minus-plus sign |
 | $\prime$ | `\prime` |  | $\backprime$ | `\backprime` |  |
-| $\ast$ | `\ast` | asterisk | $\times$ | `\times` | cross/vector product |
+| $\ast$ | `\ast` | asterisk, Khatri–Rao product | $\times$ | `\times` | cross/vector product |
 | $\ltimes$ | `\ltimes` | semidirect product of normal factor to the left | $\rtimes$ | `\rtimes` | semidirect product of normal factor to the right |
 | $\leftthreetimes$ | `\leftthreetimes` | semidirect product to the left | $\rightthreetimes$ | `\rightthreetimes` | semidirect product to the right |
 | $\star$ | `\star` |  | $\bigstar$ | `\bigstar` |  |
@@ -462,8 +460,8 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\div$ | `\div` | divided by | $\divideontimes$ | `\divideontimes` |  |
 | $\oplus$ | `\oplus` | direct sum, exclusive disjunction | $\ominus$ | `\ominus` | symmetric difference |
 | $\circledast$ | `\circledast` |  | $\circledcirc$ | `\circledcirc` |  |
-| $\odot$ | `\odot` | Hadamard product of power series | $\otimes$ | `\otimes` | Kronecker product, tensor product |
-| $\circleddash$ | `\circleddash` |  | $\oslash$ | `\oslash` |  |
+| $\odot$ | `\odot` | Hadamard product of power series | $\otimes$ | `\otimes` | Kronecker product, tensor product, dyadic product |
+| $\circleddash$ | `\circleddash` |  | $\oslash$ | `\oslash` | Hadamard division |
 | $\bigcirc$ | `\bigcirc` |  | $\Box$ | `\Box` |  |
 | $\boxplus$ | `\boxplus` |  | $\boxminus$ | `\boxminus` |  |
 | $\boxdot$ | `\boxdot` |  | $\boxtimes$ | `\boxtimes` |  |
@@ -472,7 +470,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\amalg$ | `\amalg` | disjoint union | $\Join$ | `\Join` |  |
 | $\lhd$ | `\lhd` |  | $\rhd$ | `\rhd` |  |
 | $\unlhd$ | `\unlhd` |  | $\unrhd$ | `\unrhd` |  |
-| $\wr$ | `\wr`| wreath product |  |  |  |
+| $\wr$ | `\wr`| wreath product | $\intercal$ | `\intercal` | Transposed matrix |
 
 ##### Geometry
 
@@ -615,10 +613,10 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | Name | Code | Symbol | Name | Code | Symbol |
 | --- | --- | :---: | --- | --- | :---: |
 | $\empty$ | `\empty` |  | $\emptyset$ | `\emptyset` |  |
-| $\varnothing$ | `\varnothing` |  | $\uplus$ | `\uplus` | multiset addition |
+| $\varnothing$ | `\varnothing` |  | $\uplus$ | `\uplus` | multiset addition, disjoint union |
 | $\cap$ | `\cap` | set intersection | $\cup$ | `\cup` | set union |
 | $\in$ | `\in` | is member of | $\ni$, $\owns$ | `\ni`, `\owns` | has member, owns |
-| $\notin$ | `\notin` | is not member of | $\pitchfork$ | `\pitchfork` |  |
+| $\notin$ | `\notin` | is not member of | $\pitchfork$ | `\pitchfork` | transversal intersection |
 | $\subset$ | `\subset` | is a proper subset of | $\supset$ | `\supset` | is a proper superset of |
 | $\subseteq$ | `\subseteq` | is a subset of | $\supseteq$ | `\supseteq` | is a superset of |
 | $\subseteqq$ | `\subseteqq` |  | $\supseteqq$ | `\supseteqq` |  |
@@ -634,7 +632,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\sqsubseteq$ | `\sqsubseteq` |  | $\sqsupseteq$ | `\sqsupseteq` |  |
 | $\doublecap$, $\Cap$ | `\doublecap`, `\Cap` | double intersection | $\doublecup$, $\Cup$ | `\doublecup`, `\Cup` | double union |
 | $\Subset$ | `\Subset` |  | $\Supset$ | `\Supset` |  |
-| $\between$ | `\between` |  |  |  |  |
+| $\between$ | `\between` |  | $\complement$ | `\complement` | complement |
 
 Most relations can be negated by prefixing them with $\backslash\texttt{not}$.
 
