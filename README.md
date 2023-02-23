@@ -6,3 +6,4 @@ This repository contains my documents written in plain text:
 - Dr. William Phillips Interview.
 - My html signature for emails.
 - Markdown cheatsheet.
+- Latex cheatsheet.
