@@ -434,7 +434,7 @@ $\backslash\texttt{multicolumn}\lbrace n \rbrace\lbrace cols \rbrace\lbrace text
 | $\vert$ | `\vert` |  | $\Vert$ | `\Vert` |  |
 | $\lVert$ | `\lVert` |  | $\rVert$ | `\rVert` |  |
 | $\parallel$ | `\parallel` | is parallel with | $\nparallel$ | `\nparallel` | is not parallel with |
-| $\\\|$ | `\|` |  |  |  |  |
+| $\\\|$ | `\\|` |  |  |  |  |
 
 | Symbol | Command | Name | Symbol | Command | Name |
 | :---: | --- | --- | :---: | --- | --- |
