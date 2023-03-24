@@ -844,6 +844,16 @@ The general format for constructing leaders is <br>
 $\backslash\texttt{leaders}\langle box \\; or \\; rule \rangle \backslash \texttt{hskip}\langle glue\rangle$ repeat box or rule <br>
 $\backslash\texttt{leaders}\langle box \\; or \\; rule \rangle \backslash \texttt{hfill}$ fill space with box or rule
 
+#### Useful environments
+
+| name | code | render |
+| --- | --- | --- |
+| cases | `f(n) = \begin{cases}`<br />`  n/2 & n \text{ is even}`<br />`  3n+1 & n \text{ is odd}`<br />`\end{cases}` | $$f(n) = \begin{cases} n/2 & n \text{ is even} \\ 3n+1 & n \text{ is odd} \end{cases}$$ |
+| split | `\begin{equation}`<br>`\begin{split}`<br>`e^{x} & = \sum^{\infty}_{n = 0}\frac{x^{n}}{n!} \\`<br>`&= 1 + x + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + ...`<br>`\end{split}` | $$\begin{equation}\begin{split} e^{x} & = \sum^{\infty}\_{n = 0} \frac{x^{n}}{n!} \\ &= 1 + x + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + ... \end{split}\end{equation}$$ |
+| multline | `\begin{equation}`<br>`\begin{multline}`<br>`a+b+c+d+e+f\\`<br>`+i+j+k+l+m+n`<br>`\end{multline}`<br>`\end{equation}` | $$\begin{equation}\begin{multline}a+b+c+d+e+f\\+i+j+k+l+m+n\end{multline}\end{equation}$$ |
+| gather | `\begin{gather}`<br>`a_1=b_1+c_1\\`<br>`a_2=b_2+c_2-d_2+e_2`<br>`\end{gather}` | $$\begin{gather} a_1=b_1+c_1\\ a_2=b_2+c_2-d_2+e_2 \end{gather}$$ |
+| align | `\begin{align}`<br>`a_1& =b_1+c_1\\`<br>`a_2& =b_2+c_2-d_2+e_2`<br>`\end{align}` | $$\begin{align} a_1& =b_1+c_1\\ a_2& =b_2+c_2-d_2+e_2 \end{align}$$ |
+
 ***
 
 ### Bibliography and citations
