@@ -853,6 +853,10 @@ $\backslash\texttt{leaders}\langle box \\; or \\; rule \rangle \backslash \textt
 | multline | `\begin{equation}`<br>`\begin{multline}`<br>`a+b+c+d+e+f\\`<br>`+i+j+k+l+m+n`<br>`\end{multline}`<br>`\end{equation}` | $$\begin{equation}\begin{multline}a+b+c+d+e+f\\+i+j+k+l+m+n\end{multline}\end{equation}$$ |
 | gather | `\begin{gather}`<br>`a_1=b_1+c_1\\`<br>`a_2=b_2+c_2-d_2+e_2`<br>`\end{gather}` | $$\begin{gather} a_1=b_1+c_1\\ a_2=b_2+c_2-d_2+e_2 \end{gather}$$ |
 | align | `\begin{align}`<br>`a_1& =b_1+c_1\\`<br>`a_2& =b_2+c_2-d_2+e_2`<br>`\end{align}` | $$\begin{align} a_1& =b_1+c_1\\ a_2& =b_2+c_2-d_2+e_2 \end{align}$$ |
+| matrix (parentheses) | `\begin{pmatrix}`<br>`  a_{1} & a_{2} \\`<br>`  a_{3} & a_{4}`<br>`\end{pmatrix}` | $$\begin{pmatrix} a_{1} & a_{2} \\ a_{3} & a_{4} \end{pmatrix}$$ |
+| matrix (brackets) | `\begin{bmatrix}`<br>`  a_{1} & a_{2} \\`<br>`  a_{3} & a_{4}`<br>`\end{bmatrix}` | $$\begin{bmatrix} a_{1} & a_{2} \\ a_{3} & a_{4} \end{bmatrix}$$ |
+| matrix (vertical line) | `\begin{vmatrix}`<br>`  a_{1} & a_{2} \\`<br>`  a_{3} & a_{4}`<br>`\end{vmatrix}` | $$\begin{vmatrix} a_{1} & a_{2} \\ a_{3} & a_{4} \end{vmatrix}$$ |
+
 
 ***
 
