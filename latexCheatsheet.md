@@ -1,5 +1,7 @@
 # $\LaTeX{}$ Cheatsheet
 
+If it takes a long time to load, visit this [web site](https://johzu.com/latexCheatsheet.html).
+
 ## Contents
 
 | [Document classes](#document-classes) | [Document Structure](#document-structure) | [Text properties](#text-properties) | [Text-mode symbols](#text-mode-symbols)| [Tabular environments](#tabular-environments) | [Math mode](#math-mode) | [Bibliography and citations](#bibliography-and-citations) |
@@ -8,8 +10,7 @@
 | [Packages](#packages) | [Lists](#lists) | [Font size](#font-size) | [Accents](#accents) | [tabular environment](#tabular-environment) | [Letters](#letters) | [BibTex entry types](#bibtex-entry-types) |
 | [Title](#title) | [References](#references) | [Verbatim text](#verbatim-text) | [Dashes](#dashes) | [tabular column specification](#tabular-column-specification) | [Other symbols](#other-symbols) | [Bibtex fields](#bibtex-fields) |
 | [Miscellaneous documents classes](#miscellaneous-documents-classes) | [Floating bodies](#floating-bodies) | [Justification](#justification) |  | [tabular elements](#tabular-elements) | [Arrows](#arrows) | [Common BibTeX style files](#common-bibtex-style-files) |
-|  |  | [Miscellaneous text properties](#miscellaneous-text-properties) |  |  | [Binary Operations](#binary-operations) | [BibTex example](#bibtex-example) |
-|  |  |  |  |  | [Delimiters](#delimiters) |  |
+|  |  | [Miscellaneous text properties](#miscellaneous-text-properties) |  |  | [Delimiters](#delimiters) | [BibTex example](#bibtex-example) |
 |  |  |  |  |  | [Accents](#accents) |  |
 |  |  |  |  |  | [Elementary Math Control Sequences](#elementary-math-control-sequences) |  |
 |  |  |  |  |  | [Non-Italic Function Names](#non-italic-function-names) |  |
