@@ -67,17 +67,17 @@
 | Let binding | `let x = 1` |
 | Named function | `let f(x) = 2 * x` |
 | Set rule | `set text(14pt)` |
-| Set-if rule	 | `set text(..) if ..` |
-| Show-set rule	 | `show par: set block(..)` |
+| Set-if rule | `set text(..) if ..` |
+| Show-set rule | `show par: set block(..)` |
 | Show rule with function | `show raw: it => {..}` |
 | Show-everything rule | `show: columns.with(2)` |
 | Conditional | `if x == 1 {..} else {..}` |
-| For loop	 | `for x in (1, 2, 3) {..}` |
-| While loop	 | `while x < 10 {..}` |
+| For loop | `for x in (1, 2, 3) {..}` |
+| While loop | `while x < 10 {..}` |
 | Loop control flow | `break`, `continue` |
 | Return from function | `return x` |
-| Include module	 | `include "bar.typ"` |
-| Import module	 | `import "bar.typ"` |
+| Include module | `include "bar.typ"` |
+| Import module | `import "bar.typ"` |
 | Import items from module | `import "bar.typ": a, b, c` |
 | Comment | `/* block */`, `// line` |
 
