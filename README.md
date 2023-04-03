@@ -7,4 +7,5 @@ This repository contains my documents written in plain text:
 - My simple html signature for emails (<img src="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/es.svg" width="16">).
 - Markdown cheatsheet.
 - Latex cheatsheet.
+- Typst cheatsheet.
 - git cheatsheet (<img src="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/es.svg" width="16">).
