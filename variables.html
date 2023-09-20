@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+      integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
+      crossorigin="anonymous"
+    />
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+      integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+      integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
+
+    <title>Variables Físicas</title>
+  </head>
+  <body>
+    <h1>Variables Físicas</h1>
+    <h2>Fundamentales</h2>
+    <table>
+      <thead>
+        <th>Magnitud Física</th>
+        <th>Nombre</th>
+        <th>Símbolo</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Longitud</td>
+          <td>metro</td>
+          <td>\(\mathrm{m}\)</td>
+        </tr>
+        <tr>
+          <td>Masa</td>
+          <td>Kilogramo</td>
+          <td>\(\mathrm{Kg}\)</td>
+        </tr>
+        <tr>
+          <td>Tiempo</td>
+          <td>segundo</td>
+          <td>\(\mathrm{s}\)</td>
+        </tr>
+        <tr>
+          <td>Intensidad de la corriente eléctrica</td>
+          <td>Ampere</td>
+          <td>\(\mathrm{A}\)</td>
+        </tr>
+        <tr>
+          <td>Temperatura</td>
+          <td>Kelvin</td>
+          <td>\(\mathrm{K}\)</td>
+        </tr>
+        <tr>
+          <td>Cantidad de sustancia</td>
+          <td>mol</td>
+          <td>\(\mathrm{mol}\)</td>
+        </tr>
+        <tr>
+          <td>Intensidad luminosa</td>
+          <td>candela</td>
+          <td>\(\mathrm{cd}\)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Derivadas</h2>
+
+    <h3>Unidades con nombre derivadas de unidades básicas del SI</h3>
+    <table>
+      <thead>
+        <th>Magnitud Física</th>
+        <th>Nombre</th>
+        <th>Símbolo</th>
+        <th>Equivalencias</th>
+        <th>Equivalencias en SI</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>frecuencia</td>
+          <td>hertz</td>
+          <td>\(\mathrm{Hz}\)</td>
+          <td>\( 1 / s \)</td>
+          <td>\( s^{-1} \)</td>
+        </tr>
+        <tr>
+          <td>ángulo</td>
+          <td>radián</td>
+          <td>\(\mathrm{rad}\)</td>
+          <td>\( m / m \)</td>
+          <td>\( 1 \)</td>
+        </tr>
+        <tr>
+          <td>ángulo sólido</td>
+          <td>estereorradian</td>
+          <td>\(\mathrm{sr}\)</td>
+          <td>\( m^{2} / m^{2} \)</td>
+          <td>\( 1 \)</td>
+        </tr>
+        <tr>
+          <td>
+            fuerza,<br />
+            peso
+          </td>
+          <td>newton</td>
+          <td>\(\mathrm{N}\)</td>
+          <td>\( kg \cdot m/s^{2} \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>presión,<br />tensión mecánica</td>
+          <td>pascal</td>
+          <td>\(\mathrm{Pa}\)</td>
+          <td>\( N/m^{2} \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>energía,<br />trabajo,<br />calor</td>
+          <td>joule</td>
+          <td>\(\mathrm{J}\)</td>
+          <td>\( m \cdot N,\ C \cdot V,\ W \cdot s \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>potencia,flujo radiante<br /></td>
+          <td>watt</td>
+          <td>\(\mathrm{W}\)</td>
+          <td>\( J/s, V \cdot A  \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>carga eléctrica</td>
+          <td>coulomb</td>
+          <td>\(\mathrm{C}\)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>
+            voltaje,<br />diferencia de potencial eléctrico,<br />fuerza
+            electromotriz
+          </td>
+          <td>volt</td>
+          <td>\(\mathrm{V}\)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>capacitancia eléctrica</td>
+          <td>farad</td>
+          <td>\(\mathrm{F}\)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>resistencia eléctrica,<br />impedancia,<br />reactancia</td>
+          <td>ohm</td>
+          <td>\(\Omega\)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>conductancia eléctrica</td>
+          <td>siemens</td>
+          <td>\(\mathrm{S}\)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>flujo magnético</td>
+          <td>weber</td>
+          <td>\(\mathrm{Wb}\)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>inducción magnética,<br />densidad de flujo magnético</td>
+          <td>tesla</td>
+          <td>\(\mathrm{T}\)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>inductancia eléctrica</td>
+          <td>henry</td>
+          <td>\(\mathrm{H}\)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>temperatura relativa a \(273.15\ K\)</td>
+          <td>grado Celsius</td>
+          <td>\( ^{\circ}\mathrm{C} \)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>flujo luminoso</td>
+          <td>lumen</td>
+          <td>\(\mathrm{lm}\)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>iluminancia</td>
+          <td>lux</td>
+          <td>\(\mathrm{lx}\)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>radioactividad</td>
+          <td>becquerel</td>
+          <td>\(\mathrm{Bq}\)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>dosis absorbida</td>
+          <td>gray</td>
+          <td>\(\mathrm{Gy}\)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>dosis equivalente</td>
+          <td>sievert</td>
+          <td>\(\mathrm{Sv}\)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+        <tr>
+          <td>actividad catalítica</td>
+          <td>katal</td>
+          <td>\(\mathrm{kat}\)</td>
+          <td>\( \)</td>
+          <td>\( \)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <th>Magnitud Física</th>
+        <th>Nombre</th>
+        <th>Símbolo</th>
+        <th>Equivalencias</th>
+        <th>Equivalencias en SI</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
