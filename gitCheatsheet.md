@@ -1,7 +1,5 @@
 # git cheatsheet
 
-`alias "nombre"` = "instruccion": Abreviar una instruccion.
-
 `Ctrl + shift + R`: Fuerza el refrescar de página para ver los binarios modificados.
 
 `gitk`: Abre una ventana con una interfaz gráfica para ver las ramas de manera gráfica.
