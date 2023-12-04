@@ -67,7 +67,7 @@
 
 `git pull "remoto" "rama"`: sintaxis.<br>
 `git pull origin main`: Traer el repositorio remoto.<br>
-`git pull origin main --allow-unrelated-histories`: Trae el repositorio remoto auqnue haya hisotrias no relacionadas (archivos sobrantes).
+`git pull origin main --allow-unrelated-histories`: Trae el repositorio remoto aunque haya historias no relacionadas (archivos sobrantes).
 
 `git push "remoto" "rama"`: sintaxis.<br>
 `git push origin main`: Enviar al repositorio remoto los cambios.<br>
